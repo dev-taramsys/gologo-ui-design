@@ -15,7 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar1">
+   <!--<div id="navbar1">
     <nav class="navbar navbar-expand-md navbar-light bg-white">
       <div class="container-fluid">
         <a class="navbar-brand mx-4" href="index.html">LOGO</a>
@@ -58,7 +58,64 @@
       </div>
       </nav>
     </div>
-    
+    --> 
+    <!------Main Navbar-->
+    <div id="navbar1">
+      
+      <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+          <div class="container-fluid">
+          <a class="navbar-brand mx-4" href="index.html">LOGO</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+            <ul class="navbar-nav mr-auto " >
+              <li class="nav-item active mx-2">
+                <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">SUPPORT</a>
+              </li>
+             
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+            </ul>
+            <!--
+            <form class="form-inline mx-4" >
+              <input class="form-control pl-4 "  size="100" id="searchbar" type="search"  placeholder="Search..." aria-label="Search">
+              <button class="btn my-2 my-sm-0"  type="submit"><i class="fa fa-search"  aria-hidden="true"></i>
+              </button>
+            </form>
+          -->
+          <form class="navbar-form navbar-left mx-2 " id="searchbar">
+            <div class="input-group" >
+              <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar" placeholder="Search" name="search">
+              <div class="input-group-btn ">
+                <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
+                    <i class="fa fa-search"  aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="container " id="navicon">
+                  <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+                          </li>
+                         
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><img class="img-responsive" src="images/Path 4183.png"></a>
+                          </li>
+                        </ul>
+          </div>
+          </div>
+          </div>
+        </div>
+        </nav>
+      </div>
+      
     <div class="jumbotron-fluid h-100 w-100 pt-1 mb-5 " id="banner1">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -95,89 +152,108 @@
     
           </div>
         </div>
+        
 
 <div class="container" id="card1">
   <div class="clearfix" id="btnview">
     <button type="button" class="btn btn-link float-right p-4">View All</button>
   </div>
+  
   <div class="container">
-    <div class="card-deck">
-      <div class="card border-0" id="firstwomen">
-      <a href="Product.html"> <img  class="card-img-top" src="images/women 3.png" alt="Card image" ></a> 
-    <a href="Product.html"><div class="card-img-overlay w-100">
-          <div class="container ">
-            <div class="text-center overlay">
-            <button type="button" class="btn btn-light rounded-pill ">Quick View</button>
-        </div>
-      </div>
-      </div></a>
-      
-      <div class="card-body text-center ">
-        <a href="Product.html" class="card-text  p-4" id="txtfont">Net Semi-stitched Dress</a>
-        <a href="Product.html" class="card-text  p-4" id="txtrate"> From $199</a>
+    <div class="row ">
+      <div class="product col-lg-3 col-md-6 border-0 " id="firstwomen">
+        <div class="img-fluid">
+      <img  class="img-top " src="images/women 3.png" alt="Card image" >
+    </div>
+
+    <div class=" col mt-4 ">
+        <h2  class="text-center " ><a href="Product.html" id="txtfont">Net Semi-stitched Dress</a></h2>
+        <p href="Product.html" class="text-center" ><a href="Product.html" id="txtrate">From $199</a></p>
        
       </div>
-
-      </div>
+  <div class="black-overlay">
+            <button type="button" class="btn btn-light rounded-pill ">Quick View</button>
+        
       
-      <div class="card  border-0" id="firstwomen">
-        <a href="Product.html"> <img  class="card-img-top" src="images/women4.png" alt="Card image"></a> 
-        <div class="card-img-overlay w-100">
-          <div class="container ">
-            <div class="text-center overlay">
-            <button type="button" class="btn btn-light rounded-pill ">Quick View</button>
-        </div>
       </div>
-      </div>
-    <div class="card-body text-center">
-            <a href="Product.html" class="card-text p-4" id="txtfont">Net Semi-stitched Dress</a>
-            <a href="Product.html" class="card-text p-4" id="txtrate"> From $299</a>
-        </div>
+    </div>
+    
+      <div class=" product col-lg-3 col-md-6 border-0" id="firstwomen">
+
+        <div class="img-fluid">
+        <img  class="img-top" src="images/women4.png" alt="Card image">
       </div>
 
-
-      <div class="card  border-0" id="firstwomen">
-         <a href="Product.html"> <img  class="card-img-top" src="images/women 1.png" alt="Card image"></a>
-         <div class="card-img-overlay w-100">
-          <div class="container ">
-            <div class="text-center overlay">
-            <button type="button" class="btn btn-light rounded-pill ">Quick View</button>
+      <div class=" col mt-4 ">
+          <h2  class="text-center " ><a href="Product.html" id="txtfont">Net Semi-stitched Dress</a></h2>
+          <p href="Product.html" class="text-center" ><a href="Product.html" id="txtrate">From $199</a></p>
+         
         </div>
+
+        <div class="black-overlay">
+            <button type="button" class="btn btn-light rounded-pill ">Quick View</button>
+        
+      
       </div>
-      </div>      
-    <div class="card-body text-center ">
-              <a href="Product.html" class="card-text p-4" id="txtfont">Net Semi-stitched Dress</a>
-              <a href="Product.html" class="card-text p-4" id="txtrate"> From $399</a>
+      </div>
+   
+      
+
+
+      <div class="product col-lg-3 col-md-6  border-0" id="firstwomen">
+
+        <div class="img-fluid">
+         <img  class="img-top" src="images/women 1.png" alt="Card image">
+        </div>
+         
+        <div class=" col mt-4 ">
+            <h2  class="text-center " ><a href="Product.html" id="txtfont">Net Semi-stitched Dress</a></h2>
+            <p href="Product.html" class="text-center" ><a href="Product.html" id="txtrate">From $199</a></p>
+           
           </div>
-      </div>
 
-      <div class="card  border-0" id="firstwomen">
-         <a href="Product.html"><img  class="card-img-top" src="images/women 2.png" alt="Card image"></a> 
-        
-        
-         <div class="card-img-overlay w-100">
-          <div class="container ">
-            <div class="text-center overlay">
+          <div class="black-overlay">
             <button type="button" class="btn btn-light rounded-pill ">Quick View</button>
-        </div>
+        
+      
       </div>
       </div>
-        
-        
-         <div class="card-body text-center">
-            <a href="Product.html" class="card-text p-4" id="txtfont">Net Semi-stitched Dress</a>
-            <a href="Product.html" class="card-text p-4" id="txtrate"> From $499</a>
+          
+    
+
+
+
+      <div class=" product col-lg-3 col-md-6  border-0" id="firstwomen">
+        <div class="img-fluid">
+         <img  class="img-top" src="images/women 2.png" alt="Card image"></a> 
         </div>
+          
+        <div class=" col mt-4 ">
+            <h2  class="text-center " ><a href="Product.html" id="txtfont">Net Semi-stitched Dress</a></h2>
+            <p href="Product.html" class="text-center" ><a href="Product.html" id="txtrate">From $199</a></p>
+           
+          </div>
+          <div class="black-overlay">
+              <button type="button" class="btn btn-light rounded-pill ">Quick View</button>
+          
+        
+        </div>
+        
+         
       </div>  
     </div>
   </div>
 </div>
+<br>
+<br>
+<br>
 
 
 <div class="jumbotron" id="card2">
-  <hr  id="thickline"></hr>
-  <h2 class="display-6 " id="testimonial">Testimonial</h2>
-  <div class="container mt-4 " >
+  
+  <div class="container mt-3 " >
+      <hr  id="thickline"></hr>
+      <h2 class="display-6 " id="testimonial">Testimonial</h2>
       <div class="card-deck" id="cardrow2">
           <div class="card border-0 " id="thumb1" >
          
@@ -255,15 +331,15 @@
 </div>
 
 
-<footer class="page-footer w-100 h-100 p-3" >
-  <div class="container mt-4">
+<footer class="page-footer w-100 h-100 p-3" id="footer1" >
+  <div class="container-fluid mt-4">
 <div class="row">
   <div class="col-sm" >
-    <div class="footer-copyright" id="copyright" >Copyright © 2020 Company Name
+    <div class="footer-copyright" id="copyright1" >Copyright © 2020 Company Name
       </div>
     </div>
    
-        <div class="col-sm" id="social">
+        <div class="col-sm" id="social1">
             <ul class="list-unstyled d-inline-flex ">
                 <li>
                   <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
@@ -278,16 +354,16 @@
               </ul>
         </div>
 
-        <div class="col-sm " id="conditions">
+        <div class="col-sm" id="conditions1">
             <ul class="list-unstyled d-inline-flex">
                 <li class="pl-4" >
-                  <a  id="citems" href="#!">Help</a>
+                  <a  id="citems1" href="#!">Help</a>
                 </li>
                 <li class="pl-4">
-                  <a  id="citems" href="#!">Terms & Conditions</a>
+                  <a  id="citems1" href="#!">Terms&Conditions</a>
                 </li>
                 <li class="pl-4" >
-                  <a id="citems" href="#!">Support</a>
+                  <a id="citems1" href="#!">Support</a>
                 </li>
                 
               </ul>
