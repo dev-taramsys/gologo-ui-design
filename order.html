@@ -11,38 +11,35 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-default" style="height: 112px">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li> <a href="#" style="color: black;font: Bold 18px Roboto;right: 50px;">LOGO</a></li>
-                    <li><a style="color: black;" href="#">HOME</a></li>
-                    <li><a style="color: black;" href="#">ABOUT</a></li>
-                    <li><a style="color: black;" href="#">SUPPORT</a></li>
-              
-                <li><form class="navbar-form navbar-left" >
-                    <div id="custom-search-input">
-                    <div class="input-group">
-                      
-                      <input type="text" class=" search-query form-control"
-                       style="background: #FFFFFF 0% 0% no-repeat padding-box;border: 1px solid #DEDEDE;
-                      border-radius: 10px;width: 700px;" placeholder="Search" > 
-                  <span class="input-group-btn">
-                    <button class="btn btn-danger" type="button">
-                        <span class=" glyphicon glyphicon-search"></span>
-                    </button>
-                </span>
-                    </div> 
-                </div>
-                 </form></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" style="color: black;right: 50px;"><i class="fa fa-user"  style="font-size:24px"></i></a></li>
-                    <li><a href="#" style="color: black;right: 70px;"><i class="fa fa-shopping-cart"  style="font-size:24px"></i></a></li>
-                </ul>
-              </div>
-              </div>
-    </nav><br><br>
+  <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-default" style="height: 112px">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li> <a href="#" style="color: black;font: Bold 18px Roboto;right: 50px;">LOGO</a></li>
+            <li><a style="color: black;" href="#">HOME</a></li>
+            <li><a style="color: black;" href="#">ABOUT</a></li>
+            <li><a style="color: black;" href="#">SUPPORT</a></li>
+            <li> <form class="navbar-form navbar-left mx-2 " id="searchbar">
+        <div class="input-group">
+          <input type="text"  id="search1" style="background: #FFFFFF;
+                      border-radius: 3px;width: 600px;" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" id="searchfont" type="submit">
+              <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </form></li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img class="img-responsive" src="images/Path 4183.png"></a>
+      </li>
+      </ul>
+    </div>
+  </nav><br><br>
 
     <div class="ordbackground">
         <div class="container">
@@ -50,42 +47,40 @@
           <ul style="background-color: #f3f3f3; border: 1px solid #e7e7e7;padding-left: 20px;">
             <li><a style="font-size: 14px/16px;font: bold;" href="#home"><strong>Home</strong> 
             <i class='fa fa-angle-right' style='font-size:14px;padding: 14px;'></i>My Orders</a> </li>
-          </ul>
-        
-          </div><br><br>
+          </ul><br><br>
 
-      <div class="container">
-        <div class="left-halff">
-       <div class="sidenav">
-        <ul id="list">
-          <li> <img src="images/profile@2x.png" width="20px" height="20px"></li>
-          <li> <p class="example10">Account Overview</p></li><br>
-        </ul>
-            <ul id="list" style=" background-color: #000000;color: white;">
-              <li> <p class="example10"> <i class="glyphicon glyphicon-sort-by-attributes"></i>My Order</p></li><br>
+         
+          <div class="menu">
+            <div class="sidenav">
+              <ul id="list" >
+                <li> <img src="images/profile@2x.png" width="20px" height="20px"></li>
+                <li> <p class="example61">Account Overview</p></li><br>
               </ul>
-              <ul id="list">
-                <li> <img src="images/Address.png" width="20px" height="20px" ></li>
-                <li> <p class="example10">Manage Address</p></li><br>
-              </ul>
-              <ul id="list">
-                <li> <p class="example10"> <i class="fa fa-credit-card"></i>Payment Methods</p></li><br>
-              </ul>
-              <ul id="list">
-                <li> <p class="example10"> <i class="fa fa-truck"></i>Track Order</p></li><br>
-              </ul>
-              <ul id="list">
-                <li> <p class="example10"> <i class="glyphicon glyphicon-info-sign"></i>Need Help ?</p></li><br>
-              </ul>
-              <ul id="list">
-                <li> <p class="example10"> <i class="glyphicon glyphicon-log-out"></i>Logout</p></li><br>
-              </ul>
-          </div>
-        </div>
-      </div>
+                  <ul id="list" style=" background-color: #000000;color: white;">
+                    <li> <p class="example61"> <i class="glyphicon glyphicon-sort-by-attributes"></i>My Order</p></li><br>
+                    </ul>
+                    <ul id="list">
+                      <li> <img src="images/address.png" width="20px" height="20px" ></li>
+                      <li> <p class="example61">Manage Address</p></li><br>
+                    </ul>
+                    <ul id="list">
+                      <li> <p class="example61"> <i class="fa fa-credit-card"></i>Payment Methods</p></li><br>
+                    </ul>
+                    <ul id="list">
+                      <li> <p class="example61"> <i class="fa fa-truck"></i>Track Order</p></li><br>
+                    </ul>
+                    <ul id="list">
+                      <li> <p class="example61"> <i class="glyphicon glyphicon-info-sign"></i>Need Help ?</p></li><br>
+                    </ul>
+                    <ul id="list">
+                      <li> <p class="example61"> <i class="glyphicon glyphicon-log-out"></i>Logout</p></li><br>
+                    </ul>
+                  </div>
+             </div>
+     
        
-       <div class="container">
-           <div class="right">
+      
+           <div class="main1">
             <div class="cities">
                    <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
                    <ul id="type" >
@@ -317,9 +312,9 @@
        <div class="container" >
        <hr class="new5">
        </div>
-        </div>
     </div>
     </div>
+</div>
 
           
      <footer class="contain text-center">

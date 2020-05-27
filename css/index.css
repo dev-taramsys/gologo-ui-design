@@ -759,8 +759,9 @@ font-size: 14px;
     opacity: 1;
     -webkit-box-shadow: 20px 20px 20px #F0F7F8;
     -moz-box-shadow:  20px 20px 20px #F0F7F8;
-    box-shadow:         20px 20px 20px #F0F7F8;
+    box-shadow: 20px 20px 20px #F0F7F8;
     z-index:999;
+    width: 1500px;
   }
   
 .navbar-nav li{
@@ -771,7 +772,7 @@ font-size: 14px;
 }
 .custom-navbar{box-shadow: 3px 3px 3px #F0F7F8;background-color: #fff;}
 
-#custom-search-input button {
+/* #custom-search-input button {
   border: 0;
   background: none;
   padding: 2px 5px;
@@ -787,7 +788,7 @@ font-size: 14px;
 
 .search-query:focus + button {
   z-index: 3;   
-}
+} */
 .navbar-brand{
       top: 40px;
       left: 1px;
@@ -849,7 +850,7 @@ font-size: 14px;
 /* ORDER.CSS */
 
 .ordbackground{
-  height: 2000px;
+  height: 2300px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
 }
@@ -871,19 +872,6 @@ font-size: 14px;
     color: #141414;
   }
   
-.left-halff {
-  position: absolute;
-  left: 110px;
-  width: 50%;
-}
-
-.right {
-  position: absolute;
-  left: 400px; 
-  width: 50%;
-  top:230px;
-}
-
 .sidenav {
   top: 207px;
   left: 135px;
@@ -962,28 +950,50 @@ font: bold;
 /* ACCOUNT.CSS */
 
 .accbackground{
-height: 700px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-opacity: 1;
-}
+    height: 700px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    }
+    
+  .menu {
+    float:left;
+    width:20%;
+    text-align:center;
+  }
+  .main {
+    float:left;
+    width:35%;
+    margin-left: 10%;
+  }
+  .main1 {
+    float:left;
+    width:35%;
+    margin-left: 5%;
+    margin-top:-30px ;
+  }
+  .rightha {
+    float:left;
+    width:35%;
+    padding:15px;
+    margin-top:25px;
+    
+  }
+  .example61 {
+    font-size:18px;
+    font: bold;
+    }
 
-.lefthalf {
-position: absolute;
-left: 110px;
-width: 50%;
-}
+  .example62 {
+    font-size:28px;
+    font: bold;
+    color: black;
+    }
 
-.righthalf {
-position: absolute;
-left: 400px;
-bottom:-30px;
-}
-.example62 {
-font-size:28px;
-font: bold;
-color: black;
-}
-.example61 {
-font-size:18px;
-font: bold;
-}
+ .center .btn{
+        color: #DEDEDE;
+        width: 160px;
+        line-height: 38px;
+        border-radius: 50px;
+        margin-left: 30%;
+    
+ }
