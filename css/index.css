@@ -604,5 +604,236 @@ font-size: 14px;
 
 }
 
+/*-----Praba------ login Page------ codes----*/
+.login{
+    margin-top: 132px;
+    width: 50%;
+    height: 100%;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 8px #14141429;
+    border-radius: 20px;
+    opacity: 1;   
+    }
+    .log_title_1, .log_customer{
+        font-size: 25px;
+    }
+    .log_title_2{
+        font-size: 18px;
+    }
+    .log_title_3{
+        font-size: 16px;
+    }
+    .log_forgot, .log_btn, .log_sentence, .log-account{
+        font-size: 14px;
+    }
+    .login-email, .login-password{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    opacity: 1;
+    width: 50%;
+    font-size: 14px;
+    }
+    .login-thinline{
+        border: 1px solid #D2D2D2;
+        opacity: 1;
+        font-size: 1px;
+        color: #D2D2D2;
+        width: 50%;
+
+    }
+    .login-social{
+        font-size:1.5rem;
+    }
+    @media (max-width: 767px){
+        .login{
+            width: 75%;
+            margin-top: 66px;
+        
+        }
+        .login-email, .login-password, .login-thinline{
+            width: 75%;
+        }
+        .login-email, .login-password{
+            font-size: 12px;
+        }
+        .log_title_1, .log_customer{
+            font-size: 20px;
+        }
+        .log_title_2{
+            font-size: 16px;
+        }
+        .log_title_3{
+            font-size: 14px;
+        }
+        .log_forgot, .log_btn, .log_sentence, .log-account{
+            font-size: 12px;
+        }
+        .login-social{
+            font-size:1.4rem;
+        }
+    }
 
 
+
+/*-----Praba------ Registration Page------ codes----*/
+
+.register{
+    margin-top: 132px;
+    width: 50%;
+    height: 100%;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 8px #14141429;
+    border-radius: 20px;
+    opacity: 1; 
+    }
+
+    .reg-customer{
+        font-size: 22px;
+    }
+    .reg-info{
+        font-size: 18px;
+    }
+    #reg-sign, .reg-account{
+        font-size: 14px;
+    }
+    .reg-email, .reg-password, .reg-confirm-password{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    opacity: 1;
+    width: 50%;
+    font-size: 14px;
+    }
+
+    @media (max-width: 768px){
+        .register{
+            width: 75%;
+            margin-top: 66px;
+        
+        }
+        .reg-customer{
+            font-size: 20px;
+        }
+        .reg-info{
+            font-size: 16px;
+        }
+        #reg-sign, .reg-account{
+            font-size: 12px;
+        }
+        .reg-email, .reg-password, .reg-confirm-password{
+            width: 75%;
+            font-size: 12px;
+        }
+    }
+
+
+    /*-----Praba------ Registration Page------ codes----*/
+
+    .forgot_pwd{
+        margin-top: 132px;
+        width: 50%;
+        height: 100%;
+        background: #F9F9F9 0% 0% no-repeat padding-box;
+        box-shadow: 8px 8px 8px #14141429;
+        border-radius: 20px;
+        opacity: 1; 
+        }
+
+    .forgot-customer{
+        font-size: 22px;
+    }
+
+    .forget-info{
+        font-size: 18px;
+    }
+    .forgot-email{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #D6D6D6;
+        border-radius: 5px;
+        opacity: 1;
+        width: 50%;
+        font-size: 14px;
+    }
+    .forgot-account, #forgot-link{
+        font-size: 14px;
+    }
+    #forgot-link{
+        color: #00B577;
+    }
+    
+
+    @media (max-width: 768px){
+        .forgot_pwd{
+            width: 75%;
+            margin-top: 66px;
+        
+        }
+        .forgot-customer{
+            font-size: 20px;
+        }
+        .forget-info{
+            font-size: 16px;
+        }
+        .forgot-account, #forgot-link{
+            font-size: 12px;
+        }
+        .forgot-email{
+            width: 75%;
+            font-size: 12px;
+        }
+    }
+
+
+    /*-----Praba------ Reset Password Page------ codes----*/
+
+    .reset{
+        margin-top: 132px;
+        width: 50%;
+        height: 100%;
+        background: #F9F9F9 0% 0% no-repeat padding-box;
+        box-shadow: 8px 8px 8px #14141429;
+        border-radius: 20px;
+        opacity: 1; 
+        }
+    
+    .reset-customer{
+            font-size: 22px;
+        }
+    .reset-info{
+            font-size: 18px;
+        }
+        .reset-password, .reset-new-password{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D6D6D6;
+            border-radius: 5px;
+            opacity: 1;
+            width: 50%;
+            font-size: 14px;
+        }
+    .reset-account{
+            font-size: 12px;
+        }
+    #reset-notify{
+        color: #00B577;
+    }
+        @media (max-width: 768px){
+            .reset{
+                width: 75%;
+                margin-top: 66px;
+            
+            }
+            .reset-customer{
+                font-size: 20px;
+            }
+            .reset-info{
+                font-size: 16px;
+            }
+            .reset-account{
+                font-size: 12px;
+            }
+            .reset-password, .reset-new-password{
+                width: 75%;
+                font-size: 12px;
+            }
+        }  

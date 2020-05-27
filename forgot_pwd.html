@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <!--Boostrap cdn & css file---->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!--Fontaweosme-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Forgot Password</title>
+    </head>
+<body>
+    <div class= "container forgot_pwd">
+    <p class="pt-5 text-center forgot-customer" style="color: #141414;"><b>Forgot Password</b></p>
+    <p class="pt-3 text-center forgot-info" style="color: #676767;">Password recovery details</p>
+    <form>
+        <div class="text-center">
+            <input type="email" class="forgot-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+            <br>
+        
+        <div class="text-center pt-4">
+            <button class="pl-4 pr-4 pt-2 pb-2 forgot-account mb-4" id="btn" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Submit</b></button>
+        </div>
+        <div class=" text-center mb-2" id="forgot-link">
+        </div>
+    </form>
+    </div>
+    <br>
+    <br>
+</body>
+
+<script>
+    const button = document.getElementById("btn");
+    button.addEventListener("click", function(){
+        document.getElementById("forgot-link").innerHTML = "Password reset link was sent to your email id.";
+    });
+</script>
+</html>

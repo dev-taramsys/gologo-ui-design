@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <!--Boostrap cdn & css file---->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!--Fontaweosme-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reset Password</title>
+    </head>
+<body>
+    <div class= "container reset">
+    <p class="pt-5 text-center reset-customer" style="color: #141414;"><b>Reset Password</b></p>
+    <p class="pt-2 text-center reset-info" style="color: #676767;">New password details</p>
+    <form>
+        <div class="text-center">
+            <input type="password" id="pwd" class="reset-password mt-2 pl-2 pt-1 pb-1" placeholder="New Password" required>
+            <br>
+            <input type="password" id="reset_pwd" class="reset-new-password mt-3 pl-2 pt-1 pb-1" placeholder="Confirm New Password" required>
+        </div>
+    <div class="text-center pt-3">
+        <button class="pl-4 pr-4 pt-2 pb-2 mt-3 reset-account" id="reset-btn" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Reset Password</b></button>
+    </div>
+    <div class=" text-center mt-2 mb-2" id="reset-notify">
+
+    </form>
+    </div>
+    <br>
+    <br>
+</body>
+<script>
+    const password = document.getElementById("pwd");
+    const repassword = document.getElementById("reset_pwd");
+    const reset_button = document.getElementById("reset-btn");
+        reset_button.addEventListener("click", function(){
+        document.getElementById("reset-notify").innerHTML = "Your new password was successfully changed.";
+    });
+    
+</script>
+</html>
