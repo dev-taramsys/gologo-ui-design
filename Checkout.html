@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+   <!--<div id="navbar1">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+          <ul class="navbar-nav mr-auto " >
+            <li class="nav-item active ml-1">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-1 ">
+              <a class="nav-link" href="#">SUPPORT</a>
+            </li>
+           
+            <li class="nav-item ml-1 ">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+          <div class="ml-4">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2"  id="searchbar" type="search"  placeholder="Search..." aria-label="Search">
+            <button class="btn  my-2 my-sm-0" id="searchfont" type="submit"><i class="fa fa-search"  aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <div class="container" id="navicon">
+                <ul class="navbar-nav mx-1">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#"><span class="sr-only">(current)</span><img src="images/Path 4182.png"></a>
+                        </li>
+                       
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img src="images/Path 4183.png"></a>
+                        </li>
+                      </ul>
+        </div>
+        </div>
+      </div>
+      </nav>
+    </div>
+    --> 
+    <!------Main Navbar-->
+    <div id="navbar1">
+      
+      <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+          <div class="container-fluid">
+          <a class="navbar-brand mx-4" href="index.html">LOGO</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+            <ul class="navbar-nav mr-auto " >
+              <li class="nav-item active mx-2">
+                <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">SUPPORT</a>
+              </li>
+             
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+            </ul>
+            <!--
+            <form class="form-inline mx-4" >
+              <input class="form-control pl-4 "  size="100" id="searchbar" type="search"  placeholder="Search..." aria-label="Search">
+              <button class="btn my-2 my-sm-0"  type="submit"><i class="fa fa-search"  aria-hidden="true"></i>
+              </button>
+            </form>
+          -->
+          <form class="navbar-form navbar-left mx-2 " id="searchbar">
+            <div class="input-group" >
+              <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar" placeholder="Search" name="search">
+              <div class="input-group-btn ">
+                <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
+                    <i class="fa fa-search"  aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="container " id="navicon">
+                  <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+                          </li>
+                         
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><img class="img-responsive" src="images/Path 4183.png"></a>
+                          </li>
+                        </ul>
+          </div>
+          </div>
+          </div>
+        </div>
+        </nav>
+      </div>
+
+      <div class="col-sm-12">
+  <div class=" container border mt-4" id="cartnav">
+        <ul class="nav">
+                <li class="nav-item">
+                  <a class=" nav-link" id="CartH" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="Cart1" href="#">></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="CartH" href="#">Women</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" id="Cart1" href="#">></a>
+                      </li>
+                <li class="nav-item">
+                        <a class="nav-link" id="Cartc" href="#">HOME</a>
+                      </li>
+                      
+                
+              </ul>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-8 mt-4 border">
+
+    
+    <div id="accordion">
+      <div class="card border-0">
+        <div class="card-header border-0">
+          <a class="float-left" id="Ch1"><span class="badge badge-pill badge-primary" id="Cpill">1</span>   Shipping Address</a> 
+          <a class="card-link float-right" data-toggle="collapse" href="#collapseOne">
+              <i class="fa fa-minus" aria-hidden="true" style="color:black" id="Chyphen"></i></a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+
+
+            <div class="container" id="Cship">
+          
+             <h5 class="p-3" id="Cship1"><span id="Cdummyaddress">Ship to this address</span>
+               <a href="#" class="d-inline pull-right mx-4 " id="Cremove"><i class="fa fa-trash" aria-hidden="true"></i> Remove</a> 
+              <a href="#" class="d-inline pull-right mx-4" id="Cedit">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              Edit</a></h5>
+           
+
+             <div class="container" style=" height:124px">
+               <div class="row">
+                  <form id="Cradio">
+                    <div class="form-check">
+                      <label class="form-check-label" for="radio1">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio"><span class="mx-4" id="Cadd">
+                        7195 S. Sulphur Springs Lane Sugar Land, TX 77478</span>
+                      </label>
+                    </div>
+                  </form>
+               </div>
+              </div>
+            </div>
+               
+                  <form class="mt-2">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" id="email" placeholder="First Name" name="First Name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last Name" name="Last Name">
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                          <input type="text" class="form-control" id="email" placeholder="Email Address" name="email">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Mobile Number" name="Mobile Number">
+                        </div>
+                      </div>
+                      <div class="form-group mt-2">
+                          <label for="comment"></label>
+                          <textarea class="form-control" rows="5" id="comment" placeholder="Address" name="text"></textarea>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="sel1" ></label>
+                                    <select class="form-control" id="sel1" name="sellist1">
+                                        <option hidden >City</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="sel1"></label>
+                                    <select class="form-control" id="sel1" name="sellist1">
+                                        <option hidden >Zipcode</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row mt-2">
+                              <div class="col">
+                                  <div class="form-group">
+                                      <label for="sel1" ></label>
+                                      <select class="form-control" id="sel1" name="sellist1">
+                                          <option hidden >State</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="form-group">
+                                      <label for="sel1"></label>
+                                      <select class="form-control" id="sel1" name="sellist1">
+                                          <option hidden >Country</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                      </select>
+                                  </div>
+                              </div>
+                            </div>  
+                            <div class="container mt-2">
+                            <div>
+                  <button type="button" id="CASave" class="btn border d-inline pull-right">Save this address & Continue</button>
+                    </div>                        
+                  </form>
+                </div>
+            
+
+ 
+
+
+          </div>
+        </div>
+      
+
+
+
+      <div class="card">
+        <div class="card-header">
+            <a class="float-left" id="Ch1"><span class="badge badge-pill badge-primary" id="Cpill">2</span>   Shipping Address</a> 
+          <a class="collapsed card-link float-right" data-toggle="collapse" href="#collapseTwo">
+              <i class="fa fa-plus" aria-hidden="true" style="color:black" id="Chyphen"></i>
+        </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+           
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="col-sm-4 mt-4 border" id="price">
+    
+    <div class="container border border-bottom-0" id="priceh1">
+        <h2 class="text-left p-3" id="priceh">Price Details</h2>
+    </div>
+    
+    <table class="table table-striped border">
+            <tbody>
+              <tr class="border">
+                <td class="border-0 bg-white">Price(2items)</th>
+                <td class="text-right border-0 bg-white">$299</th>
+              </tr>
+            
+              <tr class="border">
+                <td class="border-0 bg-white">Delivery Charge</td>
+                <td class="text-right border-0 bg-white">Free</td>
+              </tr>
+              <tr class="border" id="Finalamount">
+                <td class="border-0 bg-white">Amount Payable</td>
+                <td class="text-right border-0 bg-white">$299</td>
+              </tr>
+             
+            </tbody>
+          </table>
+
+          
+  
+</div>
+</div>
+
+</div>
+</div>
+
+<footer class="page-footer fixed-bottom p-3 mt-4 " id="footer1" >
+    <div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-sm" >
+      <div class="footer-copyright" id="copyright1" >Copyright © 2020 Company Name
+        </div>
+      </div>
+     
+          <div class="col-sm" id="social1">
+              <ul class="list-unstyled d-inline-flex ">
+                  <li>
+                    <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fa fa-twitter pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fa fa-facebook-square pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  
+                </ul>
+          </div>
+  
+          <div class="col-sm" id="conditions1">
+              <ul class="list-unstyled d-inline-flex">
+                  <li class="pl-4" >
+                    <a  id="citems1" href="#!">Help</a>
+                  </li>
+                  <li class="pl-4">
+                    <a  id="citems1" href="#!">Terms&Conditions</a>
+                  </li>
+                  <li class="pl-4" >
+                    <a id="citems1" href="#!">Support</a>
+                  </li>
+                  
+                </ul>
+          </div>
+        </div>
+     </div>
+    
+  </footer>
+  </body>
+  </html>
