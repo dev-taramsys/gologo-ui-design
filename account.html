@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Account</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-default" style="height: 112px">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li> <a href="#" style="color: black;font: Bold 18px Roboto;right: 50px;">LOGO</a></li>
-            <li><a style="color: black;" href="#">HOME</a></li>
-            <li><a style="color: black;" href="#">ABOUT</a></li>
-            <li><a style="color: black;" href="#">SUPPORT</a></li>
-            <li> <form class="navbar-form navbar-left mx-2 " id="searchbar">
-        <div class="input-group">
-          <input type="text"  id="search1" style="background: #FFFFFF;
-                      border-radius: 3px;width: 600px;" class="form-control" placeholder="Search" name="search">
-          <div class="input-group-btn">
-            <button class="btn btn-default" id="searchfont" type="submit">
-              <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
-            </button>
+  <div id="navbar1">
+      
+    <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+        <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+          <ul class="navbar-nav mr-auto " >
+            <li class="nav-item active mx-2">
+              <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">SUPPORT</a>
+            </li>
+           
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+        <form class="navbar-form navbar-left mx-2 " id="searchbar">
+          <div class="input-group" >
+            <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar" placeholder="Search" name="search">
+            <div class="input-group-btn ">
+              <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
+                  <i class="fa fa-search"  aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
+        </form>
+        <div class="container " id="navicon">
+                <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+                        </li>
+                       
+                        <li class="nav-item">
+                          <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png"></a>
+                        </li>
+                      </ul>
         </div>
-      </form></li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
-      </li>
+        </div>
+        </div>
      
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img class="img-responsive" src="images/Path 4183.png"></a>
-      </li>
-      </ul>
-    </div>
-  </nav><br><br>
+      </nav>
+    </div><br><br>
 
 <!-- <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-default" style="height: 112px">
    <div class="container-fluid">
@@ -72,7 +94,7 @@
               </div>
     </nav><br><br> -->
 
-  <div class="accbackground">
+  
       <div class="container">
        
         <ul style="background-color: #f3f3f3; border: 1px solid #e7e7e7;padding-left: 20px;">
@@ -81,117 +103,149 @@
         </ul>
     <br><br>
     
-
-  <div class="menu">
-        <div class="sidenav">
-          <ul id="list" style=" background-color: #000000;color: white;">
-            <li> <p class="example61"><i class="glyphicon glyphicon-user"></i>Account Overview</p></li><br>
-          </ul>
-              <ul id="list" >
-                <li><a href="order.html"class="example61"> <i class="glyphicon glyphicon-sort-by-attributes"></i>My Order</a></li><br>
-                </ul>
-                <ul id="list">
-                  <li> <p class="example61"> <i class="	fa fa-address-book-o"></i></i>Manage Address</p></li><br>
-                </ul>
-                <ul id="list">
-                  <li> <p class="example61"> <i class="fa fa-credit-card"></i>Payment Methods</p></li><br>
-                </ul>
-                <ul id="list">
-                  <li> <p class="example61"> <i class="fa fa-truck"></i>Track Order</p></li><br>
-                </ul>
-                <ul id="list">
-                  <li> <p class="example61"> <i class="glyphicon glyphicon-info-sign"></i>Need Help ?</p></li><br>
-                </ul>
-                <ul id="list">
-                  <li> <p class="example61"> <i class="glyphicon glyphicon-log-out"></i>Logout</p></li><br>
-                </ul>
-              </div>
-         </div>
-
-      <div class="main">
-          <p class="example62">Personal Information</p>
+<div class="row">
+  <div class="col-sm-3">
+      <div class="sidenav">
+        <ul id="list" style=" background-color: #000000;color: white;">
+          <li> <p class="example61"><i class="fa fa-user-o fa-5x"></i>Account Overview</p></li><br>
+        </ul>
+            <ul id="list" >
+              <li><a href="order.html" class="example61"><i class="fa fa-sort-amount-desc fa-5x"></i>My Order</a></li><br>
+              </ul>
+              <ul id="list">
+                <li> <p class="example61"> <i class="	fa fa-address-book-o fa-5x"></i></i>Manage Address</p></li><br>
+              </ul>
+              <ul id="list">
+                <li> <p class="example61"> <i class="fa fa-credit-card fa-5x"></i>Payment Methods</p></li><br>
+              </ul>
+              <ul id="list">
+                <li> <p class="example61"> <i class="fa fa-truck fa-5x"></i>Track Order</p></li><br>
+              </ul>
+              <ul id="list">
+                <li> <p class="example61"><i class="fa fa-info-circle fa-5x" ></i>Need Help ?</p></li><br>
+              </ul>
+              <ul id="list">
+                <li> <p class="example61"><i class="fa fa-sign-out fa-5x" ></i>Logout</p></li><br>
+              </ul>
+            </div>
+  </div>
+  
+  <div class="col-sm-9">
+      <p class="example62">Personal Information</p>
+      <div class="row">
+        <div class="col-sm-6">
           <div class="form-group">
-            <h4 for="name" style="color: #676767;">First Name</h4>
+            <h5 for="name" style="color: #676767;">First Name</h5>
             <input type="text" class="form-control" id="email" placeholder="First Name" name="name" style=" width: 380px;height: 38px;"><br>
           </div>
-          <div class="form-group">
-            <h4 for="name" style="color: #676767;">Company Name</h4>
-            <input type="text" class="form-control" id="pwd" placeholder="Company Name" style=" width: 380px;height: 38px;" name="name"><br>
-          </div>
-          <div class="form-group" >
-            <h4 for="pwd" style="color: #676767;">Email</h4>
-            <input type="email" class="form-control" id="pwd" placeholder="Email Id" name="pwd" style=" width: 380px;height: 38px;"><br>
-          </div>
         </div>
-      
-        <div class="rightha">
+        <div class="col-sm-6">
           <div class="form-group" >
-            <h4 for="name" style="color: #676767;">Last Name</h4>
+            <h5 for="name" style="color: #676767;">Last Name</h5>
             <input type="text" class="form-control" id="pwd" placeholder="Last Name"  name="name" style=" width: 380px;height: 38px;" ><br>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
           <div class="form-group">
-            <h4 for="pwd" style="color: #676767;">Tax number</h4>
+            <h5 for="name" style="color: #676767;">Company Name</h5>
+            <input type="text" class="form-control" id="pwd" placeholder="Company Name" style=" width: 380px;height: 38px;" name="name"><br>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <h5 for="pwd" style="color: #676767;">Tax number</h5>
             <input type="number" class="form-control" id="pwd" placeholder="Tax number" name="pwd" style=" width: 380px;height: 38px;"><br>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group" >
+            <h5 for="pwd" style="color: #676767;">Email</h5>
+            <input type="email" class="form-control" id="pwd" placeholder="Email Id" name="pwd" style=" width: 380px;height: 38px;"><br>
+          </div>    
+        </div>
+        <div class="col-sm-6">
           <div class="form-group">
-            <h4 for="pwd" style="color: #676767;">Mobile Number</h4>
+            <h5 for="pwd" style="color: #676767;">Mobile Number</h5>
             <input type="number" class="form-control" id="pwd" placeholder="Mobile Number" name="pwd" style=" width: 380px;height: 38px;" ><br>
           </div>
         </div>
-
-    <div class="center">
-          <button class="btn btn-primary" 
-          style=" background: #141414 0% 0% no-repeat padding-box;
-          border: 1px solid #DEDEDE; border-radius: 5px;
-          opacity: 1;">Edit</button>
-        <button class="btn btn-default"
-        style=" background: #00B577 0% 0% no-repeat padding-box;
-        border-radius: 5px;margin-left: 10px ;
-        opacity: 1;" >UPDATE</button>
       </div>
     </div>
- 
+   </div>
+
+</div>
+
+<div class="row">
+  <div class="col text-center">
+    <button class="btn btn-primary" 
+    style=" background: #141414;   color: #DEDEDE;
+    width: 100px;
+    line-height: 38px;
+    border-radius: 50px;
+    border: 1px solid #DEDEDE; border-radius: 5px;
+    opacity: 1;">Edit</button>
+  <button class="btn btn-default"
+  style=" background: #00B577;   color: #DEDEDE;
+  width: 100px;
+  line-height: 38px;
+  border-radius: 50px;
+  border-radius: 5px;margin-left: 10px ;
+  opacity: 1;" >UPDATE</button>
   </div>
+  </div>
+</div><br><br>
 
-  <footer class="contain text-center">
-        <div class="container">
-            <div class="row">
-                <div class="column">
+
+
+
+
+
+  <footer class="page-footer w-100 h-100 p-3 " id="footer1" >
+    <div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-sm" >
+      <div class="footer-copyright" id="copyright1" >Copyright © 2020 Company Name
+        </div>
+      </div>
+     
+          <div class="col-sm" id="social1">
+              <ul class="list-unstyled d-inline-flex ">
+                  <li>
+                    <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fa fa-twitter pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fa fa-facebook-square pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                  </li>
                   
-                    <p style="text-align: left;
-                    letter-spacing: 0px;
-                    color: #FFFFFF;
-                    opacity: 1;">Copyright @ 2020 Company Name</p>
-               
-                </div>
-                <div class="column">
-                   
-                    
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-facebook"></a>
-              
-                </div>
+                </ul>
+          </div>
+  
+          <div class="col-sm" id="conditions1">
+              <ul class="list-unstyled d-inline-flex">
+                  <li class="pl-4" >
+                    <a  id="citems1" href="#!">Help</a>
+                  </li>
+                  <li class="pl-4">
+                    <a  id="citems1" href="#!">Terms & Conditions</a>
+                  </li>
+                  <li class="pl-4" >
+                    <a id="citems1" href="#!">Support</a>
+                  </li>
+                  
+                </ul>
+          </div>
+        </div>
+     </div>
     
-                <div class="column">
-               <div class="row">
-                   <div class="column">
-                       <a href="#" style="text-align: right;font: Regular 16px/20px Roboto; letter-spacing: 0px;color: #FFFFFF; opacity: 1;">Help</a>
-                   </div>
-                   <div class="column">
-                    <a href="#" style="text-align: right;font: Regular 16px/20px Roboto; letter-spacing: 0px;color: #FFFFFF; opacity: 1;">Terms & condition</a>
-                </div>
-                <div class="column">
-                    <a href="#" style="text-align: right;font: Regular 16px/20px Roboto; letter-spacing: 0px;color: #FFFFFF; opacity: 1;">Support</a>
-                </div>
-               </div>
-                
-                </div>
-               
-            </div>
-       </div>
-    </footer>   
-
+  </footer>
+ 
     </body>
     
     </html>

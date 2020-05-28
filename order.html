@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Order</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-default" style="height: 112px">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li> <a href="#" style="color: black;font: Bold 18px Roboto;right: 50px;">LOGO</a></li>
-            <li><a style="color: black;" href="#">HOME</a></li>
-            <li><a style="color: black;" href="#">ABOUT</a></li>
-            <li><a style="color: black;" href="#">SUPPORT</a></li>
-            <li> <form class="navbar-form navbar-left mx-2 " id="searchbar">
-        <div class="input-group">
-          <input type="text"  id="search1" style="background: #FFFFFF;
-                      border-radius: 3px;width: 600px;" class="form-control" placeholder="Search" name="search">
-          <div class="input-group-btn">
-            <button class="btn btn-default" id="searchfont" type="submit">
-              <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
-            </button>
+  <div id="navbar1">
+      
+    <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+        <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+          <ul class="navbar-nav mr-auto " >
+            <li class="nav-item active mx-2">
+              <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">SUPPORT</a>
+            </li>
+           
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+        <form class="navbar-form navbar-left mx-2 " id="searchbar">
+          <div class="input-group" >
+            <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar" placeholder="Search" name="search">
+            <div class="input-group-btn ">
+              <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
+                  <i class="fa fa-search"  aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
+        </form>
+        <div class="container " id="navicon">
+                <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+                        </li>
+                       
+                        <li class="nav-item">
+                          <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png"></a>
+                        </li>
+                      </ul>
         </div>
-      </form></li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
-      </li>
+        </div>
+        </div>
      
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img class="img-responsive" src="images/Path 4183.png"></a>
-      </li>
-      </ul>
-    </div>
-  </nav><br><br>
+      </nav>
+    </div><br><br>
 
-    <div class="ordbackground">
-        <div class="container">
+
+  <div class="container">
       
           <ul style="background-color: #f3f3f3; border: 1px solid #e7e7e7;padding-left: 20px;">
             <li><a style="font-size: 14px/16px;font: bold;" href="#home"><strong>Home</strong> 
@@ -50,309 +72,245 @@
           </ul><br><br>
 
          
-          <div class="menu">
+     <div class="row">
+      <div class="col-sm-4">
             <div class="sidenav">
-              <ul id="list" >
-                <li> <a class="example61" href="account.html"><i class="glyphicon glyphicon-user"></i>Account Overview</a></li><br>
+              <ul id="list">
+                <li> <a href="account.html" class="example61"><i class="fa fa-user-o fa-5x"></i>Account Overview</a></li><br>
               </ul>
-                  <ul id="list" style=" background-color: #000000;color: white;">
-                    <li> <p class="example61"> <i class="glyphicon glyphicon-sort-by-attributes"></i>My Order</p></li><br>
+                  <ul id="list"  style=" background-color: #000000;color: white;">
+                    <li><p class="example61"><i class="fa fa-sort-amount-desc fa-5x"></i>My Order</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="	fa fa-address-book-o"></i></i>Manage Address</p></li><br>
+                      <li> <p class="example61"> <i class="	fa fa-address-book-o fa-5x"></i></i>Manage Address</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="fa fa-credit-card"></i>Payment Methods</p></li><br>
+                      <li> <p class="example61"> <i class="fa fa-credit-card fa-5x"></i>Payment Methods</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="fa fa-truck"></i>Track Order</p></li><br>
+                      <li> <p class="example61"> <i class="fa fa-truck fa-5x"></i>Track Order</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="glyphicon glyphicon-info-sign"></i>Need Help ?</p></li><br>
+                      <li> <p class="example61"><i class="fa fa-info-circle fa-5x" ></i>Need Help ?</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="glyphicon glyphicon-log-out"></i>Logout</p></li><br>
+                      <li> <p class="example61"><i class="fa fa-sign-out fa-5x" ></i>Logout</p></li><br>
                     </ul>
                   </div>
              </div>
-     
+    
        
       
-           <div class="main1">
-            <div class="cities">
-                   <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
-                   <ul id="type" >
-                   <li ><p class="example11"><strong>Lorem Ipsum</strong> </p></li>
-                   <li style="float:right"><p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p></li>
-                 </ul>
-
-                 <ul id="type" >
-                    <li > <p class="example12">Quantity: 40, Color: Black</p></li>
-                    <li style="float:right"><p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p></li>
-                  </ul>
-
-                  <ul id="type" >
-                    <li> <p ><strong>Price : $299</strong></p></li>
-                  </ul>
-
-                    <ul id="list">
-                        <li > <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p></li>
-                          <button class="btn btn-primary"
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple"  style="width: 120px;height: 130px;float: left;">
+                </div>
+                <div class="col-sm-6">
+                 <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                 <p class="example12">Quantity: 40, Color: Black</p>
+                 <p >price : $299</p>
+                 <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                </div>
+                <div class="col-sm-4">
+                  <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
+                  <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                  <button class="btn btn-primary"
                           style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
                           border: 1px solid #DEDEDE;
-                          border-radius: 5px;float: right;
-                          opacity: 1;" >Track my Order</button>
-                      </ul><br>
-                      <div style="padding-left: 690px;">
-                        <a href="#">Order Details</a>
-                      </div>
-                     
-                </div> <br><br><br>
-                <div class="container" >
-                <hr class="new5">
-                </div>
-
-                <div class="cities">
-                  <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
-                  <ul id="type" >
-                  <li ><p class="example11"><strong>Lorem Ipsum</strong> </p></li>
-                  <li style="float:right"><p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p></li>
-                </ul>
-        
-                <ul id="type" >
-                   <li > <p class="example12">Quantity: 40, Color: Black</p></li>
-                   <li style="float:right"><p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p></li>
-                 </ul>
-        
-                 <ul id="type" >
-                   <li> <p ><strong>Price : $299</strong></p></li>
-                 </ul>
-        
-                   <ul id="list">
-                       <li > <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p></li>
-                       <button class="btn btn-primary"
-                       style=" background: #00B577 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                       border: 1px solid #DEDEDE;
-                       border-radius: 5px;float: right;
-                       opacity: 1;" >Write a Review</button>
-                     </ul><br>
-                     <div style="padding-left: 690px;">
-                       <a href="#">Order Details</a>
-                     </div>
-                    
-               </div> <br><br><br>
-               <div class="container" >
-               <hr class="new5">
-               </div>
-              
-          
-                 <div class="cities">
-                  <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
-                  <ul id="type" >
-                  <li ><p class="example11"><strong>Lorem Ipsum</strong> </p></li>
-                  <li style="float:right"><p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p></li>
-                </ul>
-
-                <ul id="type" >
-                   <li > <p class="example12">Quantity: 40, Color: Black</p></li>
-                   <li style="float:right"><p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p></li>
-                 </ul>
-
-                 <ul id="type" >
-                   <li> <p ><strong>Price : $299</strong></p></li>
-                 </ul>
-
-                   <ul id="list">
-                       <li > <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p></li>
-                         <button class="btn btn-primary"
-                         style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                         border: 1px solid #DEDEDE;
-                         border-radius: 5px;float: right;
-                         opacity: 1;" >Track my Order</button>
-                     </ul><br>
-                     <div style="padding-left: 690px;">
-                       <a href="#">Order Details</a>
-                     </div>
-                    
-               </div> <br><br><br>
-               <div class="container" >
-               <hr class="new5">
-               </div>
-
-               <div class="cities">
-                <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
-                <ul id="type" >
-                <li ><p class="example11"><strong>Lorem Ipsum</strong> </p></li>
-                <li style="float:right"><p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p></li>
-              </ul>
-
-              <ul id="type" >
-                 <li > <p class="example12">Quantity: 40, Color: Black</p></li>
-                 <li style="float:right"><p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p></li>
-               </ul>
-
-               <ul id="type" >
-                 <li> <p ><strong>Price : $299</strong></p></li>
-               </ul>
-
-                 <ul id="list">
-                     <li > <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p></li>
-                       <button class="btn btn-primary"
-                       style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                       border: 1px solid #DEDEDE;
-                       border-radius: 5px;float: right;
-                       opacity: 1;" >Track my Order</button>
-                   </ul><br>
-                   <div style="padding-left: 690px;">
-                     <a href="#">Order Details</a>
-                   </div>
-                  
-             </div> <br><br><br>
-             <div class="container" >
-             <hr class="new5">
-             </div>
-
-             <div class="cities">
-              <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
-              <ul id="type" >
-              <li ><p class="example11"><strong>Lorem Ipsum</strong> </p></li>
-              <li style="float:right"><p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p></li>
-            </ul>
-
-            <ul id="type" >
-               <li > <p class="example12">Quantity: 40, Color: Black</p></li>
-               <li style="float:right"><p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p></li>
-             </ul>
-
-             <ul id="type" >
-               <li> <p ><strong>Price : $299</strong></p></li>
-             </ul>
-
-               <ul id="list">
-                   <li > <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p></li>
-                     <button class="btn btn-primary"
-                     style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                     border: 1px solid #DEDEDE;
-                     border-radius: 5px;float: right;
-                     opacity: 1;" >Track my Order</button>
-                 </ul><br>
-                 <div style="padding-left: 690px;">
-                   <a href="#">Order Details</a>
+                          border-radius: 5px;
+                          opacity: 1;" >Track my Order</button><br><br>
+                        <a href="#" style="padding-left: 40px;">Order Details</a>
                  </div>
-                
-           </div> <br><br><br>
-           <div class="container" >
-           <hr class="new5">
-           </div>
+                 </div>
+                <hr class="new5"><br><br>
 
-           <div class="cities">
-            <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
-            <ul id="type" >
-            <li ><p class="example11"><strong>Lorem Ipsum</strong> </p></li>
-            <li style="float:right"><p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p></li>
-          </ul>
-
-          <ul id="type" >
-             <li > <p class="example12">Quantity: 40, Color: Black</p></li>
-             <li style="float:right"><p  style="color:#676767;"> Date <strong style="color: black;">Sun, Jul 1st '18</strong></p></li>
-           </ul>
-
-           <ul id="type" >
-             <li> <p ><strong>Price : $299</strong></p></li>
-           </ul>
-
-             <ul id="list">
-                 <li > <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p></li>
-                   <button class="btn btn-primary"
-                   style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                   border: 1px solid #DEDEDE;
-                   border-radius: 5px;float: right;
-                   opacity: 1;" >Track my Order</button>
-               </ul><br>
-               <div style="padding-left: 690px;">
-                 <a href="#">Order Details</a>
-               </div>
-              
-         </div> <br><br><br>
-         <div class="container" >
-         <hr class="new5">
-         </div>
-
-         <div class="cities">
-          <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="left" style="width: 120px;height: 120px;float: left;">
-          <ul id="type" >
-          <li ><p class="example11"><strong>Lorem Ipsum</strong> </p></li>
-          <li style="float:right"><p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p></li>
-        </ul>
-
-        <ul id="type" >
-           <li > <p class="example12">Quantity: 40, Color: Black</p></li>
-           <li style="float:right"><p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p></li>
-         </ul>
-
-         <ul id="type" >
-           <li> <p ><strong>Price : $299</strong></p></li>
-         </ul>
-
-           <ul id="list">
-               <li > <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p></li>
-                 <button class="btn btn-primary"
-                 style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                 border: 1px solid #DEDEDE;
-                 border-radius: 5px;float: right;
-                 opacity: 1;" >Track my Order</button>
-             </ul><br>
-             <div style="padding-left: 690px;">
-               <a href="#">Order Details</a>
-             </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple"  style="width: 120px;height: 130px;float: left;">
+                      </div>
+                      <div class="col-sm-6">
+                       <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                       <p class="example12">Quantity: 40, Color: Black</p>
+                       <p >price : $299</p>
+                       <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                      </div>
+                      <div class="col-sm-4">
+                        <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
+                        <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                        <button class="btn btn-primary"
+                                style=" background: #00B577 0% 0% no-repeat padding-box;width: 168px;height: 50px;
+                                border: 1px solid #DEDEDE;
+                                border-radius: 5px;
+                                opacity: 1;" >Write a Review</button><br><br>
+                              <a href="#" style="padding-left: 40px;">Order Details</a>
+                       </div>
+                       </div>
+                      <hr class="new5"><br><br>
             
-       </div> <br><br><br>
-       <div class="container" >
-       <hr class="new5">
-       </div>
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple"  style="width: 120px;height: 130px;float: left;">
+                          </div>
+                          <div class="col-sm-6">
+                           <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                           <p class="example12">Quantity: 40, Color: Black</p>
+                           <p >price : $299</p>
+                           <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                          </div>
+                          <div class="col-sm-4">
+                            <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
+                            <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                            <button class="btn btn-primary"
+                                    style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
+                                    border: 1px solid #DEDEDE;
+                                    border-radius: 5px;
+                                    opacity: 1;" >Track my Order</button><br><br>
+                                  <a href="#" style="padding-left: 40px;">Order Details</a>
+                           </div>
+                           </div> 
+                          <hr class="new5"><br><br>
+
+                         
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple"  style="width: 120px;height: 130px;float: left;">
+                          </div>
+                          <div class="col-sm-6">
+                           <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                           <p class="example12">Quantity: 40, Color: Black</p>
+                           <p >price : $299</p>
+                           <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                          </div>
+                          <div class="col-sm-4">
+                            <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
+                            <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                            <button class="btn btn-primary"
+                                    style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
+                                    border: 1px solid #DEDEDE;
+                                    border-radius: 5px;
+                                    opacity: 1;" >Track my Order</button><br><br>
+                                  <a href="#" style="padding-left: 40px;">Order Details</a>
+                           </div>
+                           </div> 
+                          <hr class="new5"><br><br>
+
+                               
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple"  style="width: 120px;height: 130px;float: left;">
+                          </div>
+                          <div class="col-sm-6">
+                           <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                           <p class="example12">Quantity: 40, Color: Black</p>
+                           <p >price : $299</p>
+                           <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                          </div>
+                          <div class="col-sm-4">
+                            <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
+                            <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                            <button class="btn btn-primary"
+                                    style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
+                                    border: 1px solid #DEDEDE;
+                                    border-radius: 5px;
+                                    opacity: 1;" >Track my Order</button><br><br>
+                                  <a href="#" style="padding-left: 40px;">Order Details</a>
+                           </div>
+                           </div> 
+                          <hr class="new5"><br><br>
+
+                                     
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple"  style="width: 120px;height: 130px;float: left;">
+                          </div>
+                          <div class="col-sm-6">
+                           <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                           <p class="example12">Quantity: 40, Color: Black</p>
+                           <p >price : $299</p>
+                           <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                          </div>
+                          <div class="col-sm-4">
+                            <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
+                            <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                            <button class="btn btn-primary"
+                                    style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
+                                    border: 1px solid #DEDEDE;
+                                    border-radius: 5px;
+                                    opacity: 1;" >Track my Order</button><br><br>
+                                  <a href="#" style="padding-left: 40px;">Order Details</a>
+                           </div>
+                           </div> 
+                          <hr class="new5"><br><br>
+
+                                          
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple"  style="width: 120px;height: 130px;float: left;">
+                          </div>
+                          <div class="col-sm-6">
+                           <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                           <p class="example12">Quantity: 40, Color: Black</p>
+                           <p >price : $299</p>
+                           <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                          </div>
+                          <div class="col-sm-4">
+                            <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
+                            <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                            <button class="btn btn-primary"
+                                    style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
+                                    border: 1px solid #DEDEDE;
+                                    border-radius: 5px;
+                                    opacity: 1;" >Track my Order</button><br><br>
+                                  <a href="#" style="padding-left: 40px;">Order Details</a>
+                           </div>
+                           </div> 
+                          <hr class="new5"><br><br>
     </div>
     </div>
 </div>
 
           
-     <footer class="contain text-center">
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                  
-                    <p style="text-align: left;
-                    letter-spacing: 0px;
-                    color: #FFFFFF;
-                    opacity: 1;">Copyright @ 2020 Company Name</p>
-               
-                </div>
-                <div class="column">
-                   
-                    
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-facebook"></a>
-              
-                </div>
-    
-                <div class="column">
-               <div class="row">
-                   <div class="column">
-                       <a href="#" style="text-align: right;font: Regular 16px/20px Roboto; letter-spacing: 0px;color: #FFFFFF; opacity: 1;">Help</a>
-                   </div>
-                   <div class="column">
-                    <a href="#" style="text-align: right;font: Regular 16px/20px Roboto; letter-spacing: 0px;color: #FFFFFF; opacity: 1;">Terms & condition</a>
-                </div>
-                <div class="column">
-                    <a href="#" style="text-align: right;font: Regular 16px/20px Roboto; letter-spacing: 0px;color: #FFFFFF; opacity: 1;">Support</a>
-                </div>
-               </div>
+<footer class="page-footer w-100 h-100 p-3" id="footer1" >
+  <div class="container-fluid mt-4">
+<div class="row">
+  <div class="col-sm" >
+    <div class="footer-copyright" id="copyright1" >Copyright © 2020 Company Name
+      </div>
+    </div>
+   
+        <div class="col-sm" id="social1">
+            <ul class="list-unstyled d-inline-flex ">
+                <li>
+                  <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="fa fa-twitter pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="fa fa-facebook-square pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                </li>
                 
-                </div>
-               
-            </div>
-       </div>
-    </footer> 
+              </ul>
+        </div>
+
+        <div class="col-sm" id="conditions1">
+            <ul class="list-unstyled d-inline-flex">
+                <li class="pl-4" >
+                  <a  id="citems1" href="#!">Help</a>
+                </li>
+                <li class="pl-4">
+                  <a  id="citems1" href="#!">Terms & Conditions</a>
+                </li>
+                <li class="pl-4" >
+                  <a id="citems1" href="#!">Support</a>
+                </li>
+                
+              </ul>
+        </div>
+      </div>
+   </div>
+</footer>
 
     </body>
     
