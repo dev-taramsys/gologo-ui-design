@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Checkout Page</title>
+    <title>Checkout Payment Page</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -120,14 +120,19 @@
   <div class=" container border mt-4" id="cartnav">
         <ul class="nav">
                 <li class="nav-item">
-                  <a class=" nav-link" id="CartH1" href="index.html"> Home </a>
+                  <a class=" nav-link" id="CartH1" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="Cart1" href="#"> > </a>
                 </li>
-               
                 <li class="nav-item">
-                        <a class="nav-link" id="Cartc" href="#"> Checkout</a>
+                    <a class=" nav-link" id="CartH1" href="Product.html"> Product </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Cart1" href="#"> > </a>
+                  </li>
+                <li class="nav-item">
+                        <a class="nav-link" id="Cartc" href="#"> Checkout </a>
                       </li>
                       
                 
@@ -145,139 +150,95 @@
     <div id="accordion">
       <div class="card border-0 mt-4 ">
         <div class="card-header border">
-          <a class="float-left" id="Ch1"><span class="badge badge-pill badge-primary" id="Cpill">1</span>   Shipping Address</a> 
+          <a class="float-left" id="Ch1"><span class="badge badge-pill badge-primary" id="Cpill">1</span>   Shipping Address
+            <i class="fa fa-check" style="color:#00B577;font-size:18px" aria-hidden="true" ></i></a>
+
+   
           <a class="card-link float-right" data-toggle="collapse" href="#collapseOne">
-              <i class="fa fa-minus" aria-hidden="true" style="color:black" id="Chyphen"></i></a>
+              <i class="fa fa-plus" aria-hidden="true" style="color:black" id="Chyphen"></i></a>
         </div>
         <div id="collapseOne" class="collapse show" data-parent="#accordion">
           <div class="card-body border">
-
-
-            <div class="container" id="Cship">
-          
-             <h5 class="p-3" id="Cship1"><span id="Cdummyaddress">Ship to this address</span>
-               <a href="#" class="d-inline pull-right mx-1" id="Cremove"><i class="fa fa-trash" aria-hidden="true"></i> Remove</a> 
-              <a href="#" class="d-inline pull-right" id="Cedit">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              Edit</a></h5>
-           
-
-             <div class="container" style=" height:124px">
-               <div class="row">
-                  <form id="Cradio">
-                    <div class="form-check">
-                      <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio"><span class="mx-4" id="Cadd">
-                        7195 S. Sulphur Springs Lane Sugar Land, TX 77478</span>
-                      </label>
-                    </div>
-                  </form>
-               </div>
-              </div>
-            </div>
-               
-                  <form class="mt-2">
-                    <div class="row">
-                      <div class="col">
-                        <input type="text" class="form-control" id="email" placeholder="First Name" name="First Name">
-                      </div>
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="Last Name" name="Last Name">
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col">
-                          <input type="text" class="form-control" id="email" placeholder="Email Address" name="email">
-                        </div>
-                        <div class="col">
-                          <input type="text" class="form-control" placeholder="Mobile Number" name="Mobile Number">
-                        </div>
-                      </div>
-                      <div class="form-group mt-2">
-                          <label for="comment"></label>
-                          <textarea class="form-control" rows="5" id="comment" placeholder="Address" name="text"></textarea>
-                        </div>
-
-                        <div class="row mt-2">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="sel1" ></label>
-                                    <select class="form-control" id="sel1" name="sellist1">
-                                        <option hidden >City</option>
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="sel1"></label>
-                                    <select class="form-control" id="sel1" name="sellist1">
-                                        <option hidden >Zipcode</option>
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="row mt-2">
-                              <div class="col">
-                                  <div class="form-group">
-                                      <label for="sel1" ></label>
-                                      <select class="form-control" id="sel1" name="sellist1">
-                                          <option hidden >State</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                      </select>
-                                  </div>
-                              </div>
-                              <div class="col">
-                                  <div class="form-group">
-                                      <label for="sel1"></label>
-                                      <select class="form-control" id="sel1" name="sellist1">
-                                          <option hidden >Country</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                      </select>
-                                  </div>
-                              </div>
-                           
-                            <div class="container mt-2">
-                            <div>
-                  <button type="button" id="CASave" class="btn border d-inline pull-right">Save this address & Continue</button>
-                    </div>     
-                            </div>                   
-                  </form> </div>  
+  
                 </div>
-            
-
- 
-
-
-          </div>
+            </div>
       
 
-   
-
-
-      <div class="card mt-2">
+   <div class="card mt-2">
         <div class="card-header">
             <a class="float-left" id="Ch1"><span class="badge badge-pill badge-primary" id="Cpill">2</span> Payment Method</a> 
           <a class="collapsed card-link float-right" data-toggle="collapse" href="#collapseTwo">
-              <i class="fa fa-plus" aria-hidden="true" style="color:black" id="Chyphen"></i>
+              <i class="fa fa-minus" aria-hidden="true" style="color:black" id="Chyphen"></i>
         </a>
         </div>
         <div id="collapseTwo" class="collapse" data-parent="#accordion">
           <div class="card-body">
-           
+
+                <div class="container">
+                        <div class="row">
+                           <form id="Cradio">
+                             <div class="form-check">
+                               <label class="form-check-label" for="radio1">
+                                 <input type="radio" class="form-check-input" id="radio1" name="optradio"><span class="mx-2" id="Cadd">
+                                 Credit Card Details</span>
+                               </label>
+                             </div>
+                           </form>
+                        </div>
+                       </div>
+        <div class="container mt-4">
+                       <div class="row">
+            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px" src="images/amazon@2x.png"></a>
+            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/discover@2x.png"></a>
+            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/mastercard@2x.png"></a>
+            <a href="#"><img class="img-fluid border mx-2"  style="height:24px;width:48px"  src="images/visa@2x.png"></a>
+            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"   src="images/mastercard@2x.png"></a>
+</div>
+        </div>
+<div class="mt-4">
+        <form class="input-group">
+            <div class="row">
+              <div class="col">
+                    <label for="email" id="Ccredit">Credit Card Number</label>
+                <input type="text" class="form-control" id="email" size="30" placeholder="" name="email">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group mt-4">
+                            <label for="ExpiryDate" >Expiry Date</label>
+                            <select class="form-control" id="sel1"   name="sellist1">
+                                <option hidden >Month</option>
+                              <option>January</option>
+                              <option>February</option>
+                              <option>March</option>
+                              <option>April</option>
+                              <option>May</option>
+                              <option>June</option>
+                              <option>July</option>
+                              <option>August</option>
+                              <option>September</option>
+                              <option>October</option>
+                              <option>November</option>
+                              <option>December</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="form-group mt-4">
+                                <label for="ExpiryDate"></label>
+                                <select class="form-control mt-2" id="sel1"  onload="loadyear()" name="sellist1">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </form>
+</div>
+
+
+    </div>
           </div>
         </div>
       </div>
@@ -339,7 +300,7 @@
         <div class="input-group" >
             <input type="text" class="form-control border-right-0 progress-bar progress-bar-striped progress-bar-animated text-left " id="tick2" role="progressbar" placeholder="Coupon Code">
             <div class="input-group-btn">
-              <span class="btn border border-left-0 bg-white  " id="tick1">
+              <span class="btn border border-left-0 bg-white " id="tick1">
                   <i class="fa fa-check"  aria-hidden="true" ></i>
               </span>
             </div>
