@@ -1368,10 +1368,10 @@ font-size: 14px;
   display:inline;
   margin: 10px 20px;
 }
-.sidenav ul#list:hover:not(.active) {
+/* .sidenav ul#list li a:hover:not(.active) {
   background-color: #555;
   color: white;
-}
+} */
 .sidenav ul#list li .fa{
   font-size: 20px;
  padding-right: 60px;
