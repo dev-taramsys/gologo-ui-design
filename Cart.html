@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+   <!--<div id="navbar1">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+          <ul class="navbar-nav mr-auto " >
+            <li class="nav-item active ml-1">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-1 ">
+              <a class="nav-link" href="#">SUPPORT</a>
+            </li>
+           
+            <li class="nav-item ml-1 ">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+          <div class="ml-4">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2"  id="searchbar" type="search"  placeholder="Search..." aria-label="Search">
+            <button class="btn  my-2 my-sm-0" id="searchfont" type="submit"><i class="fa fa-search"  aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <div class="container" id="navicon">
+                <ul class="navbar-nav mx-1">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#"><span class="sr-only">(current)</span><img src="images/Path 4182.png"></a>
+                        </li>
+                       
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img src="images/Path 4183.png"></a>
+                        </li>
+                      </ul>
+        </div>
+        </div>
+      </div>
+      </nav>
+    </div>
+    --> 
+    <!------Main Navbar-->
+    <div id="navbar1">
+      
+      <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+          <div class="container-fluid">
+          <a class="navbar-brand mx-4" href="index.html">LOGO</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+            <ul class="navbar-nav mr-auto " >
+              <li class="nav-item active mx-2">
+                <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">SUPPORT</a>
+              </li>
+             
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+            </ul>
+            <!--
+            <form class="form-inline mx-4" >
+              <input class="form-control pl-4 "  size="100" id="searchbar" type="search"  placeholder="Search..." aria-label="Search">
+              <button class="btn my-2 my-sm-0"  type="submit"><i class="fa fa-search"  aria-hidden="true"></i>
+              </button>
+            </form>
+          -->
+          <form class="navbar-form navbar-left mx-2 " id="searchbar">
+            <div class="input-group" >
+              <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar" placeholder="Search" name="search">
+              <div class="input-group-btn ">
+                <button class="btn btn-outline-secondary border-left-0 " id="searchfont" type="submit">
+                    <i class="fa fa-search"  aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="container " id="navicon">
+                  <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+                          </li>
+                         
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><img class="img-responsive" src="images/Path 4183.png"></a>
+                          </li>
+                        </ul>
+          </div>
+          </div>
+          </div>
+        </div>
+        </nav>
+      </div>
+
+      <div class="col-sm-12">
+  <div class=" container border mt-4" id="cartnav">
+        <ul class="nav">
+                <li class="nav-item">
+                  <a class=" nav-link" id="CartH" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="Cart1" href="#">></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="Cartc" href="#">Cart</a>
+                </li>
+                
+              </ul>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-8 mt-4 border">
+
+    <div class="row">
+            <div class="col-sm-4">
+                    <img class="img-fluid" id="imgsize" src="images/women 2.png">
+                </div>
+
+                <div class="col-sm-8 mt-3">
+                    <h1 class="display-5" id="carttitle">Lorem ipsum</h>
+                     <h4 class="display-6" id="cartcolor">color:Black</h4>
+                     <p class="card-text" id="cartprice">$1999  <Strong class="ml-4" id="cartquantity"> Quantity:30</Strong> 
+                        <a class="ml-4" id="cartedit" href="#">Edit</a></p>
+                        <form>
+                                <div class="row">
+                                   
+                                    <div class="col-sm-2 text-center"><label>S</label><input class="form-control" placeholder="" type="text"></div>
+                                    <div class="col-sm-2 text-center"><label>M</label><input class="form-control" placeholder="" type="text"></div>
+                                    <div class="col-sm-2 text-center"><label>L<Label></Label></label><input class="form-control" placeholder="" type="text"></div>
+                                    <div class="col-sm-2 text-center"><label>XL</label><input class="form-control" placeholder="" type="text"></div>
+                                    <div class="col-sm-2 text-center"><label>XXL</label><input class="form-control" placeholder="" type="text"></div>
+                                  </div>
+                               
+                          
+                            </form>
+                            <div class="container mt-4">
+                            <div>
+                                <p class="d-inline pull-left" id="deliveryde">Delivery in 3-4 days</p>
+                                
+                            </div>
+                                <div>
+                                        <button type="button" id="Removei" class="btn d-inline pull-right"><i class="fa fa-trash" aria-hidden="true"></i>  Remove</button>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+
+<div class="container ">
+                                <div class="row border">
+                                  <div class="col-sm-4">
+                                          <img class="img-fluid" id="imgsize" src="images/women 2.png">
+                                      </div>
+                      
+                                      <div class="col-sm-8 mt-3">
+                                          <h1 class="display-5" id="carttitle">Lorem ipsum</h>
+                                           <h4 class="display-6" id="cartcolor">color:Black</h4>
+                                           <p class="card-text" id="cartprice">$1999  <Strong class="ml-4" id="cartquantity"> Quantity:30</Strong> 
+                                              <a class="ml-4" id="cartedit" href="#">Edit</a></p>
+                                              <form>
+                                                      <div class="row">
+                                                         
+                                                          <div class="col-sm-2 text-center"><label>S</label><input class="form-control" placeholder="" type="text"></div>
+                                                          <div class="col-sm-2 text-center"><label>M</label><input class="form-control" placeholder="" type="text"></div>
+                                                          <div class="col-sm-2 text-center"><label>L<Label></Label></label><input class="form-control" placeholder="" type="text"></div>
+                                                          <div class="col-sm-2 text-center"><label>XL</label><input class="form-control" placeholder="" type="text"></div>
+                                                          <div class="col-sm-2 text-center"><label>XXL</label><input class="form-control" placeholder="" type="text"></div>
+                                                        </div>
+                                                     
+                                                
+                                                  </form>
+                                                  <div class="container mt-4">
+                                                  <div>
+                                                      <p class="d-inline pull-left" id="deliveryde">Delivery in 3-4 days</p>
+                                                      
+                                                  </div>
+                                                  <div>
+                                                              <button type="button" id="Removei" class="btn d-inline pull-right"><i class="fa fa-trash" aria-hidden="true"></i>  Remove</button>
+                                                          </div>
+                                                          
+          </div>
+          </div>
+ 
+
+
+<div class="container ">
+                <div class="row border">
+              
+                
+                   
+<div class="container mt-4">
+<div>
+<button type="button"  id="cartshop1" class="btn d-inline pull-right border"><a style="text-decoration: none;" href="Checkout.html">CHECKOUT</a></button>
+</div>
+                
+<div >
+<p class="d-inline pull-right" id="cartshop2">Continue Shopping</p>
+                                                
+</div>
+
+</div>
+                                            
+</div>
+</div>
+
+</div>
+</div>
+    </div>
+</div>
+
+
+
+
+
+<div class="col-sm-4 mt-4 border" id="price">
+    
+    <div class="container border border-bottom-0" id="priceh1">
+        <h2 class="text-left p-3" id="priceh">Price Details</h2>
+    </div>
+    
+    <table class="table table-striped">
+            <tbody>
+              <tr >
+                <td class="border-0 bg-white">Sub total(2items)</th>
+                <td class="text-right border-0 bg-white">$299</th>
+              </tr>
+            
+              <tr>
+                <td class="border-0 bg-white">Coupon Discount(10% off)</td>
+                <td class="text-right border-0 bg-white">$299</td>
+              </tr>
+              <tr>
+                <td class="border-0 bg-white">Delivery Charge</td>
+                <td class="text-right border-0 bg-white">Free</td>
+              </tr>
+              <tr>
+                <td class="border-0 bg-white">Total</td>
+                <td class="text-right border-0 bg-white">$2700</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="container">
+              <p class="text-center">Have a promo coupon?<a href="#"> Redeem Now</a></p>
+          </div>
+          
+        <!-- <form class="row">
+            
+              <div class="input-group"  id="Ccoupon"> <input type="text" id="pcolor" class="form-control text-left progress-bar progress-bar-striped progress-bar-animated"
+                     name=""aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" placeholder="Coupon code">
+              </div>
+                     <div class="input-group-append"><span><i class="fa fa-check icon" aria-hidden="true" style="color:green; position:absolute;"></i>
+                     </span>
+                      </div>
+
+          </form>
+          -->
+
+          <div class="input-group" >
+              <input type="text" class="form-control border-right-0 progress-bar progress-bar-striped progress-bar-animated text-left " id="tick2" role="progressbar" placeholder="Coupon Code">
+              <div class="input-group-btn">
+                <span class="btn border border-left-0 bg-white  " id="tick1">
+                    <i class="fa fa-check"  aria-hidden="true" ></i>
+                </span>
+              </div>
+          </div>
+              <div class="row" id="Sbutton">
+                <div class="col text-center">
+                <button class="btn btn-apply coupon border mt-4 " >Apply</button> 
+                <button class="btn btn-apply coupon border mt-4" >Cancel</button> 
+              </div>
+            </div>
+          
+
+        </div>
+      
+  
+</div>
+</div>
+
+</div>
+</div>
+
+<footer class="page-footer w-100 h-100 p-3 mt-4" id="footer1" >
+    <div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-sm" >
+      <div class="footer-copyright" id="copyright1" >Copyright © 2020 Company Name
+        </div>
+      </div>
+     
+          <div class="col-sm" id="social1">
+              <ul class="list-unstyled d-inline-flex ">
+                  <li>
+                    <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fa fa-twitter pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fa fa-facebook-square pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                  </li>
+                  
+                </ul>
+          </div>
+  
+          <div class="col-sm" id="conditions1">
+              <ul class="list-unstyled d-inline-flex">
+                  <li class="pl-4" >
+                    <a  id="citems1" href="#!">Help</a>
+                  </li>
+                  <li class="pl-4">
+                    <a  id="citems1" href="#!">Terms&Conditions</a>
+                  </li>
+                  <li class="pl-4" >
+                    <a id="citems1" href="#!">Support</a>
+                  </li>
+                  
+                </ul>
+          </div>
+        </div>
+     </div>
+    
+  </footer>
+  </body>
+  </html>
