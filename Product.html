@@ -19,7 +19,7 @@
     <title>Product Details</title>
 </head>
 <body>
-    <div class="header1-container header1">
+    <div class="header1-container" id="main_header">
       <nav class="navbar navbar-expand-lg navbar-bold w-100" style="min-height: 112px;">
         <a class="navbar-brand abs ml-1" href="index.html">LOGO</a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
@@ -28,7 +28,7 @@
         <div class="navbar-collapse collapse" id="collapsingNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">SUPPORT</a>
@@ -46,27 +46,73 @@
               </div>
             <ul class="navbar-nav my-icon ml-auto pl-2">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-target="#myModal" data-toggle="modal"><img src="images/Path 4182.png"></a>
-                </li>
+                    <a class="nav-link" href="#" data-target="#myModal" data-toggle="modal" ><img src="images/Path 4182.png"></a>
+                  </li>  
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog " >
+                          <div class="modal-content">
+                            <div class="modal-body" >
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <p class="pt-5 text-center log_title_1" style="color: #343232;"><b>Customer Login</b></p>
+                              <p class="pt-4 text-center log_title_2" style="color: #343232;"><b>Registered Users</b></p>
+                              <p class="text-center pt-2 log_title_3" style="color: #727272;">If you have an account, sign in with your email address.</p>
+                              <form>
+                                  <div class="text-center">
+                                      <input type="email" class="login-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+                                      <br>
+                                      <input type="password" class="login-password mt-3 pl-2 pt-1 pb-1" placeholder="Password" required>
+                                  </div>
+                              <div class="text-center pt-3 log_forgot">
+                              <a href="#!" style="color: #676767; text-decoration: none;">Forgot Password?</a>
+                            </div>
+                              <div class="text-center pt-4">
+                                  <button class="pl-4 pr-4 pt-1 pb-1 log_btn" style="color: #FFFFFF; font-size: 14px; background: #141414 0% 0% no-repeat padding-box; border-radius: 5px; border: 3px solid #141414; opacity: 1;"><b>Login</b></button>
+                              </div>
+                              <div class="col-md text-center pt-4" id="login-social">
+                                          <ul class="list-unstyled d-inline-flex ">
+                                              <li>
+                                               <a href="#!"><i class="fa fa-facebook-square" aria-hidden="true"  style="color:#141414;"></i></a>
+                                              </li>  
+                                              <li>
+                                                <a href="#!"><i class="fa fa-google pl-4" aria-hidden="true" style="color:#141414; padding-top: 1px;"></i></a>
+                                              </li>
+                                              <li>
+                                                <a href="#!"><i class="fa fa-twitter pl-4" aria-hidden="true"  style="color:#141414; padding-top: 1px;"></i></a>
+                                              </li>
+                                            </ul>
+                                      </div>
+                                    </form>
+                                      <hr class="login-thinline"></hr>
+                                      <p class="text-center pt-4 log_customer" style="color: #141414;"><b>New Customer</b></p>
+                                      <p class="text-center log_sentence" style="color: #727272;;">Creating an account has many benefits: check out faster, keep more <br> than one address, track orders and more.</p>
+                                      <div class="text-center pt-2">
+                                        <button class="pl-4 pr-4 pt-2 pb-2 log-account mb-5" style="color: #FFFFFF; font-size: 14px; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Create an Account</b></button>
+                                    </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                    
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-target="#myModal" data-toggle="modal"><img src="images/Path 4183.png"></a>
+                    <a class="nav-link" href="Cart.html" ><img src="images/Path 4183.png"></a>
                 </li>
             </ul> 
         </div>
     </nav>
     </div>
     <br>
-    <div class="container header2" >
-      <nav class="navbar navbar_sub navbar-expand-sm" style="background-color: #F9F9F9;">
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link list-inline-item" style="color: #141414; font-weight: bold;" href="index.html">Home</a>
+    <div class="container" id="sub_header" >
+      <nav class="navbar_pro navbar-expand-sm" id="navbar_sub" style="background-color: #F9F9F9;">
+        <ul class="nav_pro">
+            <li class="nav-item_pro">
+              <a class="nav-link_pro list-inline-item pl-2" style="color: #141414; font-weight: bold;" href="index.html">Home</a>
           </li> 
-          <li class="nav-item">
-            <a class="nav-link list-inline-item" style="color: #676767;">></a>
+          <li class="nav-item_pro">
+            <a class="nav-link_pro list-inline-item pl-2" style="color: #676767;"> ></a>
         </li> 
-          <li class="nav-item">
-            <a class="nav-link list-inline-item" style="color: #676767;" href="#">Product Detail</a>
+          <li class="nav-item_pro">
+            <a class="nav-link_pro list-inline-item pl-2" style="color: #676767;" href="#">Product Detail</a>
           </li>
         </ul>
       </nav>
