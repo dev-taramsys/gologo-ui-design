@@ -313,6 +313,7 @@ font-family: 'Roboto', sans-serif;
     /*.form-inline .form-control{
         display: none;
     }*/
+
     
     
    #navbar1 .navbar{
@@ -1320,12 +1321,50 @@ font: bold;
     font: bold;
     color:#676767
   }
+  .details{
+      padding-left: 40px;
+  }
 
+  /*Ipad pro */
+@media (min-width: 1024px) and (max-width: 1024px){
+   .align{
+       padding-left: 35px;
+   }
+  
+  
+}
+  /*Ipad */
+  @media (min-width: 768px) and (max-width: 770px){
+    .align{
+        padding-left: 100px;
+        margin-right: 20px;
+    }
+    .responsive {
+        width: 100%;
+        height: auto;
+        margin-left: 50px;
+      }
+     .alignment{
+        margin-right: 50px;
+     }
+     hr.new5{
+        margin-left: 70px;
+     }
+     .trick{
+        padding-left: 45px;
+       }
+       .tom{
+        padding-left: 155px;
+       }
+  
+    
+ }
 
+ 
 /* ACCOUNT.CSS */
 
 .accbackground{
-    height: 900px;
+    height: 700px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     }
