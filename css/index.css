@@ -981,13 +981,14 @@ height: 254px;
   
 #conditions{
     color:white;
+    /* margin-right: 0; */
 }
 #citems{
     text-decoration: none;
     color: #FFFFFF;
     opacity: 1;
     font-family: 'Roboto',sans-serif;
-    font-size:1rem;
+    font-size:1.2rem;
 }
 
 .size_1{
@@ -1011,7 +1012,7 @@ font-size: 14px;
 }
 
 @media (max-device-width: 767px){
-      .desktop_view, .desktop_view_1,.input-group, .my-icon, #sub_header, #copyrights, #conditions, 
+      .desktop_view, .desktop_view_1,.input-group, #sub_header, #copyrights, #conditions, 
     .size-group, .scale, .citems, .sample, .title, .t-logo, .btn_desk, #custom-text, .price,.size-box,
     .btn_desk_1{
         display: none;
@@ -1026,7 +1027,7 @@ font-size: 14px;
     }
 
     .social{
-        margin-left: none;
+        margin-left: 0;
     }
 
 }
@@ -1069,8 +1070,8 @@ font-size: 14px;
         border: 1px solid #D2D2D2;
         opacity: 1;
         font-size: 1px;
-        color: #D2D2D2;
         width: 50%;
+        background-color: #D2D2D2;
 
     }
     .login-social{
