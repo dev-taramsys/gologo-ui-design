@@ -494,8 +494,8 @@ font-size:1.3rem;
 }
 
 
-/*Ipad pro */
-@media (min-width: 768px) and (max-width: 1024px){
+/*Ipad*/
+@media (min-width: 768px) and (max-width: 768px){
     #navbar1 .navbar-nav .nav-item .nav-link{
         font-size: 18px;
     }
@@ -524,6 +524,11 @@ font-size:1.3rem;
     }
     #conditions1{
        margin-left:-2rem ;
+        
+    }
+    .black-overlay{
+        top: 48%;
+        left: 44%;
         
     }
     
@@ -835,7 +840,7 @@ background: white;
 
 #CASave:hover,
 #CASave:active{
-    background: #141414;
+    background: #00B577;
     color:white;
 }
 
@@ -854,13 +859,28 @@ opacity: 1;
     bottom: 0;
     width: 100%;
 }
-
-
-/*------Checkout Payment Method------*/
-
-#Ccredit{
+#ccheckout1{
+    color:black;
     
 }
+
+/*------Checkout Payment Method------Nisha*/
+#Corder{
+    width: 139px;
+   height: 37px;
+    background: white;
+    font-family: 'Roboto-Medium',sans-serif;
+    
+}
+#Corder:hover,
+#Corder:active
+{
+    background: #00B577;
+    color:black;
+}
+
+
+
 
 
 

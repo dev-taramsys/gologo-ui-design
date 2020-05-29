@@ -106,7 +106,7 @@
                           </li>
                          
                           <li class="nav-item">
-                            <a class="nav-link" href="#"><img class="img-responsive" src="images/Path 4183.png"></a>
+                            <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png"></a>
                           </li>
                         </ul>
           </div>
@@ -131,6 +131,12 @@
                 <li class="nav-item">
                     <a class="nav-link" id="Cart1" href="#"> > </a>
                   </li>
+                  <li class="nav-item">
+                      <a class=" nav-link" id="CartH1" href="Cart.html">Cart</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="Cart1" href="#"> > </a>
+                    </li>
                 <li class="nav-item">
                         <a class="nav-link" id="Cartc" href="#"> Checkout </a>
                       </li>
@@ -174,85 +180,150 @@
         <div id="collapseTwo" class="collapse" data-parent="#accordion">
           <div class="card-body">
 
-                <div class="container">
-                        <div class="row">
-                           <form id="Cradio">
-                             <div class="form-check">
-                               <label class="form-check-label" for="radio1">
-                                 <input type="radio" class="form-check-input" id="radio1" name="optradio"><span class="mx-2" id="Cadd">
-                                 Credit Card Details</span>
-                               </label>
-                             </div>
-                           </form>
-                        </div>
-                       </div>
-        <div class="container mt-4">
-                       <div class="row">
-            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px" src="images/amazon@2x.png"></a>
-            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/discover@2x.png"></a>
-            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/mastercard@2x.png"></a>
-            <a href="#"><img class="img-fluid border mx-2"  style="height:24px;width:48px"  src="images/visa@2x.png"></a>
-            <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"   src="images/mastercard@2x.png"></a>
-</div>
-        </div>
-<div class="mt-4">
-        <form class="input-group">
-            <div class="row">
-              <div class="col">
-                    <label for="email" id="Ccredit">Credit Card Number</label>
-                <input type="text" class="form-control" id="email" size="30" placeholder="" name="email">
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group mt-4">
-                            <label for="ExpiryDate" >Expiry Date</label>
-                            <select class="form-control" id="sel1"   name="sellist1">
-                                <option hidden >Month</option>
-                              <option>January</option>
-                              <option>February</option>
-                              <option>March</option>
-                              <option>April</option>
-                              <option>May</option>
-                              <option>June</option>
-                              <option>July</option>
-                              <option>August</option>
-                              <option>September</option>
-                              <option>October</option>
-                              <option>November</option>
-                              <option>December</option>
-                            </select>
-                        </div>
-                    </div>
-                
-                    <div class="col">
-                        <div class="form-group mt-4">
-                                <label for="ExpiryDate"></label>
-                                <select class="form-control mt-2" id="sel1"  onload="loadyear()" name="sellist1">
-                                    
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    
-            </div>
-        </form>
-</div>
+<div class="container">
+<div class="row">
 
-
+<form>
+<div class="form-check">
+<label class="form-check-label" for="radio1">
+<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"><span class="mx-2" id="Cadd">
+Credit Card Details</span>
+</label>
+</div>
+<div class="col">                      
+    <div class="container mt-4 ml-2">
+    
+    <div class="row">
+    <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px" src="images/amazon@2x.png"></a>
+    <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/discover@2x.png"></a>
+    <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/mastercard@2x.png"></a>
+    <a href="#"><img class="img-fluid border mx-2"  style="height:24px;width:48px"  src="images/visa@2x.png"></a>
+    <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"   src="images/mastercard@2x.png"></a>
     </div>
-          </div>
-        </div>
-      </div>
+    </div>
+               
+    <div class="mt-4">
+    
+    <form class="input-group">
+    <div class="row">
+    
+    <div class="container">
+    
+    <div class="col">
+    <label for="email" id="Ccredit">Credit Card Number</label>
+    <input type="text" class="form-control w-75" id="email" size="30" placeholder="" name="email">
+    </div>
+    
+    
+    <div class="row">
+    
+    <div class="col ml-3">
+        <p class="mt-4 " id="ewidth">Expiry Date</p>  
+    <div class="form-group">
+        
+    <select class="form-control" id="sel1" name="sellist1">
+    <option hidden >Month</option>
+    <option>January</option>
+    <option>February</option>
+    <option>March</option>
+    <option>April</option>
+    <option>May</option>
+    <option>June</option>
+    <option>July</option>
+    <option>August</option>
+    <option>September</option>
+    <option>October</option>
+    <option>November</option>
+    <option>December</option>
+    </select>
+    </div>
+    </div>
+                                 
+                                   
+    <div class="col">
+    <div class=" mt-4">
+    <label for="ExpiryDate"></label>
+    <select class="form-control mt-3" id="sel1" name="sellist1">
+    <option hidden >year</option>
+    <option>2020</option>
+    <option>2021</option>
+    <option>2022</option>
+    <option>2023</option>
+    <option>2024</option>
+    <option>2025</option>
+    <option>2026</option>
+    <option>2027</option>
+    <option>2028</option>
+    <option>2029</option>
+    <option>2030</option>
+    <option>2031</option>
+    <option>2032</option>
+    </select>
+    </div>
+    </div>
+    
+               
+    <div class="col mt-4">
+    <label for="email" id="Ccredit">CVV</label>
+    <input type="text" class="form-control w-50 mt-2" id="email" size="4" placeholder="" name="email">     
+    </div>
+    </div>
       
-    </div>
-  </div>
+</div>
+     
+<div class="form-check mt-4">
+    <label class="form-check-label" for="radio1" >
+    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option2">
+    <span class="mx-2">Country Specific Payment Method</span></label>
+    </div>      
+</form>     
+</div>
 
 </div>
 
+</div>     
+
+<div class="" style="height:100px">
+    
+    
+<div class="col" >
+<div class="form-group">
+<label for="ExpiryDate"></label>
+<select class="form-control w-100" id="sel1" name="sellist1">
+<option hidden >Select Country</option>
+<option>India</option>
+<option>United States of America</option>
+<option>United Kingdom</option>
+</select>
+</div>
+</div>
+                        
+</div>
+</div>
 
 
+</div>
+</div>
+
+                   
+<div class="container border border-bottom-0" style="height:90px;">
+    <div class="mt-4">
+<button type="button" id="Corder" class="btn border d-inline pull-right  ml-4">Place Order</button>
+</div>       
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+            
 
 
-
+     
+    
 <div class="col-sm-4 mt-4 " id="price">
     
   <div class="container border border-bottom-0 mt-4" id="priceh1">
