@@ -495,7 +495,7 @@ font-size:1.3rem;
 }
 
 
-/*Ipad pro */
+/*Ipad*/
 @media (min-width: 768px) and (max-width: 1024px){
     #navbar1 .navbar-nav .nav-item .nav-link{
         font-size: 18px;
@@ -525,6 +525,11 @@ font-size:1.3rem;
     }
     #conditions1{
        margin-left:-2rem ;
+        
+    }
+    .black-overlay{
+        top: 48%;
+        left: 44%;
         
     }
     
@@ -836,7 +841,7 @@ background: white;
 
 #CASave:hover,
 #CASave:active{
-    background: #141414;
+    background: #00B577;
     color:white;
 }
 
@@ -855,14 +860,96 @@ opacity: 1;
     bottom: 0;
     width: 100%;
 }
-
-
-/*------Checkout Payment Method------*/
-
-#Ccredit{
+#ccheckout1{
+    color:black;
     
 }
 
+/*------Checkout Payment Method------Nisha*/
+#Corder{
+    width: 139px;
+   height: 37px;
+    background: white;
+    font-family: 'Roboto-Medium',sans-serif;
+    color:black;
+}
+#Corder:hover,
+#Corder:active
+{
+    background: #00B577;
+    color:black;
+}
+
+#Ccredit{
+    color:white;
+}
+#placeor{
+    color:black;
+    text-decoration: none;
+}
+
+
+@media (min-width: 360px) and (max-width: 640px){
+    #month select[type="text"]{
+        width:100px;
+       
+    }
+  
+    #expiry select[type="text"]{
+        width:100px;
+        
+    }
+    #cvv input[type="text"]{
+        width:100px;
+    }
+}
+
+
+
+/*----------Thank you page------- Nisha*/
+
+.dot {
+    height: 208px;
+    width: 208px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+#circle1{
+    margin-left: 9rem;
+
+}
+
+#thankyou{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #141414;
+     opacity: 1;
+     font-family: 'Roboto-Bold',sans-serif;
+     font-size:34px;
+}
+#orderdetails{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #141414;
+    opacity: 1;
+    font-family: 'Roboto-Regular',sans-serif;
+    font-size:16px;
+}
+#orderbtn{
+    width: 183px;
+    color:black;
+    background: white;
+    font-size:12px;
+    font-family: 'Roboto-Medium',sans-serif;
+    
+}
+#orderbtn:hover,
+#orderbtn:active{
+    color:black;
+    background:#00B577;
+}
 
 
 
