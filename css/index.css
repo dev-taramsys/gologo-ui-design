@@ -313,6 +313,7 @@ font-family: 'Roboto', sans-serif;
     /*.form-inline .form-control{
         display: none;
     }*/
+
     
     
    #navbar1 .navbar{
@@ -874,17 +875,17 @@ opacity: 1;
 
 
 
-.header1 .navbar{
+#main_header .navbar{
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px #14141429;
     color: #141414;
 }
-.header1 .navbar-brand{
+#main_header .navbar-brand{
     font-size: 18px;
     color: #141414;
     font-weight: bold;
 }
-.header1 .nav-link{
+#main_header .nav-link{
     top: 46px;
     font-size: 18px;
     color: #141414;
@@ -994,13 +995,14 @@ height: 254px;
   
 #conditions{
     color:white;
+    /* margin-right: 0; */
 }
 #citems{
     text-decoration: none;
     color: #FFFFFF;
     opacity: 1;
     font-family: 'Roboto',sans-serif;
-    font-size:1rem;
+    font-size:1.2rem;
 }
 
 .size_1{
@@ -1014,18 +1016,17 @@ font-size: 14px;
 }
 
 
-@media (max-width: 767px){
-     #brands, .header2, .desktop_view, .desktop_view_1, .size, .textbox, 
-    .size-group, .scale, #copyright, #conditions, .citems, .sample, .title, .t-logo, .btn_desk, 
-    .btn_desk_1, .t-postion, .option {
-    display: none;
-}
-.header1 .form-inline{
-    display: none;
+@media (min-device-width: 768px){
+    .mobile_view, .mobile_view_1, .size-group_mob,   .scale_mob, .sample_mob, 
+    .title_mob, .t-logo_mob, .btn_mob, .btn_mob_1, .price_mob, .textbox_mobile,.size_1 {
+        display: none;
+    }
+
+
 }
 
 @media (max-device-width: 767px){
-      .desktop_view, .desktop_view_1,.input-group, .my-icon, .header2, #copyrights, #conditions, 
+      .desktop_view, .desktop_view_1,.input-group, #sub_header, #copyrights, #conditions, 
     .size-group, .scale, .citems, .sample, .title, .t-logo, .btn_desk, #custom-text, .price,.size-box,
     .btn_desk_1{
         display: none;
@@ -1040,13 +1041,13 @@ font-size: 14px;
     }
 
     .social{
-        margin-left: none;
+        margin-left: 0;
     }
 
 }
 
 /*-----Praba------ login Page------ codes----*/
-.login{
+#login{
     margin-top: 132px;
     width: 50%;
     height: 100%;
@@ -1055,6 +1056,10 @@ font-size: 14px;
     border-radius: 20px;
     opacity: 1;   
     }
+  .modal-backdrop {
+        z-index: 2;
+      }
+    
     .log_title_1, .log_customer{
         font-size: 25px;
     }
@@ -1068,7 +1073,7 @@ font-size: 14px;
         font-size: 14px;
     }
     .login-email, .login-password{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: white 0% 0% no-repeat padding-box;
     border: 1px solid #D6D6D6;
     border-radius: 5px;
     opacity: 1;
@@ -1079,15 +1084,15 @@ font-size: 14px;
         border: 1px solid #D2D2D2;
         opacity: 1;
         font-size: 1px;
-        color: #D2D2D2;
         width: 50%;
+        background-color: #D2D2D2;
 
     }
     .login-social{
         font-size:1.5rem;
     }
     @media (max-width: 767px){
-        .login{
+        #login{
             width: 75%;
             margin-top: 66px;
         
@@ -1238,12 +1243,9 @@ font-size: 14px;
         opacity: 1; 
         }
     
-}
 
-/* MONASH CSS FILE */
 
-/* HEADER */
-
+<<<<<<< HEAD
 .navbar
 {
     margin-bottom: 0;
@@ -1329,19 +1331,10 @@ font-size: 14px;
 .fa-facebook {
     color: white;
   }
+=======
+/* MONASH CSS FILE */
+>>>>>>> 8831ab224040589d83d93de3356423795ac7f57e
 
-  .fa-instagram {
-    
-    color: white;
-  }
-  
- 
-.fa-twitter {
-   
-    color: white;
-  }
-  
-  
 /* ORDER.CSS */
 
 .ordbackground{
@@ -1371,7 +1364,7 @@ font-size: 14px;
   top: 207px;
   left: 135px;
   width: 270px;
-  height: 390px;
+  height: 460px;
   border: 1px solid rgb(211, 210, 210);
   list-style-type: none;
   background-color: rgb(255, 254, 254);
@@ -1389,19 +1382,7 @@ font-size: 14px;
   font-size: 20px;
  padding-right: 60px;
 }
-.sidenav ul#list li .fas{
-  font-size: 20px;
- padding-right: 30px;
-}
-.sidenav ul#list li .glyphicon{
-  font-size: 20px;
- padding-right: 40px;
-}
-.example12 {
-  font-size:13px;
-  font: bold;
-  color:#676767
-}
+
 ul#types li {
   display:inline;
   margin: 10px 20px;
@@ -1409,7 +1390,7 @@ ul#types li {
 .cities {
   background-color: white;
   color: black;
-  margin: 20px;
+  margin: 10px;
   padding: 20px;
   width: 850px;
   height: 128px;
@@ -1423,7 +1404,7 @@ ul#types li {
 }
 hr.new5 {
    margin: 20px;
-   width: 800px;
+   width: 700px;
    border: 1px solid #EAEAEA;
    border-radius: 5px;
 }
@@ -1432,7 +1413,7 @@ hr.new5 {
   margin: 0 10px; 
 }
 .example11 {
-  font-size:16px;
+  font-size:14px;
   font: bold;
   color: black;
 }
@@ -1440,8 +1421,51 @@ hr.new5 {
 font-size:18px;
 font: bold;
 }
+.example12 {
+    font-size:13px;
+    font: bold;
+    color:#676767
+  }
+  .details{
+      padding-left: 40px;
+  }
 
+  /*Ipad pro */
+@media (min-width: 1024px) and (max-width: 1024px){
+   .align{
+       padding-left: 35px;
+   }
+  
+  
+}
+  /*Ipad */
+  @media (min-width: 768px) and (max-width: 770px){
+    .align{
+        padding-left: 100px;
+        margin-right: 20px;
+    }
+    .responsive {
+        width: 100%;
+        height: auto;
+        margin-left: 50px;
+      }
+     .alignment{
+        margin-right: 50px;
+     }
+     hr.new5{
+        margin-left: 70px;
+     }
+     .trick{
+        padding-left: 45px;
+       }
+       .tom{
+        padding-left: 155px;
+       }
+  
+    
+ }
 
+ 
 /* ACCOUNT.CSS */
 
 .accbackground{
@@ -1450,11 +1474,11 @@ font: bold;
     opacity: 1;
     }
     
-  .menu {
+  /* .menu {
     float:left;
     width:20%;
     text-align:center;
-  }
+  } */
   .main {
     float:left;
     width:35%;
@@ -1467,10 +1491,7 @@ font: bold;
     margin-top:-30px ;
   }
   .rightha {
-    float:left;
-    width:35%;
-    padding:15px;
-    margin-top:25px;
+    margin-top:55px;
     
   }
   .example61 {
@@ -1485,10 +1506,6 @@ font: bold;
     }
 
  .center .btn{
-        color: #DEDEDE;
-        width: 160px;
-        line-height: 38px;
-        border-radius: 50px;
-        margin-left: 30%;
-    
+     
+        margin-left: 300px;
  }
