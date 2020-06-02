@@ -1261,7 +1261,7 @@ font-size: 14px;
     }
 
 
-    /*-----Praba------ Registration Page------ codes----*/
+    /*-----Praba------ Forget Password Page------ codes----*/
 
     .forgot_pwd{
         margin-top: 132px;
@@ -1330,9 +1330,22 @@ font-size: 14px;
         opacity: 1; 
         }
     
+        /*------------Praba-------Tracking my Order-1---------Codes-------*/
+
+        .track_title{
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 34px;
+        }
+    
+        .arrival_1{
+            color: #141414;
+            font-family: 'Roboto';
+            font-size: 30px;
+        }
+        
 
 
-<<<<<<< HEAD
 .navbar
 {
     margin-bottom: 0;
@@ -1418,9 +1431,6 @@ font-size: 14px;
 .fa-facebook {
     color: white;
   }
-=======
-/* MONASH CSS FILE */
->>>>>>> 8831ab224040589d83d93de3356423795ac7f57e
 
 /* ORDER.CSS */
 
