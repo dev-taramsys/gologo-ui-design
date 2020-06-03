@@ -309,7 +309,7 @@ font-family: 'Roboto', sans-serif;
 
 
 /*Mobile view*/
-@media (min-width: 360px) and (max-width: 640px){
+@media (min-width: 320px) and (max-width: 640px){
     /*.form-inline .form-control{
         display: none;
     }*/
@@ -394,7 +394,7 @@ font-family: 'Roboto', sans-serif;
   }
 }
 /*Mobile view--pixel2*/
-@media (min-width: 375px) and (max-width: 731px){
+@media (min-width: 411px) and (max-width: 731px){
     .black-overlay{
         top: 48%;
           left: 43%;
@@ -421,6 +421,8 @@ font-family: 'Roboto', sans-serif;
 
    
 }
+
+
 
 /*Desktop View*/
 
@@ -529,7 +531,7 @@ font-size:1.3rem;
     }
     .black-overlay{
         top: 48%;
-        left: 44%;
+        left: 58%;
         
     }
     
@@ -908,17 +910,22 @@ opacity: 1;
 
 /*----------Thank you page------- Nisha*/
 
-.dot {
-    height: 208px;
-    width: 208px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    
-  }
-#circle1{
-    margin-left: 9rem;
 
+
+
+.fa-check-circle{
+    color: #00B577; 
+    font-size:6.25rem;
+}
+
+
+.circle-icon{
+    background: #F9F9F9;
+    border: 1px solid #00B577;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 100px;
+    padding: 60px;
 }
 
 #thankyou{
@@ -928,6 +935,7 @@ opacity: 1;
      opacity: 1;
      font-family: 'Roboto-Bold',sans-serif;
      font-size:34px;
+     font-weight:bold;
 }
 #orderdetails{
     text-align: center;
@@ -941,7 +949,7 @@ opacity: 1;
     width: 183px;
     color:black;
     background: white;
-    font-size:12px;
+    font-size:14px;
     font-family: 'Roboto-Medium',sans-serif;
     
 }
@@ -951,7 +959,26 @@ opacity: 1;
     background:#00B577;
 }
 
+/*----------Help-------*/
 
+#helptag a{
+    text-decoration: none;
+    text-align: left;
+   font: Medium 20px/24px Roboto;
+   letter-spacing: 0px;
+   color: #676767;
+   opacity: 1;
+   font-size:20px;
+}
+#helph{
+   
+    letter-spacing: 0px;
+    color: #141414;
+     opacity: 1;
+     font-family: 'Roboto-Bold',sans-serif;
+     font-size: 34px;
+     font-weight:bold;
+}
 
 
 
@@ -1332,95 +1359,7 @@ font-size: 14px;
     
 
 
-<<<<<<< HEAD
-.navbar
-{
-    margin-bottom: 0;
-    border-radius: 0;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #141414;
-    opacity: 1;
-    -webkit-box-shadow: 20px 20px 20px #F0F7F8;
-    -moz-box-shadow:  20px 20px 20px #F0F7F8;
-    box-shadow: 20px 20px 20px #F0F7F8;
-    z-index:999;
-    width: 1500px;
-  }
-  
-.navbar-nav li{
-  top: 30px;
-  left: 80px;
-  font-size: 18px;
-
-}
-.custom-navbar{box-shadow: 3px 3px 3px #F0F7F8;background-color: #fff;}
-
-/*#custom-search-input button {
-  border: 0;
-  background: none;
-  padding: 2px 5px;
-  margin-top: 2px;
-  position: relative;
-  left: -28px;
-  margin-bottom: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  color:black;
-}
-
-.search-query:focus + button {
-  z-index: 3;   
-} */
-.navbar-brand{
-      top: 40px;
-      left: 1px;
-      color: black;
-      font: Bold 18px/21px Roboto;
-  }
-
-
-  /* FOOTER */
-  
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-   .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  } 
-.contain{
-    padding: 25px;
-   background-color: black;
-}
-  .fa {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-.fa:hover {
-    opacity: 0.7;
-  }
-  
-  
-.fa-facebook {
-    color: white;
-  }
-=======
 /* MONASH CSS FILE */
->>>>>>> 8831ab224040589d83d93de3356423795ac7f57e
 
 /* ORDER.CSS */
 
