@@ -40,16 +40,31 @@ font-size:20px;
 font-family: 'Roboto', sans-serif;
 
 }
+
+#search1, #searchfont{
+    -webkit-box-shadow: none;
+box-shadow: none;
+outline: -webkit-focus-ring-color auto 0px;
+
+}
 #searcbar1{
     left: 10rem;
 }
 
 #search1 {
     border-radius:15px 0px 0px 15px ;
+
 }
 
 #searchfont{
     border-radius:0px 15px 15px 0px ;
+
+}
+#searchfont:hover{
+    background-color: white;
+    color:#676767;
+    
+
 }
 
 .carousel .carousel-indicators li {
@@ -385,12 +400,12 @@ font-family: 'Roboto', sans-serif;
   }
   #social1{
       margin-top: 1rem;
-      margin-left: 4rem;
+      margin-left: 2rem;
      
   }
   #conditions1{
       width: 500px;
-      margin-left:-0.9rem;
+      margin-left:-1.9rem;
   }
 }
 
@@ -412,12 +427,12 @@ font-family: 'Roboto', sans-serif;
     }
     #social1{
         margin-top: 1rem;
-        margin-left: 5rem;
+        margin-left: 3.5rem;
        
     }
     #conditions1{
         width: 500px;
-        margin-left:1rem;
+        margin-left:-0.3rem;
     }
 
    
@@ -680,13 +695,32 @@ opacity: 1;
 font-size: 12px;
 background: white;
 }
+
 #cartshop3{
     color:black;
 }
 
 
+#cartshop5{
+    width: 150px;
+    height: 37px;
+    font-family:'Roboto-Medium',sans-serif;
+    margin-left:2rem;
+    margin-top:-0.6rem;
+   
+    text-align: center;
+letter-spacing: 0px;
+color: black;
+text-transform: uppercase;
+opacity: 1;
+font-size: 12px;
+background: white;
+}
+
 #cartshop1:hover,
-#cartshop1:active{
+#cartshop1:active,
+#cartshop5:hover,
+#cartshop:active{
     background: #00B577;
     
 
@@ -909,6 +943,21 @@ opacity: 1;
     text-decoration: none;
 }
 
+#accordion [data-toggle="collapse show"] i:before{
+    content: "\f068";
+}
+
+#accordion [data-toggle="collapse"].collapsed i:before{
+    content: "\f067";
+}
+
+#accordion [aria-expanded="true"] i:before {  
+    content: "\f068";
+  }
+
+  #accordion [aria-expanded="true"] .collapsed i:before {  
+    content: "\f067";
+  }
 
 @media (min-width: 360px) and (max-width: 640px){
     #month select[type="text"]{
@@ -952,6 +1001,7 @@ opacity: 1;
     background: white;
     font-size:14px;
     font-family: 'Roboto-Medium',sans-serif;
+   
     
 }
 #orderbtn:hover,
@@ -1033,8 +1083,21 @@ color: #676767;
 
 }
 
+/*------View order----Nisha----*/
 
+#orderbtn1{
+    width: 183px;
+    color: #141414;;
+    background: white;
+    font-size:14px;
+    font-family: 'Roboto-Bold',sans-serif;
+}
 
+#orderbtn1:hover,
+#orderbtn1:active{
+    color:black;
+   background: #00B577; 
+}
 
 /*-----Praba----- codes----*/
 
