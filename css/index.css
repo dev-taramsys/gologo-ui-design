@@ -1566,10 +1566,20 @@ font-size: 14px;
         }
 
 
-/* ------------------------------Manage Account---------------------------------- */
+/* --------------------------Praba----Manage Account---------------------------------- */
 
+@media (max-width: 767px){
+    .add_new{
+        padding-top: 25px;
+    }
+ }
 
-
+/*--------------------------- Praba------- About Us...................................... */
+.about{
+    font-size: 34px;
+    color: #141414;
+    font-weight: bold;
+}
 
 /* .navbar
 {
@@ -1687,7 +1697,7 @@ font-size: 14px;
   top: 207px;
   left: 135px;
   width: 270px;
-  height: 460px;
+  height: 545px;
   border: 1px solid rgb(211, 210, 210);
   list-style-type: none;
   background-color: rgb(255, 254, 254);
@@ -1788,9 +1798,7 @@ font: bold;
      .trick{
         padding-left: 45px;
        }
-       .tom{
-        padding-left: 155px;
-       }
+       
   
     
  }
@@ -1835,7 +1843,28 @@ font: bold;
     color: black;
     }
 
+    #btn_edit, #btn_update{
+        margin-left: 293px;
+       }
+
  .center .btn{
      
         margin-left: 300px;
  }
+
+ @media (min-width: 768px){
+    .btn_edit_mob, .btn_update_mob{
+        display: none;
+    }
+ 
+}
+
+ @media (max-width: 767px){
+    #btn_edit, #btn_update{
+        display: none;
+       }
+
+       .btn_edit_mob, .btn_update_mob{
+           margin-left: 80px;
+       }
+ } 

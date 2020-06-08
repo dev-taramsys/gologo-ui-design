@@ -1,73 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Order</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <!--Boostrap cdn & css file---->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <!--Fontaweosme-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>About Us</title>
 </head>
 <body>
-  <div id="navbar1">
+    <div id="navbar1">
       
-    <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
-        <div class="container-fluid">
-        <a class="navbar-brand mx-4" href="index.html">LOGO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
-          <ul class="navbar-nav mr-auto " >
-            <li class="nav-item active mx-2">
-              <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#">SUPPORT</a>
-            </li>
+        <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+            <div class="container-fluid">
+            <a class="navbar-brand mx-2" href="index.html">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+              <ul class="navbar-nav mr-auto " >
+                <li class="nav-item active mx-2">
+                  <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">SUPPORT</a>
+                </li>
+               
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+              </ul>
+
+              <form class="navbar-form navbar-left mx-2 " id="searchbar">
+                <div class="input-group" >
+                  <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar1" placeholder="Search" name="search">
+                  <div class="input-group-btn ">
+                    <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
+                        <i class="fa fa-search"  aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="container " id="navicon">
+                      <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalLogin"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png"></a>
+                              </li>
+                            </ul>
+              </div>
+              </div>
+              </div>    
+
+<!-- Reset Password Pop up -->
+<div class="modal fade" id="ModalResetPassword" role="dialog">
+<div class="modal-dialog">
+   
+   <div class="modal-content">
+      <div class="modal-body">
+         <button type="button" class="close" data-dismiss="modal">×</button>
+         <p class="pt-5 text-center reset-customer" style="color: #141414;"><b>Reset Password</b></p>
+         <p class="pt-2 text-center reset-info" style="color: #676767;">New password details</p>
+         <form>
+             <div class="text-center">
+                 <input type="password" id="pwd" class="reset-password mt-2 pl-2 pt-1 pb-1" placeholder="New Password" required>
+                 <br>
+                 <input type="password" id="reset_pwd" class="reset-new-password mt-3 pl-2 pt-1 pb-1" placeholder="Confirm New Password" required>
+             </div>
+         <div class="text-center pt-3">
+             <button class="pl-4 pr-4 pt-2 pb-2 mt-3 reset-account" id="reset-btn" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Reset Password</b></button>
+         </div>
+         <div class=" text-center mt-2 mb-2" id="reset-notify">
+         </div>
+         </form>
+      </div>
+   </div>
+  </div>
+</div>
+
+ 
+<!-- Create New Account Pop up -->
+
+      <div class="modal fade" id="ModalNewAccount" role="dialog">
+        <div class="modal-dialog">
            
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-          </ul>
-        <form class="navbar-form navbar-left mx-2 " id="searchbar">
-          <div class="input-group" >
-            <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar" placeholder="Search" name="search">
-            <div class="input-group-btn ">
-              <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
-                  <i class="fa fa-search"  aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-        <div class="container " id="navicon">
-                <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
-                        </li>
-                       
-                        <li class="nav-item">
-                          <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png"></a>
-                        </li>
-                      </ul>
+           <div class="modal-content">
+              <div class="modal-body">
+                 <button type="button" class="close" data-dismiss="modal">×</button>
+                 <p class="pt-5 text-center reg-customer" style="color: #141414;"><b>Create New Customer Account</b></p>
+                 <p class="pt-3 text-center reg-info" style="color: #676767;">Personal Information</p>
+                 <form>
+                     <div class="text-center">
+                         <input type="email" class="reg-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+                         <br>
+                         <input type="password" id="pwd" class="reg-password mt-3 pl-2 pt-1 pb-1" placeholder="Password" required>
+                         <br>
+                         <input type="password" id="re_pwd" class="reg-confirm-password mt-3 pl-2 pt-1 pb-1" placeholder="Confirm Password" required>
+                     </div>
+                     <div class="form-group form-check text-center mt-3" id="reg-sign" style="color: #676767;">
+                         <label class="form-check-label reg-label">
+                           <input class="form-check-input reg-check" type="checkbox" name="remember"> Signup for Newsletter
+                         </label>
+                       </div>
+                 <div class="text-center pt-2">
+                     <button class="pl-4 pr-4 pt-2 pb-2 reg-account mb-5" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Create an Account</b></button>
+                 </div>
+                 </form>
+              </div>
+           </div>
         </div>
-        </div>
-        </div>
+      </div>
+
+         <!-- Forgot password Pop up      -->
+
+  <div class="modal fade" id="ModalForgotPassword" role="dialog">
+  <div class="modal-dialog">
      
-      </nav>
-    </div><br><br>
+     <div class="modal-content">
+        <div class="modal-body">
+           <button type="button" class="close" data-dismiss="modal">×</button>
+ <p class="pt-5 text-center forgot-customer" style="color: #141414;"><b>Forgot Password</b></p>
+<p class="pt-3 text-center forgot-info" style="color: #676767;">Password recovery details</p>
+<form>
+ <div class="text-center">
+     <input type="email" class="forgot-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+     <br>
+ 
+ <div class="text-center pt-4">
+     <button class="pl-4 pr-4 pt-2 pb-2 forgot-account mb-4" data-dismiss="modal" data-toggle="modal" id="resetPassword" data-target="#ModalResetPassword" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Submit</b></button>
+ </div>
+ <div class=" text-center mb-2" id="forgot-link">
+ </div>
+ </div>
+</form>
+        </div>
+     </div>
+  </div>
+</div>
+
+
+<!-- Login Page Pop up  -->
+
+<div class="modal fade" id="ModalLogin" role="dialog">
+<div class="modal-dialog">
+  
+  <div class="modal-content">
+     <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+     <p class="pt-5 text-center log_title_1" style="color: #343232;"><b>Customer Login</b></p>
+<p class="pt-4 text-center log_title_2" style="color: #343232;"><b>Registered Users</b></p>
+<p class="text-center pt-2 log_title_3" style="color: #727272;">If you have an account, sign in with your email address.</p>
+<form>
+ <div class="text-center">
+     <input type="email" class="login-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+     <br>
+     <input type="password" class="login-password mt-3 pl-2 pt-1 pb-1" placeholder="Password" required>
+ </div>
+<div class="text-center pt-3 log_forgot">
+<a href="#" data-dismiss="modal" data-toggle="modal" id="forgotPassword" data-target="#ModalForgotPassword" style="color: #676767; text-decoration: none;">Forgot Password?</a>
+</div>
+<div class="text-center pt-4">
+ <button class="pl-4 pr-4 pt-1 pb-1 log_btn" style="color: #FFFFFF; font-size: 14px; background: #141414 0% 0% no-repeat padding-box; border-radius: 5px; border: 3px solid #141414; opacity: 1;"><b>Login</b></button>
+</div>
+<div class="col-md text-center pt-4" id="login-social">
+         <ul class="list-unstyled d-inline-flex ">
+             <li>
+              <a href="#!"><i class="fa fa-facebook-square" aria-hidden="true"  style="color:#141414;"></i></a>
+             </li>  
+             <li>
+               <a href="#!"><i class="fa fa-google pl-2" aria-hidden="true" style="color:#141414; padding-top: 1px;"></i></a>
+             </li>
+             <li>
+               <a href="#!"><i class="fa fa-twitter pl-2" aria-hidden="true"  style="color:#141414; padding-top: 1px;"></i></a>
+             </li>
+           </ul>
+     </div>
+   </form>
+     <hr class="login-thinline"></hr>
+     <p class="text-center pt-4 log_customer"  style="color: #141414;"><b>New Customer</b></p>
+     <p class="text-center log_sentence" style="color: #727272;;">Creating an account has many benefits: check out faster, keep more <br> than one address, track orders and more.</p>
+     <div class="text-center pt-2">
+       <button class="pl-4 pr-4 pt-2 pb-2 log-account mb-5" data-dismiss="modal" data-toggle="modal" id="newAccount" data-target="#ModalNewAccount" style="color: #FFFFFF; font-size: 14px; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Create an Account</b></button>
+   </div>
+     </div>
+  </div>
+</div> 
+  </div>
+</nav>
+</div><br><br>
 
 
   <div class="container">
       
           <ul style="background-color: #f3f3f3; border: 1px solid #e7e7e7;padding-left: 20px;">
-            <li><a style="font-size: 14px/16px;font: bold;" href="#home"><strong>Home</strong> 
+            <li><a style="font-size: 14px/16px;font: bold;" href="index.html"><strong>Home</strong> 
             <i class='fa fa-angle-right' style='font-size:14px;padding: 14px;'></i>My Orders</a> </li>
           </ul><br><br>
 
@@ -76,25 +213,25 @@
       <div class="col-sm-4">
             <div class="sidenav">
               <ul id="list">
-                <li> <a href="account.html" class="example61"><i class="fa fa-user-o fa-5x"></i>Account Overview</a></li><br>
+                <li> <a href="account.html" class="example61 pt-3"><i class="fa fa-user-o fa-5x"></i>Account Overview</a></li><br>
               </ul>
                   <ul id="list"  style=" background-color: #000000;color: white;">
-                    <li><p class="example61"><i class="fa fa-sort-amount-desc fa-5x"></i>My Order</p></li><br>
+                    <li><p class="example61 pt-3"><i class="fa fa-sort-amount-desc fa-5x"></i>My Order</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="	fa fa-address-book-o fa-5x"></i></i>Manage Address</p></li><br>
+                      <li> <a href="manage_address.html" class="example61 pt-3"> <i class="	fa fa-address-book-o fa-5x"></i></i>Manage Address</a></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="fa fa-credit-card fa-5x"></i>Payment Methods</p></li><br>
+                      <li> <p class="example61 pt-3"> <i class="fa fa-credit-card fa-5x"></i>Payment Methods</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"> <i class="fa fa-truck fa-5x"></i>Track Order</p></li><br>
+                      <li> <p class="example61 pt-3"> <i class="fa fa-truck fa-5x"></i>Track Order</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"><i class="fa fa-info-circle fa-5x" ></i>Need Help ?</p></li><br>
+                      <li> <p class="example61 pt-3"><i class="fa fa-info-circle fa-5x" ></i>Need Help ?</p></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <p class="example61"><i class="fa fa-sign-out fa-5x" ></i>Logout</p></li><br>
+                      <li> <p class="example61 pt-3"><i class="fa fa-sign-out fa-5x" ></i>Logout</p></li><br>
                     </ul>
                   </div>
              </div>
@@ -118,12 +255,12 @@
                     <div class="alignment">
                   <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                   <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                  <button class="btn btn-primary"
+                  <a href="Tracking.html" class="btn btn-primary pt-2"
                           style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
                           border: 1px solid #DEDEDE;
                           border-radius: 5px;
-                          opacity: 1;" >Track my Order</button><br><br>
-                        <a href="#"  class="details">Order Details</a>
+                          opacity: 1;" >Track my Order</a><br><br>
+                        <a href="View order.html"  class="details">Order Details</a>
                  </div>
                  </div>
                  <hr class="new5">
@@ -146,12 +283,12 @@
                         <div class="alignment">
                       <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                       <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                      <button class="btn btn-primary"
+                      <a href="Tracking.html" class="btn btn-primary pt-2"
                               style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                              border: 1px solid #DEDEDE;
+                              border: 1px solid #DEDEDE; color: white;
                               border-radius: 5px;
-                              opacity: 1;" >Track my Order</button><br><br>
-                            <a href="#"  class="details">Order Details</a>
+                              opacity: 1;" >Track my Order</a><br><br>
+                            <a href="View order.html"  class="details">Order Details</a>
                      </div>
                      </div>
                      <hr class="new5">
@@ -173,12 +310,12 @@
                             <div class="alignment">
                           <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                           <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                          <button class="btn btn-primary"
+                          <a href="Tracking.html" class="btn btn-primary pt-2"
                                   style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                                  border: 1px solid #DEDEDE;
+                                  border: 1px solid #DEDEDE; color: white;
                                   border-radius: 5px;
-                                  opacity: 1;" >Track my Order</button><br><br>
-                                <a href="#"  class="details">Order Details</a>
+                                  opacity: 1;" >Track my Order</a><br><br>
+                                <a href="View order.html"  class="details">Order Details</a>
                          </div>
                          </div>
                          <hr class="new5">
@@ -201,12 +338,12 @@
                             <div class="alignment">
                           <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                           <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                          <button class="btn btn-primary"
+                          <a href="Tracking.html" class="btn btn-primary pt-2"
                                   style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                                  border: 1px solid #DEDEDE;
+                                  border: 1px solid #DEDEDE; color: white;
                                   border-radius: 5px;
-                                  opacity: 1;" >Track my Order</button><br><br>
-                                <a href="#"  class="details">Order Details</a>
+                                  opacity: 1;" >Track my Order</a><br><br>
+                                <a href="View order.html"  class="details">Order Details</a>
                          </div>
                          </div>
                          <hr class="new5">
@@ -229,12 +366,12 @@
                             <div class="alignment">
                           <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                           <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                          <button class="btn btn-primary"
+                          <a href="Tracking.html" class="btn btn-primary pt-2"
                                   style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                                  border: 1px solid #DEDEDE;
+                                  border: 1px solid #DEDEDE; color: white;
                                   border-radius: 5px;
-                                  opacity: 1;" >Track my Order</button><br><br>
-                                <a href="#"  class="details">Order Details</a>
+                                  opacity: 1;" >Track my Order</a><br><br>
+                                <a href="View order.html"  class="details">Order Details</a>
                          </div>
                          </div>
                          <hr class="new5">
@@ -257,12 +394,12 @@
                             <div class="alignment">
                           <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                           <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                          <button class="btn btn-primary"
+                          <a href="Tracking.html" class="btn btn-primary pt-2"
                                   style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                                  border: 1px solid #DEDEDE;
+                                  border: 1px solid #DEDEDE; color: white;
                                   border-radius: 5px;
-                                  opacity: 1;" >Track my Order</button><br><br>
-                                <a href="#"  class="details">Order Details</a>
+                                  opacity: 1;" >Track my Order</a><br><br>
+                                <a href="View order.html"  class="details">Order Details</a>
                          </div>
                          </div>
                          <hr class="new5">
@@ -285,12 +422,12 @@
                             <div class="alignment">
                           <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                           <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                          <button class="btn btn-primary"
+                          <a href="Tracking.html" class="btn btn-primary pt-2"
                                   style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                                  border: 1px solid #DEDEDE;
+                                  border: 1px solid #DEDEDE; color: white;
                                   border-radius: 5px;
-                                  opacity: 1;" >Track my Order</button><br><br>
-                                <a href="#"  class="details">Order Details</a>
+                                  opacity: 1;" >Track my Order</a><br><br>
+                                <a href="View order.html"  class="details">Order Details</a>
                          </div>
                          </div>
                          <hr class="new5">
@@ -326,7 +463,7 @@
         <div class="col-sm" id="conditions1">
             <ul class="list-unstyled d-inline-flex">
                 <li class="pl-4" >
-                  <a  id="citems1" href="#!">Help</a>
+                  <a  id="citems1" href="Help.html">Help</a>
                 </li>
                 <li class="pl-4">
                   <a  id="citems1" href="#!">Terms & Conditions</a>
