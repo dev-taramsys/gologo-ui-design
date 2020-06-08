@@ -58,8 +58,7 @@
       </div>
       </nav>
     </div>
-    --> 
-  <!------Main Navbar-->
+ 
   <div id="navbar1">
       
     <nav class=" navbar navbar-expand-md navbar-light bg-white" >
@@ -88,7 +87,7 @@
             <button class="btn my-2 my-sm-0"  type="submit"><i class="fa fa-search"  aria-hidden="true"></i>
             </button>
           </form>
-        -->
+      
         <form class="navbar-form navbar-left mx-2 " id="searchbar">
           <div class="input-group" >
             <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar" placeholder="Search" name="search">
@@ -115,6 +114,195 @@
       </div>
       </nav>
     </div>
+
+    --->
+    <div id="navbar1">
+      
+      <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+          <div class="container-fluid">
+          <a class="navbar-brand mx-2" href="index.html">LOGO</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+            <ul class="navbar-nav mr-auto " >
+              <li class="nav-item active mx-2">
+                <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">SUPPORT</a>
+              </li>
+             
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+            </ul>
+
+            <form class="navbar-form navbar-left mx-2 " id="searchbar">
+              <div class="input-group" >
+                <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar1" placeholder="Search" name="search">
+                <div class="input-group-btn ">
+                  <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
+                      <i class="fa fa-search"  aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="container " id="navicon">
+                    <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalLogin"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png"></a>
+                            </li>
+                          </ul>
+            </div>
+            </div>
+            </div>
+          </div>
+
+
+
+
+      <!-- Reset Password Pop up -->
+      <div class="modal fade" id="ModalResetPassword" role="dialog">
+        <div class="modal-dialog">
+           
+           <div class="modal-content">
+              <div class="modal-body">
+                 <button type="button" class="close" data-dismiss="modal">×</button>
+                 <p class="pt-5 text-center reset-customer" style="color: #141414;"><b>Reset Password</b></p>
+                 <p class="pt-2 text-center reset-info" style="color: #676767;">New password details</p>
+                 <form>
+                     <div class="text-center">
+                         <input type="password" id="pwd" class="reset-password mt-2 pl-2 pt-1 pb-1" placeholder="New Password" required>
+                         <br>
+                         <input type="password" id="reset_pwd" class="reset-new-password mt-3 pl-2 pt-1 pb-1" placeholder="Confirm New Password" required>
+                     </div>
+                 <div class="text-center pt-3">
+                     <button class="pl-4 pr-4 pt-2 pb-2 mt-3 reset-account" id="reset-btn" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Reset Password</b></button>
+                 </div>
+                 <div class=" text-center mt-2 mb-2" id="reset-notify">
+             
+                 </form>
+              </div>
+           </div>
+          </div>
+     </div>
+          </div>
+         
+  <!-- Create New Account Pop up -->
+  
+              <div class="modal fade" id="ModalNewAccount" role="dialog">
+                <div class="modal-dialog">
+                   
+                   <div class="modal-content">
+                      <div class="modal-body">
+                         <button type="button" class="close" data-dismiss="modal">×</button>
+                         <p class="pt-5 text-center reg-customer" style="color: #141414;"><b>Create New Customer Account</b></p>
+                         <p class="pt-3 text-center reg-info" style="color: #676767;">Personal Information</p>
+                         <form>
+                             <div class="text-center">
+                                 <input type="email" class="reg-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+                                 <br>
+                                 <input type="password" id="pwd" class="reg-password mt-3 pl-2 pt-1 pb-1" placeholder="Password" required>
+                                 <br>
+                                 <input type="password" id="re_pwd" class="reg-confirm-password mt-3 pl-2 pt-1 pb-1" placeholder="Confirm Password" required>
+                             </div>
+                             <div class="form-group form-check text-center mt-3" id="reg-sign" style="color: #676767;">
+                                 <label class="form-check-label reg-label">
+                                   <input class="form-check-input reg-check" type="checkbox" name="remember"> Signup for Newsletter
+                                 </label>
+                               </div>
+                         <div class="text-center pt-2">
+                             <button class="pl-4 pr-4 pt-2 pb-2 reg-account mb-5" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Create an Account</b></button>
+                         </div>
+                         </form>
+                      </div>
+                   </div>
+                </div>
+             </div>
+  
+                 <!-- Forgot password Pop up      -->
+  
+          <div class="modal fade" id="ModalForgotPassword" role="dialog">
+          <div class="modal-dialog">
+             
+             <div class="modal-content">
+                <div class="modal-body">
+                   <button type="button" class="close" data-dismiss="modal">×</button>
+         <p class="pt-5 text-center forgot-customer" style="color: #141414;"><b>Forgot Password</b></p>
+     <p class="pt-3 text-center forgot-info" style="color: #676767;">Password recovery details</p>
+     <form>
+         <div class="text-center">
+             <input type="email" class="forgot-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+             <br>
+         
+         <div class="text-center pt-4">
+             <button class="pl-4 pr-4 pt-2 pb-2 forgot-account mb-4" data-dismiss="modal" data-toggle="modal" id="resetPassword" data-target="#ModalResetPassword" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Submit</b></button>
+         </div>
+         <div class=" text-center mb-2" id="forgot-link">
+         </div>
+         </div>
+     </form>
+                </div>
+             </div>
+          </div>
+       </div>
+       </div>
+      
+      <!-- Login Page Pop up  -->
+       
+       <div class="modal fade" id="ModalLogin" role="dialog">
+       <div class="modal-dialog">
+          
+          <div class="modal-content">
+             <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+             <p class="pt-5 text-center log_title_1" style="color: #343232;"><b>Customer Login</b></p>
+     <p class="pt-4 text-center log_title_2" style="color: #343232;"><b>Registered Users</b></p>
+     <p class="text-center pt-2 log_title_3" style="color: #727272;">If you have an account, sign in with your email address.</p>
+     <form>
+         <div class="text-center">
+             <input type="email" class="login-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+             <br>
+             <input type="password" class="login-password mt-3 pl-2 pt-1 pb-1" placeholder="Password" required>
+         </div>
+     <div class="text-center pt-3 log_forgot">
+     <a href="#" data-dismiss="modal" data-toggle="modal" id="forgotPassword" data-target="#ModalForgotPassword" style="color: #676767; text-decoration: none;">Forgot Password?</a>
+   </div>
+     <div class="text-center pt-4">
+         <button class="pl-4 pr-4 pt-1 pb-1 log_btn" style="color: #FFFFFF; font-size: 14px; background: #141414 0% 0% no-repeat padding-box; border-radius: 5px; border: 3px solid #141414; opacity: 1;"><b>Login</b></button>
+     </div>
+     <div class="col-md text-center pt-4" id="login-social">
+                 <ul class="list-unstyled d-inline-flex ">
+                     <li>
+                      <a href="#!"><i class="fa fa-facebook-square" aria-hidden="true"  style="color:#141414;"></i></a>
+                     </li>  
+                     <li>
+                       <a href="#!"><i class="fa fa-google pl-2" aria-hidden="true" style="color:#141414; padding-top: 1px;"></i></a>
+                     </li>
+                     <li>
+                       <a href="#!"><i class="fa fa-twitter pl-2" aria-hidden="true"  style="color:#141414; padding-top: 1px;"></i></a>
+                     </li>
+                   </ul>
+             </div>
+           </form>
+             <hr class="login-thinline"></hr>
+             <p class="text-center pt-4 log_customer"  style="color: #141414;"><b>New Customer</b></p>
+             <p class="text-center log_sentence" style="color: #727272;;">Creating an account has many benefits: check out faster, keep more <br> than one address, track orders and more.</p>
+             <div class="text-center pt-2">
+               <button class="pl-4 pr-4 pt-2 pb-2 log-account mb-5" data-dismiss="modal" data-toggle="modal" id="newAccount" data-target="#ModalNewAccount" style="color: #FFFFFF; font-size: 14px; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Create an Account</b></button>
+           </div>
+             </div>
+          </div>
+       </div> 
+          </div>
+      </nav>
+      </div>
+      <br>
     <div class="col-sm-12">
         <div class=" container border mt-4" id="cartnav">
               <ul class="nav">
@@ -171,6 +359,7 @@
 <br>
 <br>
 
+
     <footer class="page-footer p-2 mt-4 w-100 h-100" id="footer1" >
         <div class="container-fluid mt-4">
       <div class="row">
@@ -180,7 +369,7 @@
           </div>
          
               <div class="col-sm" id="social1">
-                  <ul class="list-unstyled d-inline-flex ">
+                  <ul class="list-unstyled d-inline-flex pl-4 ">
                       <li>
                         <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
                       </li>
@@ -195,12 +384,12 @@
               </div>
       
               <div class="col-sm" id="conditions1">
-                  <ul class="list-unstyled d-inline-flex">
+                  <ul class="list-unstyled d-inline-flex pl-4">
                       <li class="pl-4" >
-                        <a  id="citems1" href="#!">Help</a>
+                        <a  id="citems1" href="Help.html">Help</a>
                       </li>
                       <li class="pl-4">
-                        <a  id="citems1" href="#!">Terms&Conditions</a>
+                        <a  id="citems1" href="T&C.html">Terms&Conditions</a>
                       </li>
                       <li class="pl-4" >
                         <a id="citems1" href="#!">Support</a>
