@@ -400,7 +400,7 @@ outline: -webkit-focus-ring-color auto 0px;
   }
   #social1{
       margin-top: 1rem;
-      margin-left: 2rem;
+      margin-left: 1rem;
      
   }
   #conditions1{
@@ -427,7 +427,7 @@ outline: -webkit-focus-ring-color auto 0px;
     }
     #social1{
         margin-top: 1rem;
-        margin-left: 3.5rem;
+        margin-left: 3rem;
        
     }
     #conditions1{
@@ -793,6 +793,11 @@ font-size:16px;
     
 }
 
+@media (min-width: 320px) and (max-width: 640px){
+    #chshop{
+      height: 40px;
+    }
+}
 
 /*------Checkout Page-----Nisha*/
 
@@ -1098,6 +1103,48 @@ color: #676767;
     color:black;
    background: #00B577; 
 }
+
+
+
+
+/*--------Invoice ------------ Nisha*/
+.invoice-title h2, .invoice-title h3 {
+    display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+    border-top: none;
+}
+
+.table > thead > tr > .no-line {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+    border-top: 2px solid;
+}
+
+
+
+@media (min-width: 360px) and (max-width: 640px){
+
+    #tablewidth{
+        width:200px;
+    }
+}
+
+
+/*------Track my order---Nisha----*/
+
+
+@media (min-width: 360px) and (max-width: 640px){
+
+    #trackid{
+       margin-left:-5rem;
+    }
+}
+
+
 
 /*-----Praba----- codes----*/
 
