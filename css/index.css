@@ -1304,7 +1304,7 @@ font-size: 14px;
 }
 
 @media (max-device-width: 767px){
-      .desktop_view, .desktop_view_1, #sub_header, #copyrights, #conditions, 
+      .desktop_view, .desktop_view_1, #sub_header, 
     .size-group, .scale, .citems, .sample, .title, .t-logo, .btn_desk, #custom-text, .price,.size-box,.btn_desk_1
     /* .input-group, */
     {
@@ -1626,6 +1626,62 @@ font-size: 14px;
     font-size: 34px;
     color: #141414;
     font-weight: bold;
+}
+.about-img_desk, .about-img_mob{
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 0px #14141429;
+    opacity: 1;
+    border-radius: 5px;
+}
+.about-team{
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    /* height: 480px; */
+}
+
+
+#btmdotted_about{
+    float:left;
+     width:38px;
+     height:5px;
+     border-radius: 10px;
+     opacity: 1;
+     background: #DEDEDE 0% 0% no-repeat padding-box;
+ 
+ }
+ 
+ #btmdotted-1, #btmdotted-2{
+     float:left;
+     width:38px;
+     height:5px;
+     background: #DEDEDE 0% 0% no-repeat padding-box;
+     border-radius: 10px;
+     opacity: 1;
+ }
+ #btmdotted-2:hover{
+     background-color:#141414 ;
+ }
+ 
+ #btmdotted_about:hover{
+     background-color:#141414 ;
+ }
+ #btmdotted-1:hover{
+     background-color:#141414 ;
+ }
+
+.contact-about{
+  color: #606060;
+}
+
+@media (max-width: 767px){
+    .about-img_desk{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .about-img_mob{
+        display: none;
+    }
 }
 
 /* .navbar
