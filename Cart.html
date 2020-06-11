@@ -335,7 +335,8 @@
                     <h1 class="display-5" id="carttitle">Lorem ipsum</h>
                      <h4 class="display-6" id="cartcolor">color:Black</h4>
                      <p class="card-text" id="cartprice">$1999  <Strong class="ml-4" id="cartquantity"> Quantity:30</Strong> 
-                        <a class="ml-4" id="cartedit" href="#">Edit</a></p>
+                        <a type="button" class="btn ml-4" data-toggle="collapse" data-target="#edit1" id="cartedit" href="#">Edit</a></p>
+                        <div id="edit1" class="collapse">
                         <form>
                                 <div class="row">
                                    
@@ -344,10 +345,12 @@
                                     <div class="col-sm-2 text-center"><label>L<Label></Label></label><input class="form-control" placeholder="" type="text"></div>
                                     <div class="col-sm-2 text-center"><label>XL</label><input class="form-control" placeholder="" type="text"></div>
                                     <div class="col-sm-2 text-center"><label>XXL</label><input class="form-control" placeholder="" type="text"></div>
+                                    <div class="my-2"><a type="button text-center" class="btn  border-0 my-4" id="update"> Update</a></div>
                                   </div>
                                
                           
                             </form>
+                          </div>
                             <div class="container mt-4">
                             <div>
                                 <p class="d-inline pull-left" id="deliveryde">Delivery in 3-4 days</p>
@@ -370,19 +373,22 @@
                                           <h1 class="display-5" id="carttitle">Lorem ipsum</h>
                                            <h4 class="display-6" id="cartcolor">color:Black</h4>
                                            <p class="card-text" id="cartprice">$1999  <Strong class="ml-4" id="cartquantity"> Quantity:30</Strong> 
-                                              <a class="ml-4" id="cartedit" href="#">Edit</a></p>
+                                              <a type="button" class=" btn ml-4" data-toggle="collapse" data-target="#edit" id="cartedit" href="#">Edit</a></p>
+                                              <div id="edit" class="collapse">
                                               <form>
-                                                      <div class="row">
+                                                      <div class="row" >
                                                          
                                                           <div class="col-sm-2 text-center"><label>S</label><input class="form-control" placeholder="" type="text"></div>
                                                           <div class="col-sm-2 text-center"><label>M</label><input class="form-control" placeholder="" type="text"></div>
                                                           <div class="col-sm-2 text-center"><label>L<Label></Label></label><input class="form-control" placeholder="" type="text"></div>
                                                           <div class="col-sm-2 text-center"><label>XL</label><input class="form-control" placeholder="" type="text"></div>
                                                           <div class="col-sm-2 text-center"><label>XXL</label><input class="form-control" placeholder="" type="text"></div>
+                                                          <div class="my-2"><a type="button text-center" class="btn  border-0 my-4" id="update"> Update</a></div>
                                                         </div>
                                                      
                                                 
                                                   </form>
+                                                </div>
                                                   <div class="container mt-4">
                                                   <div>
                                                       <p class="d-inline pull-left" id="deliveryde">Delivery in 3-4 days</p>
@@ -406,10 +412,10 @@
     
 <div>
   <div class="mx-4" id="chshop">
-<button type="button"  id="cartshop1" class="btn d-inline pull-right border p-2"><a style="text-decoration: none;" id="cartshop3" href="Checkout.html">CHECKOUT</a></button>
+<a type="button"  href="Checkout.html" id="cartshop1" class="btn d-inline pull-right border ">CHECKOUT</a>
   </div>
   <div class="mx-4">
-<button type="button"  id="cartshop5" class="btn d-inline pull-right border p-2"><a style="text-decoration: none;" id="cartshop3" href="index.html">CONTINUE SHOPPING</a></button>
+<a type="button" href="index.html" id="cartshop5" class="btn d-inline pull-right border mx-4">CONTINUE SHOPPING</a>
 </div>
 </div>    
          
@@ -461,9 +467,31 @@
           </table>
 
           <div class="container">
-              <p class="text-center">Have a promo coupon?<a href="#"> Redeem Now</a></p>
-          </div>
+              <p class="text-center">Have a promo coupon?<a href="#" type="button" class="btn" id="reedemid" data-toggle="collapse" data-target="#demo"> Redeem Now</a></p>
+          <div id="demo" class="collapse">
+          <div class="container">
+         <div  class=" d-inline pull-left form-control border-right-0 progress-bar progress-bar-striped progress-bar-animated bg-secondary text-left " id="tick2" role="progressbar">Coupon Code
+            
+            <div class="d-inline pull-right pl-4" ><i class="fa fa-check" style="color:#00B577;font-size:18px" aria-hidden="true" ></i></div>
+         </div>
+        </div>
           
+          
+          
+          
+              <div class="row" >
+                <div class="col text-center">
+                <button class="btn   border mt-4 " id="Sbutton">Apply</button> 
+                <button class="btn   border mt-4" id="Sbutton" >Cancel</button> 
+              </div>
+
+            </div>
+</div>
+          
+            </div>
+          </div>
+      
+      
         <!-- <form class="row">
             
               <div class="input-group"  id="Ccoupon"> <input type="text" id="pcolor" class="form-control text-left progress-bar progress-bar-striped progress-bar-animated"
@@ -476,22 +504,6 @@
           </form>
           -->
 
-          <div class="input-group" >
-              <input type="text" class="form-control border-right-0 progress-bar progress-bar-striped progress-bar-animated text-left " id="tick2" role="progressbar" placeholder="Coupon Code">
-              <div class="input-group-btn">
-                <span class="btn border border-left-0 bg-white  " id="tick1">
-                    <i class="fa fa-check"  aria-hidden="true" ></i>
-                </span>
-              </div>
-          </div>
-              <div class="row" id="Sbutton">
-                <div class="col text-center">
-                <button class="btn btn-apply coupon border mt-4 " >Apply</button> 
-                <button class="btn btn-apply coupon border mt-4" >Cancel</button> 
-              </div>
-
-            </div>
-          
 
         </div>
       
