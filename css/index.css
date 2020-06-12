@@ -36,7 +36,7 @@ text-align: left;
 letter-spacing: 0px;
 color: #141414;
 opacity: 100;
-font-size:20px;
+font-size:23px;
 font-family: 'Roboto', sans-serif;
 
 }
@@ -197,12 +197,14 @@ outline: -webkit-focus-ring-color auto 0px;
     
 }
 
-
+#btnfont{
+    font-size: 20px;
+}
 #thumb1 .img-fluid{
     background-color:#141414;
-  
     opacity:1;
 }
+
 #thumb1 .card-body .card-text{
     font-family:'Roboto Light',sans-serif;
     font-size:1rem;
@@ -301,17 +303,17 @@ outline: -webkit-focus-ring-color auto 0px;
     font-size:1rem;
     letter-spacing: 0px;
     font-family:'Roboto', sans-serif;
-    margin-left: 2rem;
+   
   
   
 }
 
 #social1{
-    margin-left:5rem;
+    margin-left:3rem;
 }
 
 #conditions1{
-    margin-right: -1rem;
+   
     color:white;
 }
 #citems1{
@@ -462,7 +464,7 @@ outline: -webkit-focus-ring-color auto 0px;
 
 @media (min-width: 1500px){
     #navbar1 .navbar-nav .nav-item .nav-link{
-        font-size: 21px;
+        font-size: 23px;
     }
 
    #navicon .nav-item .img-responsive{
@@ -683,10 +685,8 @@ font-weight: bold;
 }
 #cartshop1{
     font-family:'Roboto-Medium',sans-serif;
-    margin-left:2rem;
-    margin-top:-0.6rem;
-    width: 117px;
-    height: 37px;
+  
+    
     text-align: center;
 letter-spacing: 0px;
 color: black;
@@ -694,20 +694,16 @@ text-transform: uppercase;
 opacity: 1;
 font-size: 12px;
 background: white;
+border-radius: 0;
 }
 
-#cartshop3{
-    color:black;
-}
+
 
 
 #cartshop5{
-    width: 150px;
-    height: 37px;
-    font-family:'Roboto-Medium',sans-serif;
-    margin-left:2rem;
-    margin-top:-0.6rem;
    
+    font-family:'Roboto-Medium',sans-serif;
+  
     text-align: center;
 letter-spacing: 0px;
 color: black;
@@ -715,22 +711,22 @@ text-transform: uppercase;
 opacity: 1;
 font-size: 12px;
 background: white;
+border-radius: 0;
 }
 
 #cartshop1:hover,
 #cartshop1:active,
 #cartshop5:hover,
-#cartshop:active{
-    background: #00B577;
+#cartshop5:active{
+    background: #141414;
+    color:white;
     
 
 }
-#cartshop3:hover{
-    color:black;
-}
+
 #priceh1{
     
-    background: #00B577;
+    background: grey;
     opacity: 1;
    }
 
@@ -746,21 +742,26 @@ font-size:16px;
 
 #Sbutton{
     align-items: center;
+    border-radius: 0;
+    color:black;
+    background: white;
+    font-family:'Roboto-Medium',sans-serif;
+   text-align: center;
+   letter-spacing: 0px;
+  text-transform: uppercase;
+   opacity: 1;
+  font-size: 12px;
+ background: white;
+  border-radius: 0;
     
 }
+#Sbutton:hover,
+#Sbutton:active{
+    color:white;
+    background:#141414;
 
-.progress-bar-animated{
-    background-color: green;
 }
 
-
-.coupon{
-    background: white;
-}
-.coupon:hover{
-    background:#00B577 ;
-    color:black;
-}
 
 .input-icons i { 
     position: absolute; 
@@ -784,14 +785,30 @@ font-size:16px;
 #tick1{
     border-radius:0px 0px 0px 0px;
     color:#00B577;
-    font-size:18px;
+    font-size:22px;
 }
 #tick2{
     border-radius:0px 0px 0px 0px;
     color:black;
-    
+    font-size:15px;
+    font-weight: bold;
+   
     
 }
+
+#reedemid, #cartedit{
+    -webkit-box-shadow: none;
+box-shadow: none;
+outline: -webkit-focus-ring-color auto 0px;
+
+}
+
+#update{
+    color: #141414;
+    opacity: 1;
+
+}
+
 
 @media (min-width: 320px) and (max-width: 640px){
     #chshop{
