@@ -1310,6 +1310,16 @@ font-size: 14px;
     font-size: 12px;
 }
 
+.desktop_view, .mobile_view{
+    position: relative;
+}
+
+#custom-text {
+
+    position: absolute;
+    top: 50px;
+    left:20px;
+  }
 
 @media (min-device-width: 768px){
     .mobile_view, .mobile_view_1, .size-group_mob,   .scale_mob, .sample_mob, 
@@ -1817,7 +1827,7 @@ font-size: 14px;
   top: 207px;
   left: 135px;
   width: 270px;
-  height: 545px;
+  height: 460px;
   border: 1px solid rgb(211, 210, 210);
   list-style-type: none;
   background-color: rgb(255, 254, 254);

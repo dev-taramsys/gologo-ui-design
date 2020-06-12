@@ -415,20 +415,20 @@
       </div>
       <br>
       <ul class="preview-thumbnail nav text-center">
-        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img class="tab_1 desktop_view_1 shadow p-3 bg-white rounded" src="images/girl_icon.jpg">
-          <img class="tab_1 mobile_view_1 shadow p-1 bg-white rounded" src="images/girl1_iconsm.jpg">
+        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img class="tab_1 desktop_view_1 shadow p-3 bg-white rounded" src="images/red_icon.jpg">
+          <img class="tab_1 mobile_view_1 shadow p-1 bg-white rounded" src="images/red_iconsm.jpg">
         </a></li>
-        <li><a data-target="#pic-2" data-toggle="tab"><img class="tab_2 desktop_view_1 shadow p-3 bg-white rounded" src="images/girl2_icon.jpg" >
-          <img class="tab_2 mobile_view_1 shadow p-1 bg-white rounded" src="images/girl2_iconsm.jpg" >
+        <li><a data-target="#pic-2" data-toggle="tab"><img class="tab_2 desktop_view_1 shadow p-3 bg-white rounded" src="images/black_icon.jpg" >
+          <img class="tab_2 mobile_view_1 shadow p-1 bg-white rounded" src="images/black_iconsm.jpg" >
         </a></li>
-        <li><a data-target="#pic-3" data-toggle="tab"><img class="tab_3 desktop_view_1 shadow p-3 bg-white rounded" src="images/girl3_icon.jpg" >
-          <img class="tab_3 mobile_view_1 shadow p-1 bg-white rounded" src="images/girl3_iconsm.jpg" >
+        <li><a data-target="#pic-3" data-toggle="tab"><img class="tab_3 desktop_view_1 shadow p-3 bg-white rounded" src="images/yellow_icon.jpg" >
+          <img class="tab_3 mobile_view_1 shadow p-1 bg-white rounded" src="images/yellow_iconsm.jpg" >
         </a></li>
-        <li><a data-target="#pic-4" data-toggle="tab"><img class="tab_4 desktop_view_1 shadow p-3 bg-white rounded" src="images/girl4_icon.jpg" >
-          <img class="tab_4 mobile_view_1 shadow p-1 bg-white rounded" src="images/girl4_iconsm.jpg" >
+        <li><a data-target="#pic-4" data-toggle="tab"><img class="tab_4 desktop_view_1 shadow p-3 bg-white rounded" src="images/green_icon.jpg" >
+          <img class="tab_4 mobile_view_1 shadow p-1 bg-white rounded" src="images/green_iconsm.jpg" >
         </a></li>
-        <li><a data-target="#pic-5" data-toggle="tab"><img class="tab_5 desktop_view_1 shadow p-3 bg-white rounded" src="images/girl5_icon.jpg">
-          <img class="tab_5 mobile_view_1 shadow p-1 bg-white rounded" src="images/girls_iconsm.jpg">
+        <li><a data-target="#pic-5" data-toggle="tab"><img class="tab_5 desktop_view_1 shadow p-3 bg-white rounded" src="images/white_icon.jpg">
+          <img class="tab_5 mobile_view_1 shadow p-1 bg-white rounded" src="images/white_iconsm.jpg">
         </a></li>
         </ul>
         </div>
@@ -484,7 +484,7 @@
     <div class="group float-right mr-5" >
       <input type="file" id="real-file">
       <label class="desk-name">Upload your logo</label>
-     <button type="button" class="pl-4 pr-4 pt-2 pb-2 custom-button-desk" id="custom-button" style="background-color: #00B577; color: #FFFFFF; border-radius: 5px; cursor: pointer; border: 1px solid #DEDEDE;">Browse File</button>
+     <button type="button" class="pl-4 pr-4 pt-2 pb-2 custom-button-desk" id="custom-button" style="background-color: #141414; color: #FFFFFF; border-radius: 5px; cursor: pointer; border: 1px solid #DEDEDE;">Browse File</button>
      <span id="custom-text">No file chosen</span>
     </br></br>
       <label class="t_postion">Printing Position</label>
@@ -591,6 +591,28 @@
     button.addEventListener("click", function(){
         document.getElementById("forgot-link").innerHTML = "Password reset link was sent to your email id.";
     });
+
+
+//browse file
+$(document).on("click", ".custom-button-desk", function() {
+  var file = $(this).parents().find("#custom-text");
+  file.trigger("click");
+});
+$('input[type="file"]').change(function(e) {
+  var fileName = e.target.files[0].name;
+  $("#custom-text").val(fileName);
+
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    // get loaded data and render thumbnail.
+    document.getElementById("preview-pic").src = e.target.result;
+  };
+  // read the image file as a data URL.
+  reader.readAsDataURL(this.files[0]);
+});
+
+
+
 
     </script>
 
