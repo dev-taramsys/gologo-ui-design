@@ -397,6 +397,9 @@
       <div class="row">
       <div class="col-lg-6">
       <div class="preview-pic tab-content">
+        <canvas class="upload-logo" id="can1">
+          <!-- <img src="https://placehold.it/60x50" id="logo-preview" class="upload-logo"> -->
+        </canvas>
         <div class="tab-pane active" id="pic-1"><img class="desktop_view img-responsive shadow p-3 bg-white rounded" src="images/girl1_desk.jpg" >
           <img class="mobile_view shadow p-1 bg-white rounded" src="images/girl1_mob.jpg">
         </div>
@@ -442,6 +445,8 @@
           The manufacture of T-shirts has become highly automated and may include cutting fabric with a laser or a water jet.
           The T-shirt evolved from undergarments used in the 19th century and, in the mid-20th century, transitioned from undergarment to general-use casual clothing.
         </p>
+        <!-- <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()"> -->
+        
         </div>
         </div>
         </div>
@@ -484,7 +489,8 @@
     <div class="group float-right mr-5" >
       <input type="file" id="real-file">
       <label class="desk-name">Upload your logo</label>
-     <button type="button" class="pl-4 pr-4 pt-2 pb-2 custom-button-desk" id="custom-button" style="background-color: #141414; color: #FFFFFF; border-radius: 5px; cursor: pointer; border: 1px solid #DEDEDE;">Browse File</button>
+     <button type="button" class="pl-4 pr-4 pt-2 pb-2 custom-button-desk" id="custom-button" style="background-color: #141414; color: #FFFFFF; border-radius: 5px; cursor: pointer; border: 1px solid #DEDEDE;" onchange="upload()">Browse File</button>
+     
      <span id="custom-text">No file chosen</span>
     </br></br>
       <label class="t_postion">Printing Position</label>
@@ -594,22 +600,16 @@
 
 
 //browse file
-$(document).on("click", ".custom-button-desk", function() {
-  var file = $(this).parents().find("#custom-text");
-  file.trigger("click");
-});
-$('input[type="file"]').change(function(e) {
-  var fileName = e.target.files[0].name;
-  $("#custom-text").val(fileName);
+function upload(){
+  var imgcanvas1 = document.getElementById("can1");
+  var fileinput = document.getElementById("custom-button");
+  var filename = fileinput.value;
+  image = new SimpleImage(fileinput); //make this variable Gloabl. SimpleImage library is from dukelearntoprogram.com
+  image.drawTo(imgcanvas1); //included in SimpleImage Library
+}
 
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    // get loaded data and render thumbnail.
-    document.getElementById("preview-pic").src = e.target.result;
-  };
-  // read the image file as a data URL.
-  reader.readAsDataURL(this.files[0]);
-});
+
+
 
 
 
