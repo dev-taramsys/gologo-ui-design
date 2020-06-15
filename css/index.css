@@ -1312,6 +1312,19 @@ padding-top: 0;
 
 }
 
+.preview-pic{
+    position: relative;
+}
+canvas{
+    position: absolute;
+    top: 210px;
+    right:220px;
+    height:60px;
+    width: 70px;
+    border: 1px solid lightgray;
+    /* display: none; */
+}
+
 #real-file{
     display: none;
 }
@@ -1375,16 +1388,20 @@ font-size: 14px;
     font-size: 12px;
 }
 
-.desktop_view, .mobile_view{
-    position: relative;
-}
 
-#custom-text {
+
+/* #real-file{
+  position: absolute;
+
+} */
+
+
+/* #finput {
 
     position: absolute;
     top: 50px;
     left:20px;
-  }
+  }  */
 
 @media (min-device-width: 768px){
     .mobile_view, .mobile_view_1, .size-group_mob,   .scale_mob, .sample_mob, 
