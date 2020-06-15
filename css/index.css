@@ -1315,15 +1315,6 @@ padding-top: 0;
 .preview-pic{
     position: relative;
 }
-canvas{
-    position: absolute;
-    top: 210px;
-    right:220px;
-    height:60px;
-    width: 70px;
-    border: 1px solid lightgray;
-    /* display: none; */
-}
 
 #real-file{
     display: none;
@@ -1388,7 +1379,19 @@ font-size: 14px;
     font-size: 12px;
 }
 
+canvas{
+    width:70px; height:60px; position: absolute; top:210px;
+}
 
+
+.upload-logo_right{
+    right:220px;
+}
+
+.upload-logo_left{
+    left:118px; 
+    display: none;
+}
 
 /* #real-file{
   position: absolute;
@@ -1431,6 +1434,24 @@ font-size: 14px;
     .social{
         margin-left: 0;
     }
+
+    #finput{
+        font-size: 12px;
+    }
+
+
+    canvas{
+        width:35px; height:30px; position: absolute; top:190px;
+    }
+    .upload-logo_right{
+       margin-right: -87px;
+
+    }
+
+    .upload-logo_left{
+        margin-left: -34px;
+
+    } 
 
 }
 
