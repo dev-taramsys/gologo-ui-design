@@ -334,38 +334,135 @@
     
     <div id="accordion">
       <div class="card border-0 mt-4 ">
-        <div class="card-header border">
-          <a class="float-left" id="Ch1"><span class="badge badge-pill badge-primary" id="Cpill">1</span>   Shipping Address</a> 
-          <a class="card-link float-right" data-toggle="collapse" href="#collapseOne">
-              <i class="fa fa-minus" aria-hidden="true" style="color:black" id="Chyphen"></i></a>
+        <div class="card-header border-0 bg-white">
+          <a class="float-left" id="Ch1">Shipping Address</a> 
+         
         </div>
-        <div id="collapseOne" class="collapse show" data-parent="#accordion">
-          <div class="card-body border">
+        <div >
+          <div class="card-body border-0">
 
 
             <div class="container" id="Cship">
           
              <h5 class="p-3" id="Cship1"><span id="Cdummyaddress">Ship to this address</span>
                <a href="#" class="d-inline pull-right mx-1" id="Cremove"><i class="fa fa-trash" aria-hidden="true"></i> Remove</a> 
-              <a href="#" class="d-inline pull-right" id="Cedit">
+              <a href="#" class="d-inline pull-right" id="Cedit" data-toggle="collapse" data-target="#Aedit">
                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
               Edit</a></h5>
-           
-
-             <div class="container" style=" height:124px">
-               <div class="row">
-                  <form id="Cradio">
-                    <div class="form-check">
-                      <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio"><span class="mx-4" id="Cadd">
-                        7195 S. Sulphur Springs Lane Sugar Land, TX 77478</span>
-                      </label>
-                    </div>
-                  </form>
+              <div class="container" style=" height:124px">
+                  <div class="row">
+                     <form id="Cradio">
+                       <div class="form-check">
+                         <label class="form-check-label" for="radio1">
+                           <input type="radio" class="form-check-input" id="radio1" name="optradio"><span class="mx-4" id="Cadd">
+                           7195 S. Sulphur Springs Lane Sugar Land, TX 77478</span>
+                         </label>
+                       </div>
+                     </form>
+                  </div>
+                 </div>
                </div>
+
+
+
+              <div class="collapse" id="Aedit">
+              <form class="mt-2">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" id="email" placeholder="First Name" name="First Name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last Name" name="Last Name">
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                      <div class="col">
+                        <input type="text" class="form-control" id="email" placeholder="Email Address" name="email">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Mobile Number" name="Mobile Number">
+                      </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="comment"></label>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Address" name="text"></textarea>
+                      </div>
+
+                      <div class="row mt-2">
+                          <div class="col">
+                              <div class="form-group">
+                                  <label for="sel1" ></label>
+                                  <select class="form-control" id="sel1" name="sellist1">
+                                      <option hidden >City</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="form-group">
+                                  <label for="sel1"></label>
+                                  <select class="form-control" id="sel1" name="sellist1">
+                                      <option hidden >Zipcode</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="sel1" ></label>
+                                    <select class="form-control" id="sel1" name="sellist1">
+                                        <option hidden >State</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="sel1"></label>
+                                    <select class="form-control" id="sel1" name="sellist1">
+                                        <option hidden >Country</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="container mt-2">
+                                <div>
+                      <a type="button" id="CASave" href="Checkout payment.html" class="btn border d-inline pull-right">Update</a>
+                        </div>     
+                                </div>     
+                          </div>
+              </form>
               </div>
-            </div>
-               
+          </div>
+        </div>
+      </div>
+    <br>
+            
+
+               <div class="row">
+                 <div class="container">
+                   
+                 <h5 class="float-left" id="Ch1">Enter Billing Address</h5>
+                
+                 <h5 class="float-right" id="Ch1"><input type="checkbox" id="Ccheck">  Same as shipping Address</h5>
+                 </div>
+               </div>
+               <br>
                   <form class="mt-2">
                     <div class="row">
                       <div class="col">
@@ -442,21 +539,23 @@
                            
                             <div class="container mt-2">
                             <div>
-                  <button type="button" id="CASave" class="btn border d-inline pull-right"><a style="text-decoration: none;" id="ccheckout1" href="Checkout payment.html">Save this address & Continue</a></button>
+                  <a type="button" id="CASave" href="Checkout payment.html" class="btn border d-inline pull-right">Save this address & Continue</a>
                     </div>     
                             </div>                   
-                  </form> </div>  
-                </div>
+                  </form> 
+                
+                
+                
             
 
  
 
 
-          </div>
+          
       
 
    
-
+<!----
 
       <div class="card mt-2">
         <div class="card-header">
@@ -471,7 +570,7 @@
           </div>
         </div>
       </div>
-      
+      -->
     </div>
   </div>
 
@@ -511,34 +610,23 @@
         </table>
 
         <div class="container">
-            <p class="text-center">Have a promo coupon?<a href="#"> Redeem Now</a></p>
-        </div>
+          <p class="text-center">Have a promo coupon?<a href="#" type="button" class="btn" id="reedemid" data-toggle="collapse" data-target="#demo"> Redeem Now</a></p>
+      <div id="demo" class="collapse">
+      <div class="container">
+     <div  class=" d-inline pull-left form-control border-right-0 progress-bar progress-bar-striped progress-bar-animated bg-secondary text-left " id="tick2" role="progressbar">Coupon Code
         
-      <!-- <form class="row">
-          
-            <div class="input-group"  id="Ccoupon"> <input type="text" id="pcolor" class="form-control text-left progress-bar progress-bar-striped progress-bar-animated"
-                   name=""aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" placeholder="Coupon code">
-            </div>
-                   <div class="input-group-append"><span><i class="fa fa-check icon" aria-hidden="true" style="color:green; position:absolute;"></i>
-                   </span>
-                    </div>
-
-        </form>
-        -->
-
-        <div class="input-group" >
-            <input type="text" class="form-control border-right-0 progress-bar progress-bar-striped progress-bar-animated text-left " id="tick2" role="progressbar" placeholder="Coupon Code">
-            <div class="input-group-btn">
-              <span class="btn border border-left-0 bg-white  " id="tick1">
-                  <i class="fa fa-check"  aria-hidden="true" ></i>
-              </span>
-            </div>
-        </div>
-            <div class="row" id="Sbutton">
-              <div class="col text-center">
-              <button class="btn btn-apply coupon border mt-4 " >Apply</button> 
-              <button class="btn btn-apply coupon border mt-4" >Cancel</button> 
-            </div>
+        <div class="d-inline pull-right pl-4" ><i class="fa fa-check" style="color:#00B577;font-size:18px" aria-hidden="true" ></i></div>
+     </div>
+    </div>
+      
+      
+      
+      
+          <div class="row" >
+            <div class="col text-center">
+            <button class="btn   border mt-4 " id="Sbutton">Apply</button> 
+            <button class="btn   border mt-4" id="Sbutton" >Cancel</button> 
+          </div>
           </div>
         
 

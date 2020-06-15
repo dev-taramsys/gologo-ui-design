@@ -67,6 +67,10 @@ outline: -webkit-focus-ring-color auto 0px;
 
 }
 
+#drdoption:hover{
+    background: black;
+    color:white;
+}
 .carousel .carousel-indicators li {
     width: 9px;
     height: 9px;
@@ -341,10 +345,13 @@ outline: -webkit-focus-ring-color auto 0px;
     display: inline;
     
     }
-    .navbar-toggler{
-        margin-left: 8rem;
+    #nav2{
+        margin-left:-.8rem;
     }
-
+    #nav3{
+        margin-left:-.9rem;
+    }
+  
     .carousel .carousel-indicators li{
         top:1rem;
     }
@@ -396,18 +403,23 @@ outline: -webkit-focus-ring-color auto 0px;
  
     
   #copyright1{
-      margin-top:-1rem;
+      
       margin-left:1.5rem;
       
   }
+
+  #fcard{
+      margin-top:1rem;
+      margin-left:.5rem;
+  }
   #social1{
       margin-top: 1rem;
-      margin-left: 1rem;
+      margin-left: 2rem;
      
   }
   #conditions1{
       width: 500px;
-      margin-left:-1.9rem;
+      margin-left:1rem;
   }
 }
 
@@ -423,9 +435,13 @@ outline: -webkit-focus-ring-color auto 0px;
     margin-left: 2rem;
 }
       #copyright1{
-        margin-top:-1rem;
+        margin-top:.2rem;
         margin-left:3rem;
         
+    }
+    #fcard{
+        margin-top:1rem;
+        margin-left:1rem;
     }
     #social1{
         margin-top: 1rem;
@@ -434,7 +450,7 @@ outline: -webkit-focus-ring-color auto 0px;
     }
     #conditions1{
         width: 500px;
-        margin-left:-0.3rem;
+        margin-left:2rem;
     }
 
    
@@ -457,6 +473,31 @@ outline: -webkit-focus-ring-color auto 0px;
         top: 48%;
         left: 50%;
         
+    }
+    #copyright1{
+       
+        margin-left:1rem;
+        
+    }
+    #fcard{
+        margin-top:1rem;
+        margin-left:1rem
+       
+        
+    }
+    #c5{
+        margin-left:6rem;
+        margin-top: 1rem;
+
+    }
+    #social1{
+        margin-top: 1rem;
+        margin-left: 2rem;
+       
+    }
+    #conditions1{
+        width: 500px;
+        margin-left:0.4rem;
     }
 
 }
@@ -553,16 +594,20 @@ font-size:1.3rem;
 
     #copyright1{
         margin-top:-0rem;
-        margin-left:0rem;
+        margin-left:-.2rem;
         
     }
     #social1{
         margin-top: 0rem;
-        margin-left: 0rem;
+        margin-left: 3rem;
        
     }
+    #fcard{
+        margin-left:4rem;
+    }
     #conditions1{
-       margin-left:-2rem ;
+       margin-left:12rem ;
+       margin-top:2rem;
         
     }
     .black-overlay{
@@ -572,6 +617,11 @@ font-size:1.3rem;
     }
     
 }
+
+
+
+
+
 
 /*CartPage----Nisha*/
 
@@ -796,7 +846,8 @@ font-size:16px;
     
 }
 
-#reedemid, #cartedit{
+#reedemid, #cartedit, #cartshop1, #cartshop5,
+#bsh{
     -webkit-box-shadow: none;
 box-shadow: none;
 outline: -webkit-focus-ring-color auto 0px;
@@ -851,7 +902,9 @@ outline: -webkit-focus-ring-color auto 0px;
 #Cship{
     background: #F9F9F9;
 }
-
+#Ccheck::before{
+    color:red;
+}
 
 #Cremove{
     text-align: left;
@@ -907,18 +960,18 @@ input[type=radio] {
 
 text-align: center;
 letter-spacing: 0px;
-color: #FFFFFF;
+
 text-transform: uppercase;
 opacity: 1;
 font-size:12px;
 font-family:'Roboto-Medium',sans-serif;
-color:black;
 background: white;
+color:black;
 }
 
 #CASave:hover,
 #CASave:active{
-    background: #00B577;
+    background: #141414;
     color:white;
 }
 
@@ -937,10 +990,7 @@ opacity: 1;
     bottom: 0;
     width: 100%;
 }
-#ccheckout1{
-    color:black;
-    
-}
+
 
 /*------Checkout Payment Method------Nisha*/
 #Corder{
@@ -953,8 +1003,8 @@ opacity: 1;
 #Corder:hover,
 #Corder:active
 {
-    background: #00B577;
-    color:black;
+    background: #141414;
+    color:white;
 }
 
 #Ccredit{
@@ -965,6 +1015,14 @@ opacity: 1;
     text-decoration: none;
 }
 
+#Corder, #orderbtn,#sel1{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+
+}
+
+/*
 #accordion [data-toggle="collapse show"] i:before{
     content: "\f068";
 }
@@ -980,6 +1038,7 @@ opacity: 1;
   #accordion [aria-expanded="true"] .collapsed i:before {  
     content: "\f067";
   }
+*/
 
 @media (min-width: 360px) and (max-width: 640px){
     #month select[type="text"]{
@@ -1028,8 +1087,8 @@ opacity: 1;
 }
 #orderbtn:hover,
 #orderbtn:active{
-    color:black;
-    background:#00B577;
+    color:white;
+    background:#141414;
 }
 
 /*----------Help-------*/
@@ -1117,10 +1176,16 @@ color: #676767;
 
 #orderbtn1:hover,
 #orderbtn1:active{
-    color:black;
-   background: #00B577; 
+    color:white;
+   background: #141414; 
 }
+#orderbtn1{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
 
+    
+}
 
 
 
