@@ -353,7 +353,9 @@ outline: -webkit-focus-ring-color auto 0px;
     #nav3{
         margin-left:-.9rem;
     }
-  
+  #navicon{
+      margin-left:1rem;
+  }
     .carousel .carousel-indicators li{
         top:1rem;
     }
@@ -863,7 +865,8 @@ outline: -webkit-focus-ring-color auto 0px;
     border-radius: 0;
 
 }
-#update:hover{
+#update:hover,
+#update:active{
     background: #141414;
     color:white;
 }
@@ -1197,7 +1200,7 @@ color: #676767;
 /*------View order----Nisha----*/
 
 #orderbtn1{
- width:150px;
+ width:175px;
     color: #141414;;
     background: white;
     font-size:14px;
@@ -1248,7 +1251,8 @@ color: #676767;
     border-radius: 0;
 }
 
-#myordertrack:hover{
+#myordertrack:hover,
+#myordertrack:active{
     background:#141414 ;
     color:white;
 
@@ -2055,6 +2059,21 @@ font: bold;
 
 }
 
+#btn_edit:hover,
+#btn_edit:active{
+    background: black;
+    color:white;
+}
+
+
+#btn_update:hover,
+#btn_update:active{
+    background: black;
+    color:white;
+
+}
+
+
   @media (min-width: 360px) and (max-width: 640px){
     .align{
         padding-left: 30px;
@@ -2139,17 +2158,34 @@ font: bold;
     color: black;
     }
 
-    #btn_edit, #btn_update{
+#btn_edit, #btn_update{
         margin-left: 293px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: -webkit-focus-ring-color auto 0px;
+    
        }
 
 
+#btn-1:hover,
+#btn-1:active{
+    background: black;
+    color:white;
+
+}
+
+#btn-1{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
 
 
+}
  .center .btn{
      
         margin-left: 300px;
  }
+
 
  @media (min-width: 768px){
     .btn_edit_mob, .btn_update_mob{
@@ -2167,3 +2203,25 @@ font: bold;
            margin-left: 80px;
        }
  } 
+
+ /*-----Manage Address---*/
+
+
+#add123{
+    color:black;
+}
+
+
+ #add123:hover,
+ #add123:active{
+     background: black;
+     color:white;
+
+ }
+
+ #add123{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+
+ }
