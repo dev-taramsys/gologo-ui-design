@@ -129,13 +129,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
             <ul class="navbar-nav mr-auto" >
               <li class="nav-item active mx-2">
-                <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item mx-2">
                 <a class="nav-link " href="Help.html">SUPPORT</a>
               </li>
              
-              <li class="nav-item mx-3">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="about.html">ABOUT</a>
               </li>
             </ul>
@@ -151,25 +151,40 @@
               </div>
             </form>
 
-            <div class="container " id="navicon">
-                    <ul class="navbar-nav ">
-                            <li class="nav-item">
-                              <a class="nav-link " href="#" data-toggle="modal" data-target="#ModalLogin"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png" style="width: 20px;"></a>
-                            </li>
-                            <li class="nav-item pl-2">
-                              <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png" style="width: 24px;"></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="Tracking.html"><span><i class="fa fa-truck" aria-hidden="true" style="font-size: 24px;"></i></span></a>
-                              </li>
-                          </ul>
+            <div  id="navicon">
+              <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown"><span class="sr-only">(current)
+
+                      </span><img class="img-responsive" src="images/Path 4182.png" style="width: 20px;"></a>
+                      <div class="dropdown-menu"  style="height:170px; width:200px;margin-left:-2rem">
+                          <a class="dropdown-item" id="drdoption"
+                          href="#" data-toggle="modal" data-target="#ModalLogin"><i class="fa fa-sign-in" aria-hidden="true" style="margin-left:-1rem"></i>
+                                      Login</a>
+                          <a class="dropdown-item" id="drdoption"
+                href="account.html"><i class="fa fa-users" aria-hidden="true" style="margin-left:-1rem"></i>
+                            My Account</a>
+                          <a class="dropdown-item" id="drdoption" href="order.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left:-1rem"></i>
+                            My Order</a>
+                          <a class="dropdown-item" id="drdoption" href="manage_address.html"><i class="fa fa-tasks" aria-hidden="true" style="margin-left:-1rem"></i>
+                            Manage Address</a>
+                          <a class="dropdown-item" id="drdoption" href="#"><i class="fa fa-power-off" aria-hidden="true" style="margin-left:-1rem"></i>
+                            Logout</a>
+                        </div>
+                    </li>
+                    <li class="nav-item pl-2">
+                      <a class="nav-link" id="nav2" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png" style="width: 24px;margin-top:.1rem"></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link my-1" id="nav3" href="Tracking.html"><span><i class="fa fa-truck" aria-hidden="true" style="font-size: 25px;"></i></span></a>
+                      </li>
+                      
+                  </ul>
             </div>
 
             </div>
             </div>
           </div>
-
-
 
 
       <!-- Reset Password Pop up -->
@@ -328,8 +343,8 @@
 
 <div class="container text-center">
         <p class="lead mt-4">
-                <a class="btn btn-outline-secondary mx-4 " id="orderbtn1" href="Checkout payment.html" role="button">Retry</a>
-                <a class="btn btn-outline-secondary mx-4" id="orderbtn1"  href="index.html" role="button">Continue Shopping</a>
+                <a class="btn btn-outline-secondary mx-4" id="orderbtn1" href="Checkout payment.html" role="button">RETRY</a>
+                <a class="btn btn-outline-secondary mx-4" id="orderbtn1"  href="Thank you.html" role="button">CONTINUE SHOPPING</a>
                 
               </p>
 </div>

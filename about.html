@@ -17,51 +17,74 @@
     <title>About Us</title>
 </head>
 <body>
-    <div id="navbar1">
+  <div id="navbar1">
       
-        <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
-            <div class="container-fluid">
-            <a class="navbar-brand mx-2" href="index.html">LOGO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
-              <ul class="navbar-nav mr-auto " >
-                <li class="nav-item active mx-2">
-                  <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="Help.html">SUPPORT</a>
-                </li>
-               
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="about.html">ABOUT</a>
-                </li>
-              </ul>
+    <nav class=" navbar navbar-expand-md navbar-light bg-white"  >
+        <div class="container-fluid">
+        <a class="navbar-brand mx-2 " href="index.html"><img src="images/logo.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarlist">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active mx-2">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link " href="Help.html">SUPPORT</a>
+            </li>
+           
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+          </ul>
 
-              <form class="navbar-form navbar-left mx-2 " id="searchbar">
-                <div class="input-group" >
-                  <input type="text" id="search1" class="form-control input-lg  border-secondary border-right-0 " size="3000" id="searchbar1" placeholder="Search" name="search">
-                  <div class="input-group-btn ">
-                    <button class="btn btn-outline-secondary border-left-0   " id="searchfont" type="submit">
-                        <i class="fa fa-search"  aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-              <div class="container " id="navicon">
-                      <ul class="navbar-nav">
-                              <li class="nav-item active">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalLogin"><span class="sr-only">(current)</span><img class="img-responsive" src="images/Path 4182.png"></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png"></a>
-                              </li>
-                            </ul>
+          <form class="navbar-form navbar-left " id="searchbar">
+            <div class="input-group" >
+              <input type="text" id="search1" class="form-control sinput-lg  border-secondary border-right-0 " size="3000" id="searchbar1" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-outline-secondary border-left-0" id="searchfont" type="submit">
+                    <i class="fa fa-search"  aria-hidden="true"></i>
+                </button>
               </div>
-              </div>
-              </div>    
+            </div>
+          </form>
+
+          <div  id="navicon">
+            <ul class="navbar-nav ">
+              <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown"><span class="sr-only">(current)
+
+                    </span><img class="img-responsive" src="images/Path 4182.png" style="width: 20px;"></a>
+                    <div class="dropdown-menu"  style="height:170px; width:200px;margin-left:-2rem">
+                        <a class="dropdown-item" id="drdoption"
+                        href="#" data-toggle="modal" data-target="#ModalLogin"><i class="fa fa-sign-in" aria-hidden="true" style="margin-left:-1rem"></i>
+                                    Login</a>
+                        <a class="dropdown-item" id="drdoption"
+              href="account.html"><i class="fa fa-users" aria-hidden="true" style="margin-left:-1rem"></i>
+                          My Account</a>
+                        <a class="dropdown-item" id="drdoption" href="order.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left:-1rem"></i>
+                          My Order</a>
+                        <a class="dropdown-item" id="drdoption" href="manage_address.html"><i class="fa fa-tasks" aria-hidden="true" style="margin-left:-1rem"></i>
+                          Manage Address</a>
+                        <a class="dropdown-item" id="drdoption" href="#"><i class="fa fa-power-off" aria-hidden="true" style="margin-left:-1rem"></i>
+                          Logout</a>
+                      </div>
+                  </li>
+                  <li class="nav-item pl-2">
+                    <a class="nav-link" id="nav2" href="Cart.html"><img class="img-responsive" src="images/Path 4183.png" style="width: 24px;margin-top:.1rem"></a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link my-1" id="nav3" href="Tracking.html"><span><i class="fa fa-truck" aria-hidden="true" style="font-size: 25px;"></i></span></a>
+                    </li>
+                    
+                </ul>
+          </div>
+
+          </div>
+          </div>
+        </div>
 
 <!-- Reset Password Pop up -->
 <div class="modal fade" id="ModalResetPassword" role="dialog">
