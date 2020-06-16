@@ -198,10 +198,13 @@
 </div> 
   </div>
 </nav>
-</div><br><br>
+</div>
+<br>
+<br>
+<br>
 
 
-  <div class="container">
+  <div class="container mt-4">
       
           <ul style="background-color: #f3f3f3; border: 1px solid #e7e7e7;padding-left: 20px;">
             <li><a style="font-size: 14px/16px;font: bold;" href="index.html"><strong>Home</strong> 
@@ -222,7 +225,7 @@
                       <li> <a href="manage_address.html" class="example61 pt-3"> <i class="	fa fa-address-book-o fa-5x"></i></i>Manage Address</a></li><br>
                     </ul>
                     <ul id="list">
-                      <li> <a href="Tracking.html" class="example61 pt-3"> <i class="fa fa-truck fa-5x"></i>Track Order</a></li><br>
+                      <li> <a href="Track my order.html" class="example61 pt-3"> <i class="fa fa-truck fa-5x"></i>Track Order</a></li><br>
                     </ul>
                     <ul id="list">
                       <li> <a href="Help.html" class="example61 pt-3"><i class="fa fa-info-circle fa-5x" ></i>Need Help ?</a></li><br>
@@ -233,14 +236,14 @@
                   </div>
              </div>
     
-      
+     <!---
         <div class="col-sm-8">
           <div class="row mt-4">
              <div class="col-sm-2">
               <img src="https://placehold.it/150x80?text=IMAGE" alt="Pineapple" class="responsive" style="width: 120px;height: 130px;float: left;">
              </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <div class="align">
                  <p class="example11"><strong>Lorem Ipsum</strong> </p>
                  <p class="example12">Quantity: 40, Color: Black</p>
@@ -252,12 +255,8 @@
                     <div class="alignment">
                   <p  style="color:#676767;">Order ID <strong style="color: black;">0947638584</strong></p>
                   <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
-                  <a href="Tracking.html" class="btn btn-primary pt-2"
-                          style=" background: #676767 0% 0% no-repeat padding-box;width: 168px;height: 50px;
-                          border: 1px solid #DEDEDE;
-                          border-radius: 5px;
-                          opacity: 1;" >Track my Order</a><br><br>
-                        <a href="View order.html"  class="details">Order Details</a>
+                  <a href="Tracking.html" class="btn border" id="myordertrack" >Track my Order</a><br><br>
+                        <a href="View order.html"  class="mx-3">Order Details</a>
                  </div>
                  </div>
                  <hr class="new5">
@@ -432,46 +431,299 @@
     </div>
     </div>
 </div>
+--> 
+<div class="col-sm-8 " >
+  <div class="container">
 
-          
-<footer class="page-footer w-100 h-100 p-3" >
+ <div class="row">
+    <div class="col-sm-2">
+     <img src="images/girl1_desk.jpg" class="img-responsive thumbnail my-4" style="width: 120px;height: 120px;float: left;">
+    </div>
+
+       <div class="col-sm-6">
+           <div class="container float-left">
+         <div class="align">
+        <p class="example11"><strong>Lorem Ipsum</strong> </p>
+        <p class="example12">Quantity: 40, Color: Black</p>
+        <p >price : $299</p>
+        <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+       </div>
+       </div>
+       <div class="mx-4">
+          <button class="border" id="cbtnorder">Cancel Order</button>
+        </div>
+     </div>
+
+
+       <div class="col-sm-4">
+             <div class="container" id="trackid">
+           <div class="alignment float-right ">
+         <p  style="color:#676767;" id="orderidde">Order ID <strong style="color: black;">0947638584</strong></p>
+         <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+         <a href="Tracking.html" class="btn border mx-2" id="myordertrack">Track my Order</a><br><br>
+               <a class="ml-4" href="View order.html">Order Details</a>
+        </div>
+        </div>
+     </div>
+ </div>
+
+      
+        <div class="container">
+             <hr class="col-sm-12">
+     </div>  
+
+       
+            <br><br>
+   
+            <div class="row mt-4">
+                 <div class="col-sm-2">
+                  <img src="images/girl2_desktop.jpg"class="img-responsive thumbnail my-4" style="width: 120px;height: 120px;float: left;">
+                 </div>
+      
+                    <div class="col-sm-4">
+                        <div class="container float-left">
+                      <div class="align">
+                     <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                     <p class="example12">Quantity: 40, Color: Black</p>
+                     <p >price : $299</p>
+                     <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                    </div>
+                    </div>
+                    <div class="mx-4">
+                        <button class="border" id="cbtnorder">Cancel Order</button>
+                      </div>
+                  </div>
+      
+      
+                    <div class="col-sm-6"  id="trackid">
+                          <div class="container">
+                        <div class="alignment float-right">
+                      <p  style="color:#676767;" id="orderidde">Order ID <strong style="color: black;">0947638584</strong></p>
+                      <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                      <a href="Tracking.html" class="btn border mx-2" id="myordertrack">Track my Order</a><br><br>
+                            <a href="View order.html"  class="ml-4">Order Details</a>
+                     </div>
+                     </div>
+                  </div>
+              </div>
+      
+                   
+                     <div class="container">
+                          <hr class="col-sm-12">
+                  </div>  
+                  <div class="row mt-4">
+                    <div class="col-sm-2">
+                     <img src="images/women 1.png" class="img-responsive thumbnail my-4" style="width: 120px;height: 120px;float: left;">
+                    </div>
+         
+                       <div class="col-sm-4">
+                           <div class="container float-left">
+                         <div class="align">
+                        <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                        <p class="example12">Quantity: 40, Color: Black</p>
+                        <p >price : $299</p>
+                        <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                       </div>
+                       </div>
+                       <div class="mx-4">
+                          <button class="border" id="cbtnorder">Cancel Order</button>
+                        </div>
+                     </div>
+         
+         
+                       <div class="col-sm-6"  id="trackid">
+                             <div class="container">
+                           <div class="alignment float-right">
+                         <p  style="color:#676767;" id="orderidde">Order ID <strong style="color: black;">0947638584</strong></p>
+                         <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                         <a href="Tracking.html" class="btn border mx-2" id="myordertrack">Track my Order</a><br><br>
+                               <a href="View order.html"  class="ml-4">Order Details</a>
+                        </div>
+                        </div>
+                     </div>
+                 </div>
+         
+                      
+                        <div class="container">
+                             <hr class="col-sm-12">
+                     </div> 
+
+                     <div class="row mt-4">
+                      <div class="col-sm-2">
+                       <img src="images/women 2.png"class="img-responsive thumbnail my-4" style="width: 120px;height: 120px;float: left;">
+                      </div>
+           
+                         <div class="col-sm-4">
+                             <div class="container float-left">
+                           <div class="align">
+                          <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                          <p class="example12">Quantity: 40, Color: Black</p>
+                          <p >price : $299</p>
+                          <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                         </div>
+                         </div>
+                         <div class="mx-4">
+                           <button class="border" id="cbtnorder">Cancel Order</button>
+                         </div>
+                         
+                       </div>
+           
+           
+                        
+                    <div class="col-sm-6"  id="trackid">
+                        <div class="container">
+                      <div class="alignment float-right">
+                    <p  style="color:#676767;" id="orderidde">Order ID <strong style="color: black;">0947638584</strong></p>
+                    <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                    <a href="Tracking.html" class="btn border mx-2" id="myordertrack">Track my Order</a><br><br>
+                          <a href="View order.html"  class="ml-4">Order Details</a>
+                          
+                   </div>
+                   </div>
+                </div>
+            </div>
+                 
+                
+                
+
+
+                          <div class="container">
+                               <hr class="col-sm-12">
+                       </div> 
+                       <div class="row mt-4">
+                        <div class="col-sm-2">
+                         <img src="images/women 3.png"class="img-responsive thumbnail my-4" style="width: 120px;height: 120px;float: left;">
+                        </div>
+             
+                           <div class="col-sm-4 ">
+                               <div class="container float-left">
+                             <div class="align">
+                            <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                            <p class="example12">Quantity: 40, Color: Black</p>
+                            <p >price : $299</p>
+                            <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                           </div>
+                           </div>
+                           <div class="mx-4">
+                              <button class="border" id="cbtnorder">Cancel Order</button>
+                            </div>
+                         </div>
+             
+             
+                           <div class="col-sm-6"  id="trackid">
+                                 <div class="container">
+                               <div class="alignment float-right">
+                             <p  style="color:#676767;" id="orderidde">Order ID <strong style="color: black;">0947638584</strong></p>
+                             <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                             <a href="Tracking.html" class="btn border mx-2" id="myordertrack">Track my Order</a><br><br>
+                                   <a href="View order.html"  class="ml-4">Order Details</a>
+                            </div>
+                            </div>
+                         </div>
+                     </div>
+             
+                          
+                            <div class="container">
+                                 <hr class="col-sm-12">
+                         </div> 
+                         <div class="row mt-4">
+                          <div class="col-sm-2">
+                           <img src="images/women4.png"class="img-responsive thumbnail my-4 " style="width: 120px;height: 120px;float: left;;">
+                          </div>
+               
+                             <div class="col-sm-4">
+                                 <div class="container float-left">
+                               <div class="align">
+                              <p class="example11"><strong>Lorem Ipsum</strong> </p>
+                              <p class="example12">Quantity: 40, Color: Black</p>
+                              <p >price : $299</p>
+                              <p style="color:#676767;">Status <strong style="color: black;">Order Placed</strong></p>
+                             </div>
+                             </div>
+                             <div class="mx-4">
+                                <button class="border" id="cbtnorder">Cancel Order</button>
+                              </div>
+                           </div>
+               
+               
+                             <div class="col-sm-6"  id="trackid">
+                                   <div class="container">
+                                 <div class="alignment float-right">
+                               <p  style="color:#676767;" id="orderidde">Order ID <strong style="color: black;">0947638584</strong></p>
+                               <p  style="color:#676767;">Date <strong style="color: black;">Sun, Jul 1st '18</strong></p>
+                               <a href="Tracking.html" class="btn border mx-2" id="myordertrack">Track my Order</a><br><br>
+                                     <a href="View order.html"  class="ml-4">Order Details</a>
+                              </div>
+                              </div>
+                           </div>
+                       </div>
+               
+                            
+                              <div class="container">
+                                   <hr class="col-sm-12">
+                           </div> 
+                    
+                         <br><br>
+                
+             </div>
+         </div>
+     </div>
+ </div>
+</div> 
+<br>
+<br>
+<br>    
+<br>
+<br>
+
+<footer class="page-footer w-100 h-100 p-2 mt-4" id="footer1" >
   <div class="container-fluid mt-4">
 <div class="row">
   <div class="col-sm" >
-    <div class="footer-copyright" id="copyrights" >Copyright © 2020 Company Name
+    <div class="footer-copyright " id="copyright1" >Copyright © 2020 Company Name
       </div>
     </div>
-   
-        <div class="col-sm text-center" id="social" >
-            <ul class="list-unstyled d-inline-flex ">
+   <div class="col-sm " id="fcard">
+      <div class="row">
+          <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px" src="images/amazon@2x.png"></a>
+          <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/discover@2x.png"></a>
+          <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/mastercard@2x.png"></a>
+          <a href="#"><img class="img-fluid border mx-2"  style="height:24px;width:48px"  src="images/visa@2x.png"></a>
+          <a href="#" id="c5"><img class="img-fluid border mx-2" style="height:24px;width:48px"   src="images/american express@2x.png"></a>
+          </div>
+   </div>
+        <div class="col-sm" id="social1">
+            <ul class="list-unstyled d-inline-flex mx-2">
                 <li>
-                  <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
+                  <a class="mx-2" href="#!"><i class="fa fa-instagram" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
+                </li>
+                <li >
+                  <a class="mx-2" href="#!"><i class="fa fa-twitter"  aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
                 </li>
                 <li>
-                  <a href="#!"><i class="fa fa-twitter pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                  <a class="mx-2" href="#!"><i class="fa fa-facebook-square" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
                 </li>
-                <li>
-                  <a href="#!"><i class="fa fa-facebook-square pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
-                </li>  
+                
               </ul>
         </div>
-        <div class="col-sm " id="conditions">
-            <ul class="list-unstyled d-inline-flex float-right">
-                <li class="pl-3" >
-                  <a  id="citems" href="Help.html">Help</a>
+
+        <div class="col-sm" id="conditions1">
+            <ul class="list-unstyled d-inline-flex">
+                <li>
+                  <a  class="mx-2" id="citems1" href="Help.html">Help</a>
                 </li>
-                <li class="pl-4">
-                  <a  id="citems" href="T&C.html">Terms&Conditions</a>
+                <li>
+                  <a class="mx-2" id="citems1" href="T&C.html">Terms&Conditions</a>
                 </li>
-                <li class="pl-4" >
-                  <a id="citems" href="#!">Support</a>
+                <li>
+                  <a class="mx-2" id="citems1" href="#!">Support</a>
                 </li>
                 
               </ul>
         </div>
       </div>
-   </div>      
+   </div>
+  
 </footer>
-    </body>
-    
-    </html>
+</body>
+</html>

@@ -303,7 +303,8 @@
       </nav>
       </div>
       <br>
-
+    <br>
+    <br>
 
 
       <div class="col-sm-12">
@@ -333,16 +334,16 @@
 
     
     <div id="accordion">
-      <div class="card border-0 mt-4 ">
-        <div class="card-header border-0 bg-white">
+      <div class="border-0 mt-4 ">
+        <div class="header border-0 bg-white">
           <a class="float-left" id="Ch1">Shipping Address</a> 
          
         </div>
         <div >
-          <div class="card-body border-0">
+          <div class="card-body border-0 mt-4">
 
 
-            <div class="container" id="Cship">
+            <div class="container mt-4" id="Cship">
           
              <h5 class="p-3" id="Cship1"><span id="Cdummyaddress">Ship to this address</span>
                <a href="#" class="d-inline pull-right mx-1" id="Cremove"><i class="fa fa-trash" aria-hidden="true"></i> Remove</a> 
@@ -355,14 +356,107 @@
                        <div class="form-check">
                          <label class="form-check-label" for="radio1">
                            <input type="radio" class="form-check-input" id="radio1" name="optradio"><span class="mx-4" id="Cadd">
-                           7195 S. Sulphur Springs Lane Sugar Land, TX 77478</span>
+                           7195 S. Sulphur Springs Lane Sugar Land <br>
+                             TX 77478</span>
                          </label>
                        </div>
                      </form>
+                     <div class="container mt-4">
+                      <div>
+                 <a type="button" id="CASave" href="#" data-toggle="collapse" data-target="#newaddress" class="btn border d-inline pull-right">Add New Address</a>
+              </div>     
+                      </div>    
                   </div>
                  </div>
                </div>
 
+
+
+               <div class="collapse" id="newaddress">
+                <form class="mt-2">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" id="email" placeholder="First Name" name="First Name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last Name" name="Last Name">
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                          <input type="text" class="form-control" id="email" placeholder="Email Address" name="email">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Mobile Number" name="Mobile Number">
+                        </div>
+                      </div>
+                      <div class="form-group mt-2">
+                          <label for="comment"></label>
+                          <textarea class="form-control" rows="5" id="comment" placeholder="Address" name="text"></textarea>
+                        </div>
+  
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="sel1" ></label>
+                                    <select class="form-control" id="sel1" name="sellist1">
+                                        <option hidden >City</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="sel1"></label>
+                                    <select class="form-control" id="sel1" name="sellist1">
+                                        <option hidden >Zipcode</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row mt-2">
+                              <div class="col">
+                                  <div class="form-group">
+                                      <label for="sel1" ></label>
+                                      <select class="form-control" id="sel1" name="sellist1">
+                                          <option hidden >State</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="form-group">
+                                      <label for="sel1"></label>
+                                      <select class="form-control" id="sel1" name="sellist1">
+                                          <option hidden >Country</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              
+                              <div class="container mt-2">
+                                  <div>
+                        <a type="button" id="CASave" href="#" class="btn border d-inline pull-right">Save</a>
+                          </div>     
+                                  </div>     
+                            </div>
+                </form>
+                </div>
+          
+          
 
 
               <div class="collapse" id="Aedit">
@@ -466,10 +560,10 @@
                   <form class="mt-2">
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="form-control" id="email" placeholder="First Name" name="First Name">
+                        <input type="text" class="form-control" id="email" placeholder="Full Name"  name="First Name">
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="Last Name" name="Last Name">
+                        <input type="text" class="form-control" placeholder="TaxID/GST/VAT" name="Last Name">
                       </div>
                     </div>
                     <div class="row mt-4">
@@ -624,8 +718,8 @@
       
           <div class="row" >
             <div class="col text-center">
-            <button class="btn   border mt-4 " id="Sbutton">Apply</button> 
-            <button class="btn   border mt-4" id="Sbutton" >Cancel</button> 
+            <button class="btn   border mt-4 mx-2" id="Sbutton">Apply</button> 
+            <button class="btn   border mt-4 mx-2" id="Sbutton" >Cancel</button> 
           </div>
           </div>
         
@@ -639,46 +733,56 @@
 
 <br>
 <br>
-<footer class="page-footer p-2 mt-4 w-100 h-100" id="footer1" >
-    <div class="container-fluid mt-4">
-  <div class="row">
-    <div class="col-sm" >
-      <div class="footer-copyright" id="copyright1" >Copyright © 2020 Company Name
+<br>
+<br>
+<br>
+<footer class="page-footer w-100 h-100 p-2 mt-4" id="footer1" >
+  <div class="container-fluid mt-4">
+<div class="row">
+  <div class="col-sm" >
+    <div class="footer-copyright " id="copyright1" >Copyright © 2020 Company Name
+      </div>
+    </div>
+   <div class="col-sm " id="fcard">
+      <div class="row">
+          <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px" src="images/amazon@2x.png"></a>
+          <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/discover@2x.png"></a>
+          <a href="#"><img class="img-fluid border mx-2" style="height:24px;width:48px"  src="images/mastercard@2x.png"></a>
+          <a href="#"><img class="img-fluid border mx-2"  style="height:24px;width:48px"  src="images/visa@2x.png"></a>
+          <a href="#" id="c5"><img class="img-fluid border mx-2" style="height:24px;width:48px"   src="images/american express@2x.png"></a>
+          </div>
+   </div>
+        <div class="col-sm" id="social1">
+            <ul class="list-unstyled d-inline-flex mx-2">
+                <li>
+                  <a class="mx-2" href="#!"><i class="fa fa-instagram" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
+                </li>
+                <li >
+                  <a class="mx-2" href="#!"><i class="fa fa-twitter"  aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                </li>
+                <li>
+                  <a class="mx-2" href="#!"><i class="fa fa-facebook-square" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
+                </li>
+                
+              </ul>
+        </div>
+
+        <div class="col-sm" id="conditions1">
+            <ul class="list-unstyled d-inline-flex">
+                <li>
+                  <a  class="mx-2" id="citems1" href="Help.html">Help</a>
+                </li>
+                <li>
+                  <a class="mx-2" id="citems1" href="T&C.html">Terms&Conditions</a>
+                </li>
+                <li>
+                  <a class="mx-2" id="citems1" href="#!">Support</a>
+                </li>
+                
+              </ul>
         </div>
       </div>
-     
-          <div class="col-sm" id="social1">
-              <ul class="list-unstyled d-inline-flex pl-4">
-                  <li>
-                    <a href="#!"><i class="fa fa-instagram pl-4" aria-hidden="true" style="color:white; font-size:1.5rem"></i></a>
-                  </li>
-                  <li>
-                    <a href="#!"><i class="fa fa-twitter pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
-                  </li>
-                  <li>
-                    <a href="#!"><i class="fa fa-facebook-square pl-4" aria-hidden="true"  style="color:white; font-size:1.5rem"></i></a>
-                  </li>
-                  
-                </ul>
-          </div>
-  
-          <div class="col-sm" id="conditions1">
-              <ul class="list-unstyled d-inline-flex pl-4">
-                  <li class="pl-4" >
-                    <a  id="citems1" href="Help.html">Help</a>
-                  </li>
-                  <li class="pl-4">
-                    <a  id="citems1" href="T&C.html">Terms&Conditions</a>
-                  </li>
-                  <li class="pl-4" >
-                    <a id="citems1" href="#!">Support</a>
-                  </li>
-                  
-                </ul>
-          </div>
-        </div>
-     </div>
-    
+   </div>
   </footer>
   </body>
   </html>
