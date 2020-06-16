@@ -1305,7 +1305,7 @@ input[type="search"]::-webkit-search-cancel-button {
   } */
 
 .description{
-    font-size: 14px; 
+    font-size: 16px; 
     color: #727272;
     padding-left: 10px;
 }
@@ -1428,16 +1428,30 @@ font-size: 14px;
     font-size: 12px;
 }
 
+#button_style{
+    background-color: #FFFFFF; 
+    color: #211F1F; 
+    border: 1px solid #DEDEDE; 
+    text-decoration: none !important;
+}
+
+#button_style:hover{
+    background:#141414 ;
+    color:white;
+
+}
+
+
 canvas{
     width:70px; height:60px; position: absolute; top:210px;
 }
 
 
-.upload-logo_right{
+.upload-logo_left{
     right:220px;
 }
 
-.upload-logo_left{
+.upload-logo_right{
     left:118px; 
     display: none;
 }
@@ -1492,17 +1506,69 @@ canvas{
     canvas{
         width:35px; height:30px; position: absolute; top:190px;
     }
-    .upload-logo_right{
+    .upload-logo_left{
        margin-right: -87px;
 
     }
 
-    .upload-logo_left{
+    .upload-logo_right{
         margin-left: -34px;
 
     } 
 
 }
+
+
+/*Mobile view--pixel2*/
+@media (min-width: 411px) and (max-width: 731px){
+    .upload-logo_left{
+        margin-right: -45px;
+ 
+     }
+}
+
+
+/*----Mobile view---iphone5/se---*/
+
+@media (min-width: 320px) and (max-width: 320px){
+
+    .upload-logo_left{
+        margin-right: -125px;
+ 
+     }
+
+}
+
+/*----Mobile view---iphone6/7/8---*/
+
+@media (min-width: 375px) and (max-width: 375px){
+    .upload-logo_left{
+        margin-right: -69px;
+ 
+     }
+
+}
+
+
+/*Ipad*/
+@media (min-width: 768px) and (max-width: 794px){
+    .upload-logo_left{
+        margin-right: 159px;
+ 
+     }
+}
+
+/*Ipad Pro */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+    .upload-logo_left{
+        margin-right: -89px;
+ 
+     }
+
+  }
 
 /*-----Praba------ login Page------ codes----*/
 #login{
@@ -1801,6 +1867,14 @@ canvas{
  }
 
 /*--------------------------- Praba------- About Us...................................... */
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 .about{
     font-size: 34px;
     color: #141414;
