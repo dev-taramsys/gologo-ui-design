@@ -22,7 +22,7 @@
     <p class="pt-3 text-center forgot-info" style="color: #676767;">Password recovery details</p>
     <form>
         <div class="text-center">
-            <input type="email" class="forgot-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
+            <input type="email" id="mail" class="forgot-email pl-2 mt-3 pt-1 pb-1" placeholder="Email" required>
             <br>
         
         <div class="text-center pt-4">
@@ -37,9 +37,13 @@
 </body>
 
 <script>
+    const e_mail = mail.value;
     const button = document.getElementById("btn");
     button.addEventListener("click", function(){
+
+        // if(e_mail.value != null){
         document.getElementById("forgot-link").innerHTML = "Password reset link was sent to your email id.";
+        // }
     });
 </script>
 </html>
