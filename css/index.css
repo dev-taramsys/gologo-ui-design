@@ -1451,15 +1451,24 @@ canvas{
     width:70px; height:60px; position: absolute; top:210px;
 }
 
-
 .upload-logo_left{
     right:220px;
+    /* display: none; */
 }
 
 .upload-logo_right{
     left:118px; 
     display: none;
 }
+
+.upload-logo_1inch_left{
+    width:35px; height:30px; position: absolute; top:230px;right:240px;border: green 1px solid;display: none;
+}
+
+.upload-logo_1inch_right{
+    width:35px; height:30px; position: absolute; top:230px;left:138px;border: green 1px solid;display: none;
+}
+
 
 /* #real-file{
   position: absolute;
@@ -1763,7 +1772,7 @@ canvas{
     /*-----Praba------ Reset Password Page------ codes----*/
 
     .reset{
-        margin-top: 132px;
+        margin-top: 52px;
         width: 50%;
         height: 100%;
         background: #F9F9F9 0% 0% no-repeat padding-box;

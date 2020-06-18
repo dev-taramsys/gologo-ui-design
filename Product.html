@@ -340,7 +340,8 @@
              <br>
          
          <div class="text-center pt-4">
-             <button class="pl-4 pr-4 pt-2 pb-2 forgot-account mb-4" data-dismiss="modal" data-toggle="modal" id="resetPassword" data-target="#ModalResetPassword" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Submit</b></button>
+          <a class="pl-4 pr-4 pt-2 pb-2 forgot-account mb-4" href="reset_pwd.html" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Submit</b></a>   
+          <!-- <button class="pl-4 pr-4 pt-2 pb-2 forgot-account mb-4" data-dismiss="modal" data-toggle="modal" id="resetPassword" data-target="#ModalResetPassword" style="color: #FFFFFF; background: #141414 0% 0% no-repeat padding-box; border: 3px solid #141414; border-radius: 5px; opacity: 1;"><b>Submit</b></button> -->
          </div>
          <div class=" text-center mb-2" id="forgot-link">
          </div>
@@ -437,6 +438,10 @@
         </canvas>
         <canvas class="upload-logo_right" id="can2">
         </canvas>
+        <!-- <canvas class="upload-logo_1inch_left" id="can3">
+        </canvas>
+        <canvas class="upload-logo_1inch_right" id="can4">
+        </canvas> -->
         <div class="tab-pane active" id="pic-1"><img class="desktop_view img-responsive shadow p-3 bg-white rounded" src="images/girl1_desk.jpg" >
           <img class="mobile_view shadow p-1 bg-white rounded" src="images/girl1_mob.jpg">
         </div>
@@ -537,6 +542,13 @@
       border-radius: 5px;" id = "exampleFormControlSelect1" onchange="showCanvas(this)">
         <option value="0">Top Left(Chest)</option>
         <option value="1">Top Right(Chest)</option>
+     </select>
+     <label class="t_postion pl-3">Logo Height</label>
+      <select class="option pt-1 pb-1 pl-1" style="border: 1px solid #D6D6D6; 
+      border-radius: 5px;" id = "logo_height" onchange="showCanvas(this)">
+        <option value="2">1 inch</option>
+        <option value="3">2 inch</option>
+        <option value="4">3 inch</option>
      </select>
      
      <br><br>
@@ -657,6 +669,10 @@ var image; //create global var image
 function upload(){
   var imgcanvas1 = document.getElementById("can1");
   var imgcanvas2 = document.getElementById("can2");
+  var imgcanvas3 = document.getElementById("can3");
+  var imgcanvas4 = document.getElementById("can4");
+
+
   var fileinput = document.getElementById("finput");
   var filename = fileinput.value;
   // var right = document.getElementById("opt_right");
@@ -669,6 +685,10 @@ function upload(){
 // { 
    image.drawTo(imgcanvas2); //included in SimpleImage Library
 // }
+// image.drawTo(imgcanvas3); //included in SimpleImage Library
+
+// image.drawTo(imgcanvas4); //included in SimpleImage Library
+
 }
 // function showDiv(can1, element)
 // {
@@ -679,6 +699,7 @@ function upload(){
 // {
 //     document.getElementById(can2).style.display = element.value == 1 ? 'block' : 'none';
 // }
+
 
 function showCanvas(select){
    if(select.value==1){
@@ -692,6 +713,43 @@ function showCanvas(select){
 
    }
 } 
+
+// function showCanvas(select){
+//   if((select.value==0) && (select.value==4)) {
+//     document.getElementById('can1').style.display = "block";
+//     document.getElementById('can2').style.display = "none";
+//     document.getElementById('can3').style.display = "none";
+//     document.getElementById('can4').style.display = "none";
+
+//   }
+//   else if((select.value==1) && (select.value==4)){
+//     document.getElementById('can2').style.display = "block";
+//     document.getElementById('can1').style.display = "none";
+//     document.getElementById('can3').style.display = "none";
+//     document.getElementById('can4').style.display = "none";
+//    } 
+   
+//    else if((select.value==0) && (select.value==2)){
+//     document.getElementById('can1').style.display = "none";
+//     document.getElementById('can2').style.display = "none";
+//     document.getElementById('can3').style.display = "block";
+//     document.getElementById('can4').style.display = "none";
+
+
+//    }
+//    else if((select.value==1) && (select.value==2)){
+//     document.getElementById('can1').style.display = "none";
+//     document.getElementById('can2').style.display = "none";
+//     document.getElementById('can3').style.display = "none";
+//     document.getElementById('can4').style.display = "block";
+//    }
+//    else {
+//     document.getElementById('can1').style.display = "none";
+//     document.getElementById('can2').style.display = "none";
+//     document.getElementById('can3').style.display = "none";
+//     document.getElementById('can4').style.display = "none";
+//    }
+// } 
 
 
 
