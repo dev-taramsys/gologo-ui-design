@@ -27,6 +27,12 @@ opacity: 1;
 margin-left:4.125rem;
 }
 
+#hellouser{
+    margin-top:-1.5rem;
+  
+}
+
+
 #navbar1 .navbar-nav{
     margin-left:1rem;
 }
@@ -337,7 +343,10 @@ outline: -webkit-focus-ring-color auto 0px;
         display: none;
     }*/
 
-    
+    #hellouser{
+        margin-top:0rem;
+      
+    }
     
    #navbar1 .navbar{
        box-shadow: none;
@@ -711,11 +720,7 @@ font-size: 25px;
    font-size: 13px;
 }
 
-#imgsize{
-    height:200px;
-    width:200px;
-    margin-top: 1.2rem;
-}
+
 
 #cartedit{
     font-family: 'Roboto-Medium',sans-serif;
