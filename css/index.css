@@ -1447,29 +1447,37 @@ font-size: 14px;
 }
 
 
-canvas{
+/* canvas{
     width:70px; height:60px; position: absolute; top:210px;
-}
+} */
 
 .upload-logo_left{
+    width:70px; height:60px; position: absolute; top:210px;
     right:220px;
-    /* display: none; */
+    display: none;
 }
 
 .upload-logo_right{
+    width:70px; height:60px; position: absolute; top:210px;
     left:118px; 
     display: none;
 }
 
 .upload-logo_1inch_left{
-    width:35px; height:30px; position: absolute; top:230px;right:240px;border: green 1px solid;display: none;
+    width:35px; height:30px; position: absolute; top:230px;right:240px;
 }
 
 .upload-logo_1inch_right{
-    width:35px; height:30px; position: absolute; top:230px;left:138px;border: green 1px solid;display: none;
+    width:35px; height:30px; position: absolute; top:230px;left:138px;display: none;
 }
 
+.upload-logo_2inch_left{
+    width:55px; height:50px; position: absolute; top:220px;right:232px;display: none;
+}
 
+.upload-logo_2inch_right{
+    width:55px; height:50px; position: absolute; top:220px;left:130px;display: none;
+}
 /* #real-file{
   position: absolute;
 
@@ -1517,18 +1525,41 @@ canvas{
     }
 
 
-    canvas{
-        width:35px; height:30px; position: absolute; top:190px;
-    }
+    /* canvas{
+        width:35px; height:30px; position: absolute; top:190px;  
+    } */
     .upload-logo_left{
        margin-right: -87px;
-
+       width:45px; height:40px; position: absolute; top:190px;
     }
 
     .upload-logo_right{
         margin-left: -34px;
-
+        width:45px; height:40px; position: absolute; top:190px;
     } 
+
+    .upload-logo_1inch_left{
+       margin-right: -102px;
+       width:25px; height:20px; position: absolute; top:190px;
+        top: 190px;
+    }
+    .upload-logo_1inch_right{
+       width:25px; height:20px; position: absolute; top:190px;
+        margin-left: -56px;
+        top: 190px;
+
+    }
+
+    .upload-logo_2inch_left{
+        margin-right: -107px;
+        width:35px; height:30px; position: absolute; top:190px;
+        top: 190px;
+    }
+    .upload-logo_2inch_right{
+        margin-left: -56px;
+        width:35px; height:30px; position: absolute; top:190px;
+        top: 190px;
+    }
 
 }
 
@@ -1537,8 +1568,15 @@ canvas{
 @media (min-width: 411px) and (max-width: 731px){
     .upload-logo_left{
         margin-right: -45px;
- 
      }
+
+     .upload-logo_2inch_left{
+        margin-right: -59px;  
+    }
+    .upload-logo_1inch_left{
+        margin-right: -52px;    
+     }
+ 
 }
 
 
@@ -1550,6 +1588,12 @@ canvas{
         margin-right: -125px;
  
      }
+     .upload-logo_2inch_left{
+        margin-right: -149px;   
+    }
+    .upload-logo_1inch_left{
+        margin-right: -149px;    
+     }
 
 }
 
@@ -1558,7 +1602,12 @@ canvas{
 @media (min-width: 375px) and (max-width: 375px){
     .upload-logo_left{
         margin-right: -69px;
- 
+     }
+     .upload-logo_2inch_left{
+        margin-right: -89px;   
+    }
+    .upload-logo_1inch_left{
+        margin-right: -89px;    
      }
 
 }
@@ -1568,7 +1617,12 @@ canvas{
 @media (min-width: 768px) and (max-width: 794px){
     .upload-logo_left{
         margin-right: 159px;
- 
+     }
+     .upload-logo_2inch_left{
+        margin-right: 139px;   
+    }
+    .upload-logo_1inch_left{
+        margin-right: 139px;    
      }
 }
 
@@ -1581,7 +1635,12 @@ canvas{
         margin-right: -89px;
  
      }
-
+     .upload-logo_2inch_left{
+        margin-right: -97px;   
+    }
+    .upload-logo_1inch_left{
+        margin-right: -102px;    
+     }
   }
 
 /*-----Praba------ login Page------ codes----*/
